@@ -38,7 +38,9 @@ footer_scripts        : # add scripts to the </body>
 # Photo by Clovis WOOD on Unsplash
 #   - /assets/images/meerkats.jpg
 # Meerkat by parkjisun from the Noun Project
-#   - /assets/images/noun_meerkat_icon.png TODO: add to footer
+#   - /assets/images/noun_meerkat_icon.png
+# Meerkat by ArmOkay from the Noun Project
+#   - /assets/images/noun_meerkat_cute_logo.png
 teaser                : "/assets/images/meerkat.jpg"
 logo                  : "/assets/images/noun_meerkat_cute_logo.png"
 words_per_minute      : 200 # for estimating reading time
@@ -53,7 +55,95 @@ algolia:
   search_only_api_key : "64845f9080f01e8f53cba4cc457fca1c"
   powered_by          : false
 
+# SEO Related TODO: do this after you get a domain name
+# google_site_verification :
+# bing_site_verification   :
+# yandex_site_verification :
+# naver_site_verification  :
 
+# Social Sharing
+social:
+  type                : "Person"
+  name                : "Tae Yoon Kim"
+  links:
+    - "https://www.instagram.com/just4ink/"
+    - "https://www.linkedin.com/in/thinkty/"
+    - "https://github.com/thinkty"
+
+# Analytics TODO:
+# analytics:
+#   provider               : false # false (default), "google", "google-universal", "custom"
+#   google:
+#     tracking_id          :
+#     anonymize_ip         : # true, false (default)
+
+# Site Author
+author:
+  name             : "Tae Yoon Kim | 김태윤"
+  avatar           : "assets/images/noun_meerkat_icon.png"
+  bio              : |
+    * Student & Avid Learner 
+    * 학생 & 학생+
+  location         : "Indiana & Seoul"
+  # email            : "just4ink007@gmail.com"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:just4ink007@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/thinkty"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/thinkty"
+
+# Reading Files
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
 
 # Default settings
 defaults:
@@ -63,30 +153,6 @@ defaults:
       type: "posts"
     values:
       read_time: true  # add read_time: false to front matter to override
-      comments: true
-
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-include-cache
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+      comments: false
+      author_profile: false
+      share: true
