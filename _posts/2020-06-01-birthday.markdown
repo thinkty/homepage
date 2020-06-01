@@ -1,29 +1,40 @@
 ---
 title:  "What I did on my 22nd birthday"
 date:   2020-06-01
-categories: "Hobby"
-tag: "daily-life"
+categories: "Thoughts"
+tag: ["daily-life", "birthday", "mid-year-evaluation"]
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+This year has been quite a horrible year so far.
+It all started with the Australian bushfires and followed a series of unfortunate events.
+A lot of universities closed their campuses and Purdue (which is the university I am currently enrolled in) was not an exception.
+However, Purdue kept the dormitories open for students who couldn't go back home or decided not to go back home.
+At least that was something thankful for me as I could focus on the academics without having to worry about the difference in timezones, all the crazy things happening in cities, and other potential factors that could distract me.
+Although I was able to achieve a satisfying result, it certainly was challenging in different ways from the year before.
+For example, for classes that required group projects, all of my teammates were outside the state so there were days where I had to wake up and get on my computer as quick as possible for meetings. 
+The time difference was a real pain for those situations.
+Through this experience, I learned that **communication** is absolutely crucial and I think my thoughts on communication is worth an individual post which I will make in the future.
+As much as the year is taking a horrible turn, I think it will become a valuable experience ~~under the circumstance that I survive~~.
 
-Jekyll requires blog post files to be named according to the following format:
+Enough with the chitchat, following are the things I did on my 22nd birthday.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:tada: Created this blog! :tada:
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:tada: Wrote my first post! :tada:
 
-Jekyll also offers powerful support for code snippets:
+Yes... This year is quite depressing...
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Jokes aside, I really did enjoy building this blog with [Jekyll](https://jekyllrb.com/) and [Minial-Mistakes](https://github.com/mmistakes/minimal-mistakes) theme.
+Jekyll was really simple and intuitive to use, yet extremely customizable than I have expected.
+It took me several days and nights to get to the point where I was satisfied with the result, but I really enjoyed reading through the well-written and extremely helpful documents and tried almost every single configuration options in the config file.
+As a result, I was able to find myself writing my first post to the blog that I can be proud of. 
+Although it lacks some features, I am satisfied with the strong foundation and the idea of adding more features already gets me excited!
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+I plan to upload posts about some of the projects that I am working on or completed.
+In addition to projects, I plan to talk about my thoughts & opinions on the topics of my interest and also share my favorite hobby! (including games and other activities)
+Also, I hope to master Markdown to create those fantastic looking blog posts and also to use it to take notes during classes.
+Markdown really seems simple and organized at the same time which is something I would want to keep my notes like. (Also, I can save trees!)
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+My goal is to consistently upload posts and make this blog into something that I can take care of for the rest of my life.
+Now, let's cheer Meerkatz! :sparkles: :sparkles:
+
+P.S. Meerkats are my favorite animal.

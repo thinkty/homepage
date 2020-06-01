@@ -184,6 +184,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-paginate
   - jekyll-archives
+  - jemoji
 
 # Archiving
 category_archive:
