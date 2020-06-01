@@ -102,6 +102,9 @@ footer:
       url: "https://github.com/thinkty"
 
 # Reading Files
+include:
+  - .htaccess
+  - _pages
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -118,6 +121,12 @@ keep_files:
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
 
 # Conversion
 markdown: kramdown
@@ -137,14 +146,6 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
-
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-include-cache
-
 # Default settings
 defaults:
   # _posts
@@ -156,3 +157,44 @@ defaults:
       comments: false
       author_profile: false
       share: true
+  - scope:
+      path: ""
+      type: tag
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: category
+    values:
+      comments: false
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: America/Chicago
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-archives
+
+# Archiving
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
