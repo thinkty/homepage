@@ -26,7 +26,8 @@ Yes... This year is quite depressing...
 Jokes aside, I really did enjoy building this blog with [Jekyll](https://jekyllrb.com/) and [Minial-Mistakes](https://github.com/mmistakes/minimal-mistakes) theme.
 Jekyll was really simple and intuitive to use, yet extremely customizable than I have expected.
 It took me several days and nights to get to the point where I was satisfied with the result, but I really enjoyed reading through the well-written and extremely helpful documents and tried almost every single configuration options in the config file.
-As a result, I was able to find myself writing my first post to the blog that I can be proud of. 
+As a result, I was able to find myself writing my first post to the blog that I can be proud of and I am extremely happy to open this blog on my birthday.
+It's like I have been given myself a birthday gift!
 Although it lacks some features, I am satisfied with the strong foundation and the idea of adding more features already gets me excited!
 
 I plan to upload posts about some of the projects that I am working on or completed and posts related to computer science.
