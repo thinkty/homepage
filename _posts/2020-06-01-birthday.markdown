@@ -29,7 +29,7 @@ It took me several days and nights to get to the point where I was satisfied wit
 As a result, I was able to find myself writing my first post to the blog that I can be proud of. 
 Although it lacks some features, I am satisfied with the strong foundation and the idea of adding more features already gets me excited!
 
-I plan to upload posts about some of the projects that I am working on or completed.
+I plan to upload posts about some of the projects that I am working on or completed and posts related to computer science.
 In addition to projects, I plan to talk about my thoughts & opinions on the topics of my interest and also share my favorite hobby! (including games and other activities)
 Also, I hope to master Markdown to create those fantastic looking blog posts and also to use it to take notes during classes.
 Markdown really seems simple and organized at the same time which is something I would want to keep my notes like. (Also, I can save trees!)
