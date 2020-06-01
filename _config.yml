@@ -22,8 +22,9 @@
 # Site settings
 theme                 : "minimal-mistakes-jekyll"
 minimal_mistakes_skin : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-locale                : "en-US" # ko-KR
+locale                : "en-US" # ko-KR , en-US
 title                 : "Meerkatz"
+subtitle              : "미어캐츠"
 name                  : "Tae Yoon Kim"
 description           : >- # this means to ignore newlines until "baseurl:"
   A personal blog to share my thoughts, projects, and hobbies.
@@ -41,6 +42,8 @@ footer_scripts        : # add scripts to the </body>
 #   - /assets/images/noun_meerkat_icon.png
 # Meerkat by ArmOkay from the Noun Project
 #   - /assets/images/noun_meerkat_cute_logo.png
+# Photo by Amanda Swanepoel on Unsplash
+#   - /assets/images/meerkat_bw.png
 teaser                : "/assets/images/meerkat.jpg"
 logo                  : "/assets/images/noun_meerkat_cute_logo.png"
 words_per_minute      : 200 # for estimating reading time
@@ -80,10 +83,8 @@ social:
 # Site Author
 author:
   name             : "Tae Yoon Kim | 김태윤"
-  avatar           : "assets/images/noun_meerkat_icon.png"
-  bio              : |
-    * Student & Avid Learner 
-    * 학생 & 학생+
+  # avatar           : "assets/images/noun_meerkat_icon.png"
+  bio              : "Student, Developer"
   location         : "Indiana & Seoul"
   # email            : "just4ink007@gmail.com"
   links:
@@ -153,10 +154,12 @@ defaults:
       path: ""
       type: "posts"
     values:
+      layout: "single"
       read_time: true  # add read_time: false to front matter to override
       comments: false
       author_profile: false
       share: true
+      related: true
   - scope:
       path: ""
       type: tag
