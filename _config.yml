@@ -24,7 +24,7 @@ theme                 : "minimal-mistakes-jekyll"
 minimal_mistakes_skin : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 locale                : "en-US" # ko-KR , en-US
 title                 : "Meerkatz"
-subtitle              : "미어캐츠"
+subtitle              : "Personal blog"
 name                  : "Tae Yoon Kim"
 description           : >- # this means to ignore newlines until "baseurl:"
   A personal blog to share my thoughts, projects, and hobbies.
@@ -33,6 +33,7 @@ url                   : "" # the base hostname & protocol for your site, e.g. ht
 repository            : "thinkty/homepage-jekyll"
 head_scripts          : # add scripts to the <head>
 footer_scripts        : # add scripts to the </body>
+future                : true
 # This image can be overriden at anytime by applying " header: teaser: " to the front matter
 # Photo by Richard Bell on Unsplash
 #   - /assets/images/meerkat.jpg
@@ -44,7 +45,7 @@ footer_scripts        : # add scripts to the </body>
 #   - /assets/images/noun_meerkat_cute_logo.png
 # Photo by Amanda Swanepoel on Unsplash
 #   - /assets/images/meerkat_bw.png
-teaser                : "/assets/images/meerkat.jpg"
+# teaser                : "/assets/images/meerkat.jpg"
 logo                  : "/assets/images/noun_meerkat_cute_logo.png"
 words_per_minute      : 200 # for estimating reading time
 email                 : "just4ink007@gmail.com"

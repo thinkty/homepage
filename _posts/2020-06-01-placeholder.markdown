@@ -1,6 +1,6 @@
 ---
 title:  "Welcome to Jekyll!"
-date:   2020-05-31
+date:   2020-06-02
 categories: Thoughts
 tag: C
 ---
