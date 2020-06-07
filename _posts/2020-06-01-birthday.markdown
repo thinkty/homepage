@@ -1,7 +1,7 @@
 ---
 title:  "What I did on my 22nd birthday"
 date:   2020-06-01
-categories: "Thoughts"
+categories: Thoughts
 tag: ["daily-life", "birthday", "mid-year-evaluation"]
 ---
 This year has been quite a horrible year so far.
