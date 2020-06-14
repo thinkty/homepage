@@ -1,5 +1,5 @@
 ---
-title:  "University Discourse: RateMyProfessor but for Courses"
+title:  "University Discourse: RateMyProfessor but for courses"
 date:   2020-06-03
 categories: Projects
 tag: ["Web", "React", "MongoDB", "Group"]
