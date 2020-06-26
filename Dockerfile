@@ -7,7 +7,7 @@ FROM ubuntu:18.04
 RUN apt-get update
 
 # Install latest Ruby and required system packages
-RUN apt-get install ruby-full build-essential zlib1g-dev
+RUN apt-get install -y ruby-full build-essential zlib1g-dev
 
 # Install Bundler and Jekyll
 RUN gem install bundler jekyll
