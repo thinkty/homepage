@@ -118,6 +118,10 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - build.sh
+  - deploy.sh
+  - netlify.toml
+  - Dockerfile
 keep_files:
   - .git
   - .svn
