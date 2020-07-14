@@ -29,7 +29,7 @@ name                  : "Tae Yoon Kim"
 description           : >- # this means to ignore newlines until "baseurl:"
   A personal blog to share my thoughts, projects, and hobbies.
 baseurl               : "" # the subpath of your site, e.g. /blog
-url                   : "" # the base hostname & protocol for your site, e.g. http://example.com // TODO:
+url                   : "https://thinkty.net" # the base hostname & protocol for your site, e.g. http://example.com // TODO:
 repository            : "thinkty/homepage-jekyll"
 head_scripts          : # add scripts to the <head>
 footer_scripts        : # add scripts to the </body>
@@ -74,12 +74,12 @@ social:
     - "https://www.linkedin.com/in/thinkty/"
     - "https://github.com/thinkty"
 
-# Analytics TODO:
-# analytics:
-#   provider               : false # false (default), "google", "google-universal", "custom"
-#   google:
-#     tracking_id          :
-#     anonymize_ip         : # true, false (default)
+# Analytics
+analytics:
+  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-172628080-1"
+    anonymize_ip         : false
 
 # Site Author
 author:
