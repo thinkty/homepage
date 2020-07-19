@@ -96,6 +96,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/thinkty/"
+    - label: "Resume"
+      icon: "fab fa-fw fa-google-drive"
+      url: "https://docs.google.com/document/d/1ZUj5d5h8V0unP5-slkiXX6VEMkW4nEuMmBy4Kiy7Ais/edit?usp=sharing"
 
 # Site Footer
 footer:
