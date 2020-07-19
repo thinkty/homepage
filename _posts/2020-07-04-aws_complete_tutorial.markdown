@@ -162,6 +162,10 @@ The main difference about the two groups is that AWS gives me more freedom.
 It feels like I am playing with LEGO blocks to build an amazing set.
 I can combine multiple services that all integrate extremely well with each other to perform some mind blowing tasks.
 
+Also, the price is significantly cheaper compared to other services.
+So far, I am only paying 50 cents per month for my blog due to Route 53 and $12 per year for my domain that I have registered on AWS.
+At this price, I think it is definitely worth it compared to Heroku or Netlify.
+
 For my blog, I used multiple services to host a static website.
 My plan is to use computational servers to run backend programs and it is already in development :)
 

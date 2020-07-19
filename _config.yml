@@ -59,7 +59,7 @@ algolia:
   search_only_api_key : "64845f9080f01e8f53cba4cc457fca1c"
   powered_by          : false
 
-# SEO Related TODO: do this after you get a domain name
+# SEO Related do this after you get a domain name
 # google_site_verification :
 # bing_site_verification   :
 # yandex_site_verification :
@@ -73,12 +73,12 @@ social:
     - "https://www.linkedin.com/in/thinkty/"
     - "https://github.com/thinkty"
 
-# Analytics TODO:
-# analytics:
-#   provider               : false # false (default), "google", "google-universal", "custom"
-#   google:
-#     tracking_id          :
-#     anonymize_ip         : # true, false (default)
+# Analytics
+analytics:
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-172628080-1"
+    anonymize_ip         : false
 
 # Site Author
 author:
