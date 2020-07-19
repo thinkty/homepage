@@ -1,8 +1,0 @@
-# netlify.toml
-# This file should be at the root of your project
-# The command will run before deployment
-# It will build jekyll and also push required data to algolia
-
-[build]
-  command = "jekyll build && jekyll algolia"
-  publish = "_site"
