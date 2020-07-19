@@ -29,7 +29,7 @@ name                  : "Tae Yoon Kim"
 description           : >- # this means to ignore newlines until "baseurl:"
   A personal blog to share my thoughts, projects, and hobbies.
 baseurl               : "" # the subpath of your site, e.g. /blog
-url                   : "" # the base hostname & protocol for your site, e.g. http://example.com // TODO:
+url                   : "https://thinkty.net" # the base hostname & protocol for your site
 repository            : "thinkty/homepage-jekyll"
 head_scripts          : # add scripts to the <head>
 footer_scripts        : # add scripts to the </body>
@@ -70,7 +70,6 @@ social:
   type                : "Person"
   name                : "Tae Yoon Kim"
   links:
-    - "https://www.instagram.com/just4ink/"
     - "https://www.linkedin.com/in/thinkty/"
     - "https://github.com/thinkty"
 
@@ -83,11 +82,11 @@ social:
 
 # Site Author
 author:
-  name             : "Tae Yoon Kim | 김태윤"
+  name             : "Tae Yoon Kim"
   # avatar           : "assets/images/noun_meerkat_icon.png"
   bio              : "Student & Programmer"
   location         : "Indiana & Seoul"
-  # email            : "just4ink007@gmail.com"
+  email            : "just4ink007@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
