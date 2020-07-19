@@ -100,10 +100,13 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "GitHub"
+    - label: ""
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:just4ink007@gmail.com"
+    - label: ""
       icon: "fab fa-fw fa-github"
       url: "https://github.com/thinkty"
-    - label: "LinkedIn"
+    - label: ""
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/thinkty/"
 
