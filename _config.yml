@@ -60,10 +60,10 @@ algolia:
   powered_by          : false
 
 # SEO Related do this after you get a domain name
-# google_site_verification :
-# bing_site_verification   :
+# google_site_verification : Done through DNS
+# bing_site_verification   : 
 # yandex_site_verification :
-# naver_site_verification  :
+naver_site_verification  : "eaa1419db9b1c75438ab6fd30f85df2ef9aefcfc"
 
 # Social Sharing
 social:
