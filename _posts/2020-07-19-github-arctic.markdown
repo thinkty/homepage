@@ -5,8 +5,6 @@ categories: Thoughts
 tag: ["Github", "Arctic", "Code Vault"]
 ---
 
-![Github Arctic Code Vault](https://www.youtube.com/watch?v=fzI9FNjXQ0o)
-
 I recently stumbled upon the [*Github Archive Program*](https://www.youtube.com/watch?v=fzI9FNjXQ0o).
 It is a program to archive open source projects 250 meters deep in the permafrost of an Arctic mountain.
 The program has already stored many open source projects and there are some amazing projects such as [Linux](https://github.com/torvalds/linux) by Linus Torvalds, [Rust](https://github.com/rust-lang/rust), and even [React](https://github.com/facebook/react)! 
