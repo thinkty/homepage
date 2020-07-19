@@ -127,7 +127,6 @@ exclude:
   - vendor/ruby/
   - build.sh
   - deploy.sh
-  - netlify.toml
   - Dockerfile
 keep_files:
   - .git
