@@ -166,7 +166,7 @@ defaults:
       type: "posts"
     values:
       layout: "single"
-      read_time: true  # add read_time: false to front matter to override
+      read_time: true  # add 'read_time: false' to front matter to override
       comments: false
       author_profile: false
       share: true
