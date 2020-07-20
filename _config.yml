@@ -34,19 +34,7 @@ repository            : "thinkty/homepage-jekyll"
 head_scripts          : # add scripts to the <head>
 footer_scripts        : # add scripts to the </body>
 future                : true
-# This image can be overriden at anytime by applying " header: teaser: " to the front matter
-# Photo by Richard Bell on Unsplash
-#   - /assets/images/meerkat.jpg
-# Photo by Clovis WOOD on Unsplash
-#   - /assets/images/meerkats.jpg
-# Meerkat by parkjisun from the Noun Project
-#   - /assets/images/noun_meerkat_icon.png
-# Meerkat by ArmOkay from the Noun Project
-#   - /assets/images/noun_meerkat_cute_logo.png
-# Photo by Amanda Swanepoel on Unsplash
-#   - /assets/images/meerkat_bw.png
-# teaser                : "/assets/images/meerkat.jpg"
-logo                  : "/assets/images/noun_meerkat_cute_logo.png"
+logo                  : "/assets/images/logo.png"
 words_per_minute      : 200 # for estimating reading time
 email                 : "just4ink007@gmail.com"
 github_username       : "thinkty"
