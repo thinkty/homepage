@@ -130,7 +130,10 @@ exclude:
   - vendor/ruby/
   - build.sh
   - deploy.sh
+  - no_search_build.sh
   - Dockerfile
+  - README.md
+  - LICENSE
 keep_files:
   - .git
   - .svn
