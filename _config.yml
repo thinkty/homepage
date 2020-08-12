@@ -35,6 +35,7 @@ head_scripts          : # add scripts to the <head>
 footer_scripts        : # add scripts to the </body>
 future                : true
 logo                  : "/assets/images/logo.png"
+breadcrumbs           : true
 words_per_minute      : 200 # for estimating reading time
 email                 : "just4ink007@gmail.com"
 github_username       : "thinkty"
