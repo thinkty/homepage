@@ -1,11 +1,6 @@
 language: ruby
 before_install: gem install bundler
 script: ./script/cibuild
-after_success: s3_website push
-addons:
-  apt:
-    packages:
-      - libcur14-openssl-dev
 cache: bundler
 notifications:
   email:
