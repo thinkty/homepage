@@ -40,6 +40,3 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # For the theme: Minimal Mistakes (https://github.com/mmistakes/minimal-mistakes)
 gem "minimal-mistakes-jekyll"
-
-# For checking the build
-gem "html-proofer"
