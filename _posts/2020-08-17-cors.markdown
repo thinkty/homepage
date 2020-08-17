@@ -1,0 +1,6 @@
+---
+title:  "CORS, CORS everywhere"
+date:   2020-08-17
+categories: Thoughts
+tag: ["tutorial", "cors"]
+---
