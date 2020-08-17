@@ -1,7 +1,7 @@
 ---
 title:  "Games: now vs then"
 date:   2020-07-19
-categories: Hobby
+categories: Thoughts
 tag: ["Games", "Competitive"]
 header:
   image: https://imgur.com/oX2sSUr.png

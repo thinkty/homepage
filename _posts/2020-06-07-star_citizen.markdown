@@ -1,7 +1,7 @@
 ---
 title:  "My Thoughts on Star Citizen"
 date:   2020-06-07
-categories: Hobby
+categories: Thoughts
 tag: ["Game", "Star Citizen", "SF"]
 header:
   image: https://imgur.com/F0h76en.png
