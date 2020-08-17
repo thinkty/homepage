@@ -3,4 +3,66 @@ title:  "CORS, CORS everywhere"
 date:   2020-08-17
 categories: Thoughts
 tag: ["tutorial", "cors"]
+toc: true
 ---
+
+When I started getting into web development, I would sometimes run into this error.
+
+![cors error](https://imgur.com/Qo2adks.png)
+
+At the time, I had no clue of what it meant even after searching it up and looking at the [official MDN page](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
+However, after taking a course that briefly went over networking, I really wanted to be clear of what CORS is, and why I get this error on certain occasions.
+I hope you also find this helpful and let's dive in!
+
+## What is CORS?
+Best place to start with is the abbreviated name. (It is quite surprising to know how much information one can get from just the name)
+CORS stands for **Cross-Origin Resource Sharing**.
+
+Based on the name, the `cross-origin` part sounds something that has to do with different domains (+ protocol, port) and the `resource sharing` part seems related to the action of requesting information from one to another.
+With this in mind, let's look at the explanation from [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS):
+> CORS is a mechanism that uses additional HTTP headers to tell browsers to give a web application running at one origin, access to selected resources from a different origin.
+
+The information we extracted from the name fits exactly with the description.
+However, there is something more we can get from the official explanation.
+
+First, CORS is a *mechanism*.
+This is what confused me the most when I first encountered CORS.
+In my opinion, I think CORS is more like a *sub-protocol* similar to the [HTTP protocol](https://tools.ietf.org/html/rfc2616) in a sense that it is a promise in the internet (more specifically between browsers and servers).
+Please correct me if I am wrong. Please.
+
+Second, CORS uses additional HTTP headers to give browsers access to the requested resource.
+Before we dive into what the additional HTTP headers are, I think it is important to analyze when and how the CORS mechanism works.
+
+## When is CORS used?
+If you have tried fetching resource before, it would seem that the CORS error shown above only seems to happen under certain situations which is something that really got me confused.
+However, to sum it up based on [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#What_requests_use_CORS), CORS is used when using the
+- **XMLHttpRequest** or **fetch API**
+- Web Fonts
+
+and more according to the source, but I only listed the ones that can be easily encountered.
+
+In addition, when using the XMLHttpRequest or the fetch API, sometimes, you do not get the CORS error message even if CORS is not setup in the target server.
+This can also be described as the CORS **preflight** not triggering.
+This mainly happens as it is a **Simple Request**. Simple requests are requests that
+- use the `GET`, `HEAD`, or `POST` method
+- use headers that are [CORS-safelisted](https://fetch.spec.whatwg.org/#cors-safelisted-request-header)
+- only has `text/plain`, `application/x-www-form-urlencoded`, or `multipart/form-data` in the Content-Type header
+
+There are [additional restrictions](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#Examples_of_access_control_scenarios) on what makes a simple request, but I have listed the most popular ones above.
+In addition, I highly recommend [https://httptoolkit.tech/will-it-cors/](https://httptoolkit.tech/will-it-cors/) for trying it out yourself.
+
+As mentioned above, these simple requests do not trigger the **CORS preflight**.
+I would like to explain more about this with the image from MDN.
+
+## How does CORS work?
+![cors flow](https://imgur.com/BPbQFA0.png)
+
+Based on the image from MDN, when requesting a resource that is not a simple request, the client (browser) must first ask whether the server will allow the request.
+To "ask" the server, the client sends a request with the `OPTION` method along with additional CORS related headers.
+When the server receives the request, it responds with the CORS related headers that specify the origin, methods, and headers that can be requested from the client.
+
+Once the server allows cross origin access, then the client can send the actual request and proceed with the resource sharing.
+
+## Conclusion
+This is the overview of CORS and there are more to it such as credentials and more.
+I highly recommend going through the [request](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#The_HTTP_request_headers) and [response](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#The_HTTP_response_headers) headers related to CORS.
