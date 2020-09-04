@@ -1,0 +1,104 @@
+---
+title:  "Switching to Manjaro Linux (+ Installation Guide)"
+date:   2020-09-04
+categories: Thoughts
+tag: ["Linux", "Manjaro", "Installing Manjaro"]
+---
+
+I did it.
+I made my first distro hop from Ubuntu to Manjaro and I intend to stay (hehehe we will see about that).
+
+![distro-hopping](https://imgs.xkcd.com/comics/not_really_into_pokemon.png)
+
+Although a lot of people look down on distro hopping, a lot of *other* people still do it.
+For me, Ubuntu was *okay* but it just wasn't *perfect*.
+A lot of the problems were probably caused by my faults during installation while switching from Windows and I decided to make a clean install.
+
+Since I was going to make a clean install anyway, I decided to try a different flavor for a change.
+After much consideration, the distro I chose was *Manjaro*.
+
+Based on my understanding, Manjaro is a stable version of Arch.
+It follows the rolling release model of Arch, which means it will have the cutting-edge technologies.
+However, different from Arch and although I haven't tried Arch, many state that it is much beginner friendly as it comes with pre-installed applications and a desktop environment of your choice.
+
+All the characteristics above sounded intriguing and thus I prepared my first hop to Manjaro.
+I created this guide just in case I want to make a clean install again in the future and I hope this guide helps others too.
+
+## Things to consider before hopping
+
+One should always backup their stuff before hopping.
+By *stuff*, I mean applications such as your text editor, IDEs, your favorite tools such as image viewers, file managers, etc.
+Also, you should have a backup of your rc files such as *.bashrc* and *.vimrc*.
+Don't forget your browser extensions too!
+
+## Creating a bootable USB stick
+
+Once you have all your files and a list of applications safely backed up, you can start the installation process.
+
+The very first step of the installation process is to have the operating system ready in a bootable USB stick.
+There are [many ways](https://wiki.manjaro.org/index.php?title=UEFI_-_Install_Guide#Using_Rufus_on_Windows_to_create_installation_media) to create a bootable USB stick.
+Once you have a bootable USB stick ready, we can move onto the next step.
+
+## Partitioning
+
+Before I go into this section, I want to point out that this guide is aimed towards a complete clean install (not a dual setup).
+With that in mind, I completely removed everything from the drive and created a new [GPT](https://www.howtogeek.com/193669/whats-the-difference-between-gpt-and-mbr-when-partitioning-a-drive/) partition.
+
+In addition to GPT, I used [UEFI](https://wiki.restarters.net/UEFI_and_GPT) (Unified Extensible Firmware Interface, a modern alternative to BIOS) which I will discuss later on in the guide.
+I am mentioning this here so that if it differs from your plan, I recommend that you follow another guide that better suits your situation.
+
+To wipeout the previous partition and start a new one, this has to be done by booting into the bootable USB.
+Once you start Manjaro from the USB drive, since you are on a separate disk from the main one on your computer, you can safely remove the old partition and create a new partition table with GPT following [this guide](https://www.digitalocean.com/community/tutorials/how-to-partition-and-format-storage-devices-in-linux#partition-the-new-drive).
+
+With the older partition removed, you can now make a clean install of Manjaro with the graphical installer or the command line.
+I used the graphical installer and followed through the steps since I am a linux noob.
+
+During the installation, it will ask you how to partition.
+For me, the option to erase the disk was unavailable for some reason, so that is why I had to manually erase the partition beforehand.
+Since I do not have anything on the main disk, I was able to just choose the disk by selecting the `manual partition` option.
+
+After selecting, I was able to set the swap size which is similar to RAM but on your disk instead of the RAM stick.
+This could be helpful when you don't have a lot of RAM installed like me.
+An adequate size of the swap is based on the size of your RAM and your disk.
+If your disk has enough space, you could go from [20% to 100%](https://itsfoss.com/swap-size/) of your RAM size.
+
+After setting up swap, which is optional, now you have to setup an EFI system partition (ESP) in order to boot in UEFI mode.
+Based on my knowledge, the EFI partition is the part that will be read by the motherboard during boot to show the available operating systems.
+The adequate size of an ESP is around [100 MiB to 550 MiB](https://superuser.com/questions/1310927/what-is-the-absolute-minimum-size-a-uefi-partition-can-be).
+Don't forget to flag the partition with `boot` and `esp`.
+
+## Boot Management
+
+After following through the rest of the installation process, once the new operating system is in your disk, you can reboot into it.
+If your computer boots all fine into your newly installed distro, you are all set.
+However, if you are facing some issues, that is where the real fun begins.
+
+In my case, although I could boot into Manjaro by selecting it on the boot menu (the menu you can enter by pressing F2 or F12 depending on your motherboard).
+However, the boot sequence wasn't right and it didn't show Manjaro as being able to boot from UEFI mode.
+
+This was because I didn't setup a EFI and UEFI compatible boot loader or boot manager like Grub or rEFInd (even the Linux kernel has one by default).
+I decided to go with rEFInd as one of the reasons I changed my distribution was due to Grub just not working (again, probably my fault during installation).
+
+rEFInd is a boot [*manager*](https://superuser.com/questions/1492583/is-bootloader-and-bootmanager-same-thing) that let's you choose from various operating systems on your disk which is useful for dual booting. In addition, in my opinion, rEFInd's configuration was way easier to understand/edit than Grub.
+
+In order to setup rEFInd, first mount the ESP created earlier if not mounted yet and [install rEFInd](https://www.rodsbooks.com/refind/installing.html).
+You can setup rEFInd automatically using the `refind-install` script.
+
+Once rEFInd is installed, restart and you should now see an option to boot from UEFI mode.
+If not, here are several scenarios that I can provide:
+
+- Make sure that in your `BIOS SETUP`, UEFI is enabled and secure boot is disabled.
+
+- Try typing `efibootmgr` in the terminal. If an error message of `efi variables are not supported` is shown, run the following command `sudo modprobe efivarfs` to load the efivarfs to the kernel.
+
+- Here is an [official guide](https://wiki.manjaro.org/index.php?title=UEFI_-_Install_Guide) from Manjaro
+
+## First Impression on Manjaro
+
+After installing all the applications needed, my worries that Manjaro might be too unstable was gone.
+Since I don't really do hardcore system stuff and mainly stick to daily usage, Manjaro was quite stable than I expected.
+
+> It just works.
+
+All the bugs (related to Grub and VSCode) that I was facing before were gone and the system just works as I intended.
+Again and for the last time, Ubuntu is great and I probably messed it up, but it was just so nice to fiddle with a computer that I control.
