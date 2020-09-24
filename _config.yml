@@ -46,7 +46,7 @@ algolia:
   application_id      : "4UJ1WD4AIU"
   index_name          : "meerkatz"
   search_only_api_key : "64845f9080f01e8f53cba4cc457fca1c"
-  powered_by          : false
+  powered_by          : true
 
 # SEO Related do this after you get a domain name
 # google_site_verification : Done through DNS
