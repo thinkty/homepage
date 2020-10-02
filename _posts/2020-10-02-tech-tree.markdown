@@ -1,0 +1,40 @@
+---
+title:  "A tech tree for the actual world"
+date:   2020-10-02
+categories: Thoughts
+tag: ["random"]
+---
+
+Recently I watched a [video](https://www.youtube.com/watch?v=82pmo53FQIY) on YouTube with the title of *Bill Gates talks toilets*.
+The video starts with the fact that the poorest population in the world does not have access to the sewer system which is something that we might take for granted.
+Absence of a proper sewer system leads to various problems starting with sanitation issues, disease, and leading to malnourishment.
+
+Since it is quite hard to implement the traditional sewer system to all the countries, Bill Gates decided to reinvent toilets.
+I believe the journey is still on going but the part where the *tech tree for the actual world* comes into picture is how Bill Gates found a solution of reinventing toilets.
+
+During the process of solving the problem, Bill Gates realized that the traditional sewer systems that we have in major cities are quite old and outdated.
+From here, I wondered:
+
+> Only if there was a tech tree of the real world, outdated technology could be easily detected and be a target of renovation if necessary
+
+If you are not familiar with the word *tech tree*, it is an abbreviation of the word technology tree.
+Based on a quick search on [Wikipedia](https://en.wikipedia.org/wiki/Technology_tree), it is a term related to gaming that means "hierarchical visual representation of the possible sequences of upgrades a player can take".
+
+![image from Civilization 5](https://scalar.usc.edu/works/empire-of-the-earth-piece-done-in-the-hexagonal-style-of-sid-meier/media/CivTechTree.jpg)
+
+The image above is a perfect example of a tech tree from a strategy game called *Civilization 5*.
+Except for the most basic technology, each new technology has prerequisites.
+
+I believe something similar could be implemented in real life with several layers of abstraction and a much bigger scale.
+For example, computer is one of the most important invention / technology that mankind was able to achieve.
+However, in a single computer, there are countless other technologies that were used in various components starting with the hardware (CPU, RAM, HDD/SSD) and software (OS, compiler, language).
+Those could be hidden through abstraction and let us focus more on the connection between computer and other technologies.
+
+The introduction of computers had significant impact on other areas too.
+It became a prerequisite for the widely used internet which connected people all around the world and the internet in return allowed others to use it in their own fields to develop themselves.
+
+Although it would be extremely challenging to create a tech tree that perfectly mirrors the current development of technology in various fields not limited to computers and engineering, I believe it should be done to provide a road map to mankind.
+Similar to fixing a bug in your program, if we are able *see* the bug, in this case, what we lack in or what kind of technology is outdated, the solution can then be implemented.
+If unable to ever spot the bug, it will be there forever and might cause problems in the future.
+
+However, as I said before, I expect this to be a task that would take experts in probably everything that exists currently.
