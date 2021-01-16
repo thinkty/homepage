@@ -72,8 +72,8 @@ analytics:
 # Site Author
 author:
   name             : "Tae Yoon Kim"
-  # avatar           : "assets/images/noun_meerkat_icon.png"
-  bio              : "Soph CS @ Purdue"
+  # avatar           : "assets/images/profile.png"
+  bio              : ""
   location         : "Indiana & Seoul"
   links:
     - label: "Email"
