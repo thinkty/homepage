@@ -22,7 +22,7 @@
 # Site settings
 theme                 : "minimal-mistakes-jekyll"
 minimal_mistakes_skin : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-locale                : "en-US" # ko-KR , en-US
+# locale                : "en-US" # ko-KR , en-US
 title                 : "Meerkatz"
 subtitle              : "Personal blog"
 name                  : "Tae Yoon Kim"
