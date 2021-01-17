@@ -1,6 +1,9 @@
 ---
-permalink: /about/
 layout: single
+
+namespace: about
+permalink: /about/
+permalink_ko: /소개/
 ---
 
-{% tf about/about.md %}
+{% translate_file about/about.md %}
