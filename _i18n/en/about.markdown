@@ -1,10 +1,3 @@
----
-permalink: /about/
-layout: single
----
-
-{% translate_file about/about.markdown %}
-
 Hello there!
 
 My name is **Tae Yoon Kim** and I'm a **sophomore in computer science** at **Purdue University**.

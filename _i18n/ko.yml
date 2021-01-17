@@ -1,6 +1,5 @@
 global:
-  english: 영어
+  english: English(영어)
   korean: 한국어
 pages:
   home: Home
-  work: Work
