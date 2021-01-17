@@ -1,7 +1,14 @@
-main:
+main_en:
   - title: "About"
     url: /about/
   - title: "Projects"
     url: /categories/projects/
   - title: "Thoughts"
+    url: /categories/thoughts/
+main_ko:
+  - title: "소개"
+    url: /소개/
+  - title: "프로젝트"
+    url: /categories/projects/
+  - title: "사설"
     url: /categories/thoughts/
