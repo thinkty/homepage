@@ -1,5 +1,4 @@
 # Homepage
-![build](https://travis-ci.com/thinkty/homepage-jekyll.svg?branch=master)
 
 This my personal blog where I post my projects and thoughts.
 It is made with [Jekyll](https://jekyllrb.com/) and is using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme.
