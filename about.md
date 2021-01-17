@@ -3,4 +3,4 @@ permalink: /about/
 layout: single
 ---
 
-{% tf about.markdown %}
+{% tf about/about.md %}
