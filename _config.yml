@@ -190,6 +190,7 @@ plugins:
   - jekyll-paginate
   - jekyll-archives
   - jemoji
+  - jekyll-multiple-languages-plugin
 
 # Archiving
 category_archive:
