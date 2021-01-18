@@ -32,19 +32,23 @@
         <!-- end custom title -->
         <ul class="visible-links">
           <!-- start custom navigation -->
-          {% if site.lang == "en" %}
-            {% for link in site.data.navigation.main_en %}
-              <li class="masthead__menu-item">
-                <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
-              </li>
-            {% endfor %}
-          {% else %}
-            {% for link in site.data.navigation.main_ko %}
-              <li class="masthead__menu-item">
-                <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
-              </li>
-            {% endfor %}
-          {% endif %}
+          <li class="masthead__menu-item">
+            <a href="{% translate_link about %}">
+              {% translate about %}
+            </a>
+          </li>
+          <li class="masthead__menu-item">
+            {% capture projects_link %}{{ site.baseurl }}/categories/projects/{% endcapture %}
+            <a href="{{ projects_link }}">
+              {% translate projects %}
+            </a>
+          </li>
+          <li class="masthead__menu-item">
+            {% capture thoughts_link %}{{ site.baseurl }}/categories/thoughts/{% endcapture %}
+            <a href="{{ thoughts_link }}">
+              {% translate thoughts %}
+            </a>
+          </li>
           <!-- end custom navigation -->
         </ul>
         {% if site.search == true %}
