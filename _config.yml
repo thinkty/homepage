@@ -119,10 +119,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - build.sh
-  - deploy.sh
-  - no_search_build.sh
-  - Dockerfile
+  - script/
   - README.md
   - LICENSE
 keep_files:
