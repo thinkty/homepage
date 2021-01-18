@@ -1,5 +1,6 @@
 ---
 layout: single
+title: about
 
 namespace: about
 permalink: /about/
