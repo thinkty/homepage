@@ -1,5 +1,8 @@
 global:
   english: Engish
   korean: 한국어(Korean)
-pages:
-  home: Home
+  logo_main: Meerkatz
+  logo_sub: "Personal Blog"
+about: About
+projects: Projects
+thoughts: Thoughts
