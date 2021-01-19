@@ -1,25 +1,47 @@
 ---
+title: 404
 permalink: /404.html
-layout: default
 ---
 
 <style type="text/css" media="screen">
   .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+    font-family: Arial, Helvetica, sans-serif;
+    border: thin solid #bbb;
   }
   h1 {
-    margin: 30px 0;
-    font-size: 4em;
     line-height: 1;
     letter-spacing: -1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    border: thin solid #bbb;
+  }
+  hr.border {
+    border-top: thin solid #bbb;
+    width: 30%;
+    margin: 20px 0;
+  }
+  a {
+    margin: 10px 0;
   }
 </style>
 
 <div class="container">
   <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <hr class="border">
+  <div class="text">
+    Page not found!
+  </div>
+  <div class="text">
+    페이지를 찾을 수 없습니다!
+  </div>
+  <a class="text" href="javascript:history.back()">
+    Go Back / 뒤로가기
+  </a>
 </div>
