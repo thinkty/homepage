@@ -15,8 +15,10 @@
         {% endunless %}
         <!-- start custom title -->
         <a class="site-title" href="{{ site.baseurl }}">
-          {{ site.masthead_title | default: site.title }}
-          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
+          {% translate global.title %}
+          <span class="site-subtitle">
+            {% translate global.subtitle %}
+          </span>
         </a>
         <!-- end custom title -->
         <ul class="visible-links">

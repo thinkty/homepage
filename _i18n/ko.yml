@@ -1,8 +1,8 @@
 global:
   english: English(영어)
   korean: 한국어
-  logo_main: Meerkatz
-  logo_sub: "개인 블로그"
+  title: Meerkatz
+  subtitle: "개인 블로그"
 about: 소개
 projects: 프로젝트
 thoughts: 사설
