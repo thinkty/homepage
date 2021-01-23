@@ -10,25 +10,14 @@
       <nav id="site-nav" class="greedy-nav">
         {% unless logo_path == empty %}
           <!-- start custom logo -->
-          {% if site.lang == "en" %}
-            <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt=""></a>
-          {% else %}
-            <a class="site-logo" href="{{ '/ko/' }}"><img src="{{ logo_path | relative_url }}" alt=""></a>
-          {% endif %}
+          <a class="site-logo" href="{{ site.baseurl }}"><img src="{{ logo_path | relative_url }}" alt=""></a>
           <!-- end custom logo -->
         {% endunless %}
         <!-- start custom title -->
-        {% if site.lang == "en" %}
-          <a class="site-title" href="{{ '/' | relative_url }}">
-            {{ site.masthead_title | default: site.title }}
-            {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
-          </a>
-        {% else %}
-          <a class="site-title" href="{{ '/ko/' }}">
-            {{ site.masthead_title | default: site.title }}
-            {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
-          </a>
-        {% endif %}
+        <a class="site-title" href="{{ site.baseurl }}">
+          {{ site.masthead_title | default: site.title }}
+          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
+        </a>
         <!-- end custom title -->
         <ul class="visible-links">
           <!-- start custom navigation -->
