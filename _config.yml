@@ -39,7 +39,7 @@ future                : true
 logo                  : "/assets/images/logo.png"
 breadcrumbs           : true
 words_per_minute      : 200 # for estimating reading time
-email                 : "just4ink007@gmail.com"
+email                 : "the.thinkty@gmail.com"
 github_username       : "thinkty"
 search                : true
 search_full_content   : true
