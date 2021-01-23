@@ -7,41 +7,75 @@ permalink: /404.html
   .container {
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 40vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  img {
+    height: 100%;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
   }
   .text {
     font-family: Arial, Helvetica, sans-serif;
-    border: thin solid #bbb;
+    font-size: 1.5em;
+    overflow: visible;
+    white-space: nowrap;
   }
-  h1 {
-    line-height: 1;
+  .title {
     letter-spacing: -1px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 5em;
-    border: thin solid #bbb;
+    font-size: 10em;
+    font-weight: bold;
+    margin-top: -20px;
   }
-  hr.border {
-    border-top: thin solid #bbb;
-    width: 30%;
-    margin: 20px 0;
+  .button-container {
+    margin-top: 35px;
   }
-  a {
-    margin: 10px 0;
+  .button {
+    padding: 10px;
+    border: 2px solid #f01b1b;
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: unset;
+    color: white;
+    background-color: #f01b1b;
+    transition-duration: 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  .button:focus,
+  .button:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 </style>
 
 <div class="container">
-  <h1>404</h1>
-  <hr class="border">
-  <div class="text">
-    Page not found!
+  <img src="/assets/images/logo.png"/>
+  <div class="item">
+    <div class="title">
+      404
+    </div>
+    <div class="text">
+      페이지를 찾을 수 없습니다!
+    </div>
+    <div class="text">
+      Page not found!
+    </div>
+    <div class="button-container">
+      <a class="button" href="javascript:history.back()">
+        Go Back&nbsp;&nbsp;-&nbsp;&nbsp;뒤로가기
+      </a>
+    </div>
   </div>
-  <div class="text">
-    페이지를 찾을 수 없습니다!
-  </div>
-  <a class="text" href="javascript:history.back()">
-    Go Back / 뒤로가기
-  </a>
 </div>
