@@ -8,13 +8,22 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
+        <!-- Custom home url as site.baseurl doesn't seem to be working -->
+        {% capture home %}
+          {% if site.lang == "en" %}
+            {{ site.baseurl_root }}/
+          {% else %}
+            {{ site.baseurl }}
+          {% endif %}
+        {% endcapture %}
+        <!---->
         {% unless logo_path == empty %}
           <!-- start custom logo -->
-          <a class="site-logo" href="{{ site.baseurl }}"><img src="{{ logo_path | relative_url }}" alt=""></a>
+          <a class="site-logo" href="{{ home }}"><img src="{{ logo_path | relative_url }}" alt=""></a>
           <!-- end custom logo -->
         {% endunless %}
         <!-- start custom title -->
-        <a class="site-title" href="{{ site.baseurl }}">
+        <a class="site-title" href="{{ home }}">
           {% translate global.title %}
           <span class="site-subtitle">
             {% translate global.subtitle %}
