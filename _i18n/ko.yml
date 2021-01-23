@@ -6,3 +6,6 @@ global:
 about: 소개
 projects: 프로젝트
 thoughts: 사설
+cross:
+  desc: View in English
+  link: /

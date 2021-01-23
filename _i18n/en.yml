@@ -6,3 +6,6 @@ global:
 about: About
 projects: Projects
 thoughts: Thoughts
+cross:
+  desc: 한국어로 보기
+  link: /ko
