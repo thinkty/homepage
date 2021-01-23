@@ -167,11 +167,6 @@ defaults:
       related: true
   - scope:
       path: ""
-      type: tag
-    values:
-      comments: false
-  - scope:
-      path: ""
       type: category
     values:
       comments: false
@@ -195,16 +190,10 @@ plugins:
 category_archive:
   type: jekyll-archives
   path: /categories/
-tag_archive:
-  type: jekyll-archives
-  path: /tags/
 jekyll-archives:
   enabled:
     - categories
-    - tags
   layouts:
     category: archive-taxonomy
-    tag: archive-taxonomy
   permalinks:
     category: /categories/:name/
-    tag: /tags/:name/

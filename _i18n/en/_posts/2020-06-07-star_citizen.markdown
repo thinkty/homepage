@@ -2,7 +2,6 @@
 title:  "My Thoughts on Star Citizen"
 date:   2020-06-07
 categories: Thoughts
-tag: ["Game", "Star Citizen", "SF"]
 header:
   image: https://imgur.com/F0h76en.png
   caption: "Photo from [wallpapermemory.com](https://wallpapermemory.com/desktop-backgrounds/gaming-video-game/star-citizen/dual-monitor)"

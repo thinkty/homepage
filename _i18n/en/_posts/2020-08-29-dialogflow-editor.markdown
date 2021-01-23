@@ -2,7 +2,6 @@
 title:  "Source Chat: a platform to manage your chatbots with an intuitive editor"
 date:   2020-08-29
 categories: Projects
-tag: ["Dialogflow", "React", "Node"]
 toc: true
 ---
 

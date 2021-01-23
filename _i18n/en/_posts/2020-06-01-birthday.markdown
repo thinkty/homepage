@@ -2,7 +2,6 @@
 title:  "What I did on my 22nd birthday"
 date:   2020-06-01
 categories: Thoughts
-tag: ["daily-life", "birthday", "mid-year-evaluation"]
 ---
 This year has been quite a horrible year so far.
 It all started with the Australian bushfires and followed a series of unfortunate events.

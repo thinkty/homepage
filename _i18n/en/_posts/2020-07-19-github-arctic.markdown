@@ -2,7 +2,6 @@
 title:  "Codes in the Arctic permafrost"
 date:   2020-07-19
 categories: Thoughts
-tag: ["Github", "Arctic", "Code Vault"]
 ---
 
 I recently stumbled upon the [*Github Archive Program*](https://www.youtube.com/watch?v=fzI9FNjXQ0o).

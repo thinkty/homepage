@@ -2,7 +2,6 @@
 title:  "The long path (but a fun one) to host your blog on AWS with HTTPS"
 date:   2020-07-04
 categories: Thoughts
-tag: ["tutorial", "AWS", "S3", "Route53", "CloudFront", "ACM", "IAM", "Hosting", "static-pages"]
 toc: true
 ---
 

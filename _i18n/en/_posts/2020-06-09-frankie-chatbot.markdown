@@ -2,7 +2,6 @@
 title:  "Frankie: a chatbot to train your cognitive health"
 date:   2020-06-09
 categories: Projects
-tag: ["Chatbot", "Facebook", "Webhook", "NodeJS", "DialogFlow"]
 toc: true
 ---
 ## Intro

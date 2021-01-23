@@ -2,7 +2,6 @@
 title:  "A tech tree for the actual world"
 date:   2020-10-02
 categories: Thoughts
-tag: ["random"]
 ---
 
 Recently I watched a [video](https://www.youtube.com/watch?v=82pmo53FQIY) on YouTube with the title of *Bill Gates talks toilets*.

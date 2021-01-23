@@ -2,7 +2,6 @@
 title:  "Using the Arduino Uno as a portable climate reader"
 date:   2020-06-09
 categories: Projects
-tag: ["Arduino", "Arduino Uno", "DHT22", "SZH-SSBH-011"]
 toc: true
 ---
 

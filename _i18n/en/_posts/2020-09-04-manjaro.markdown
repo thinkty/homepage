@@ -2,7 +2,6 @@
 title:  "Switching to Manjaro Linux (+ Installation Guide)"
 date:   2020-09-04
 categories: Thoughts
-tag: ["Linux", "Manjaro", "Installing Manjaro"]
 ---
 
 I did it.

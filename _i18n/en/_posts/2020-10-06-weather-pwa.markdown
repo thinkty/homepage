@@ -2,7 +2,6 @@
 title:  "A simple PWA application"
 date:   2020-10-06
 categories: Projects
-tag: ["React", "PWA"]
 ---
 
 Recently, I started learning about cross-platform applications such as Electron, Ionic and what caught my attention was PWA.

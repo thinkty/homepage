@@ -2,7 +2,6 @@
 title:  "Searching with StackExchange VS GoogleCustomSearch"
 date:   2020-06-04
 categories: Thoughts
-tag: ["tutorial", "API", "Google", "StackOverflow", "Search"]
 toc: true
 ---
 
