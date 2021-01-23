@@ -9,13 +9,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <!-- Custom home url as site.baseurl doesn't seem to be working -->
-        {% capture home %}
-          {% if site.lang == "en" %}
-            {{ site.baseurl_root }}/
-          {% else %}
-            {{ site.baseurl }}
-          {% endif %}
-        {% endcapture %}
+        {% capture home %}{% if site.lang == "en" %}{{ site.baseurl_root }}/{% else %}{{ site.baseurl }}{% endif %}{% endcapture %}
         <!---->
         {% unless logo_path == empty %}
           <!-- start custom logo -->
