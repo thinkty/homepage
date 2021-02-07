@@ -6,77 +6,50 @@ permalink: /404.html
 
 <style type="text/css" media="screen">
   .container {
-    margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 40vh;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  img {
-    height: 100%;
-  }
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-  }
-  .text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    overflow: visible;
-    white-space: nowrap;
   }
   .title {
     letter-spacing: -1px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10em;
     font-weight: bold;
-    margin-top: -20px;
-  }
-  .button-container {
-    margin-top: 35px;
+    color: black;
   }
   .button {
     padding: 10px;
     border: 2px solid #f01b1b;
     border-radius: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    /* font-size: 1em; */
     font-weight: bold;
     text-decoration: unset;
     color: white;
     background-color: #f01b1b;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   .button:focus,
   .button:hover {
+    color: white;
+    background-color: #C01515;
+    border-color: #C01515;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 </style>
 
 <div class="container">
-  <img src="/assets/images/logo.png"/>
-  <div class="item">
-    <div class="title">
-      404
-    </div>
-    <div class="text">
-      페이지를 찾을 수 없습니다!
-    </div>
-    <div class="text">
-      Page not found!
-    </div>
-    <div class="button-container">
-      <a class="button" href="javascript:history.back()">
-        Go Back&nbsp;&nbsp;-&nbsp;&nbsp;뒤로가기
-      </a>
-    </div>
+  <div class="title">
+    404
   </div>
+  <a class="button" href="javascript:history.back()">
+    Go Back&nbsp;&nbsp;•&nbsp;&nbsp;뒤로가기
+  </a>
 </div>
