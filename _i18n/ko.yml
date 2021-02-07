@@ -7,5 +7,10 @@ about: 소개
 projects: 프로젝트
 thoughts: 사설
 cross:
-  desc: View in English
+  desc: "View in English"
   link: /
+  email: 이메일
+  github: 깃허브
+  linkedin: 링크드인
+  resume: 자소서
+  location: "인디애나 & 서울"

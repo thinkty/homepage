@@ -7,5 +7,10 @@ about: About
 projects: Projects
 thoughts: Thoughts
 cross:
-  desc: 한국어로 보기
+  desc: "한국어로 보기"
   link: /ko
+  email: Email
+  github: Github
+  linkedin: LinkedIn
+  resume: Resume
+  location: "Indiana & Seoul"
