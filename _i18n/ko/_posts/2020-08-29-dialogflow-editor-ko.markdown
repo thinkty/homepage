@@ -1,5 +1,5 @@
 ---
-title:  "Source Chat: 챗봇 관리 플랫폼"
+title:  "Source Chat - 직관적 챗봇 관리 플랫폼"
 date:   2020-08-29
 categories: 프로젝트
 toc: true
