@@ -1,7 +1,7 @@
 ---
-title:  "Corona Impact - what will it be like after COVID-19?"
-date:   2021-03-27
-categories: thoughts
+title: "Corona Impact - what will it be like after COVID-19?"
+date: 2021-03-27
+categories: Thoughts
 ---
 
 Recently, I wasn't able to put much time nor effort into my personal projects and studies after I started my military service.
