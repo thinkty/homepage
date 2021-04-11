@@ -1,1 +1,0 @@
-{"rule":"MISSING_COMMA_AFTER_INTRODUCTORY_PHRASE","sentence":"^\\QAfter giving it some thought,\\E$"}
