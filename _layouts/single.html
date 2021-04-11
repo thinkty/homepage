@@ -28,9 +28,7 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          <!-- Start custom translated title -->
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{% translate page.title %}</h1>{% endif %}
-          <!-- End custom translated title -->
+          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
         </header>
       {% endunless %}
 
