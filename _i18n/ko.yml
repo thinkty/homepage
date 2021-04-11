@@ -5,7 +5,9 @@ global:
   subtitle: "개인 블로그"
 about: 소개
 projects: 프로젝트
+projects_link: /categories/프로젝트/
 thoughts: 사설
+thoughts_link: /categories/사설/
 cross:
   desc: "View in English"
   link: /

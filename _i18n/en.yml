@@ -5,7 +5,9 @@ global:
   subtitle: "Personal Blog"
 about: About
 projects: Projects
+projects_link: /categories/projects/
 thoughts: Thoughts
+thoughts_link: /categories/thoughts/
 cross:
   desc: "한국어로 보기"
   link: /ko
