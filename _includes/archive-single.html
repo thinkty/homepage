@@ -38,7 +38,10 @@
       {% elsif post.date %}
         <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y " }}</time>&emsp;
       {% endif %}
-      {% if post.read_time %}<i class="fas fa-clock" aria-hidden="true"></i>&nbsp;{% include read-time.html %}{% endif %}
+      {% if post.read_time %}
+        <i class="fas fa-clock" aria-hidden="true"></i>
+        {{ post.content | strip_html | number_of_words | plus: site.words_per_minute | divided_by: site.words_per_minute | append: ' min' }}
+      {% endif %}
     </p>
     <!-- end dvhart date read-time meta line -->
 

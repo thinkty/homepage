@@ -49,7 +49,10 @@ layout: default
           {% elsif page.date %}
             <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y " }}</time>&emsp;
           {% endif %}
-          {% if page.read_time %}<i class="fas fa-clock" aria-hidden="true"></i>&nbsp;{% include read-time.html %}{% endif %}
+          {% if page.read_time %}
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            {{ content | strip_html | number_of_words | plus: site.words_per_minute | divided_by: site.words_per_minute | append: ' min' }}
+          {% endif %}
         </p>
         <!-- end dvhart date read-time meta line -->
 
