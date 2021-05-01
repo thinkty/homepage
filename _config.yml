@@ -36,7 +36,7 @@ repository            : "thinkty/homepage-jekyll"
 head_scripts          : # add scripts to the <head>
 footer_scripts        : # add scripts to the </body>
 future                : true
-logo                  : "/assets/images/logo.png"
+logo                  : "/assets/icons/logo.png"
 breadcrumbs           : false
 words_per_minute      : 200 # for estimating reading time
 email                 : "the.thinkty@gmail.com"
@@ -74,7 +74,7 @@ analytics:
 # Site Author
 author:
   name             : "Tae Yoon Kim"
-  # avatar           : "assets/images/profile.png"
+  # avatar           : "assets/icons/profile.png"
   bio              : ""
   location         : "Indiana & Seoul"
   links:
