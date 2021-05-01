@@ -20,11 +20,11 @@ toc: true
 
 ## 회로도 및 사진
 
-![회로도](https://imgur.com/ZmkBiQp.png)
+![회로도](/assets/images/2021-04-18-infrared-remote-tv-1.png)
 
 회로도를 작성하기 위해 사용한 프로그램은 [Circuit.io](https://www.circuito.io/)라는 웹 앱플리케이션으로 사용가능한 모듈 숫자는 적지만 일단 무료이고 브라우저로 조작할 수 있다는 점에서 편리했다.
 
-![사진](https://imgur.com/zHnJXCt.png)
+![사진](/assets/images/2021-04-18-infrared-remote-tv-2.jpg)
 
 선들이 스파게티지만, 일단 작동은 잘하니 상관은 없다.
 
@@ -150,7 +150,7 @@ IRData IRSendData;
 세 번째와 네 번째도 마찬가지로 역이며 이 파트는 명령어(Command)를 보유하고 있다.
 방금 설명한 프로토콜은 NEC 와 매우 유사하다.
 
-![NEC protocol](https://imgur.com/2yvsPnc.png)
+![NEC protocol](https://techdocs.altium.com/sites/default/files/wiki_attachments/296329/NECMessageFrame.png)
 
 이 라이브러리에서는 NEC 프로토콜로 보낼 시, LSB 가 우선시되므로 나중에는 MSB 를 우선 보내는 함수를 사용해야한다.
 

@@ -23,12 +23,12 @@ The library used for sending IR signals is [IRremote](https://github.com/Arduino
 
 ## Circuit and Photos
 
-![circuit](https://imgur.com/ZmkBiQp.png)
+![circuit](/assets/images/2021-04-18-infrared-remote-tv-1.png)
 
 The program used for making the circuit is [Circuit.io](https://www.circuito.io/).
 It doesn't have that many default modules to play with, but it is a web application and also free (which is very convenient).
 
-![photo](https://imgur.com/zHnJXCt.png)
+![photo](/assets/images/2021-04-18-infrared-remote-tv-2.jpg)
 
 The cables are spaghetti, but it works!
 
@@ -157,7 +157,7 @@ The first part is called the Low Custom and the second part is the same but inve
 The next two parts are also similar, but are labeled as Command.
 The protocol that I have just explained is very similar to NEC.
 
-![NEC protocol](https://imgur.com/2yvsPnc.png)
+![NEC protocol](https://techdocs.altium.com/sites/default/files/wiki_attachments/296329/NECMessageFrame.png)
 
 Since the code for sending in NEC protocol sends it LSB first, I used the MSB first method. (which is the LG way)
 

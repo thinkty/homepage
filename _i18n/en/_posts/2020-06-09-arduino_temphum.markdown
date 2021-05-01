@@ -9,7 +9,7 @@ Arduino is a simple and easy-to-use [development board](https://www.quora.com/Is
 As a small project using the [Arduino Uno](https://www.arduino.cc/en/Guide/ArduinoUno), I wanted to make a small device that can read temperature, humidity, and light intensity so that I can get a more accurate result than the weather report or a particular area.
 
 ## The Layout
-![layout](https://imgur.com/Uz2M5f2.png)
+![layout](/assets/images/2020-06-09-arduino_temphum-1.png)
 
 ### DHT22
 [DHT22](https://www.adafruit.com/product/385) is a basic, low-cost digital temperature and humidity sensor.
@@ -95,14 +95,14 @@ The printed values can be checked using the `Serial Monitor`
 > `Tool` > `Serial Monitor`
 
 Result:
-![console_log](https://imgur.com/JCJXFig.png)
+![console_log](/assets/images/2020-06-09-arduino_temphum-2.png)
 
 ## Future Plans
 As I mentioned in the beginning, I plan to use this to measure the local area using this device.
 However, to actually read the value, I would have to physically be near the area which would be inconvenient.
 So, as a solution, I plan to add a **radio transmitter and receiver**.
 
-![new_layout](https://imgur.com/NmlrVcV.png)
+![new_layout](/assets/images/2020-06-09-arduino_temphum-3.png)
 
 The transmitter on the Arduino will send unique messages (like http packets) with the data and the raspberry pi will receive it and interpret the messages.
 After the values are interpretted, the raspberry pi will update its log and the updated information will be visible via internet.

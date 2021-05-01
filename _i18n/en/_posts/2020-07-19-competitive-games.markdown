@@ -20,7 +20,7 @@ It was truly an online cooperation game where people would fight against a commo
 
 However, it all changed when I was introduced to another game called League Of Legends a.k.a League.
 
-![League Of Legends](https://imgur.com/DwIB6yX.png)
+![League Of Legends](https://otakukart.com/wp-content/uploads/2021/04/league-of-legends.jpg)
 
 League was an ordinary competitive game where you choose a character and team up with 4 other people to fight against the other team of players.
 The primary objective was to destroy the other team's building.
@@ -45,10 +45,10 @@ No pressure to be better or stronger, but to just *enjoy* the game.
 Although a lot of games nowadays tend to have more popularity with the competitive genre, 
 there are still games that tells us an amazing story,
 
-![Last Of Us](https://imgur.com/0PHZ1fr.png)
+![Last Of Us](https://image.api.playstation.com/vulcan/img/rnd/202010/2716/JgIondlqViKdq8sTE1HhKTRF.png)
 
 or show us the advancements that people made in game development that just makes the players drop their jaws.
 
-![Half-Life: Alyx](https://imgur.com/W7NPedg.png)
+![Half-Life: Alyx](https://www.roadtovr.com/wp-content/uploads/2020/03/half-life-alyx-title.jpg)
 
 So, when you are feeling stressed out with competitive games, it probably is a good idea to remember the enjoyment that games used to bring us.

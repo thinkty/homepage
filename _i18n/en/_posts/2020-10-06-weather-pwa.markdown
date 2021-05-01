@@ -16,7 +16,7 @@ As a side note, if I am not mistaken, I think this is similar to Java as it is a
 Enough said, I wanted try out PWA so I went with everyone's "hello world" project: a [simple weather app](https://weather.thinkty.net).
 The app itself is very simple, it takes two inputs: latitude and longitude to print out the result.
 
-![simple weather app](https://imgur.com/sqXWlSK.png)
+![simple weather app](/assets/images/2020-10-06-weather-pwa-1.png)
 
 I really don't like it when apps "ask" me for location permission so I decided to go with a simpler solution.
 At first, I wanted to integrate a simple map to let the user select the location, but I never knew that just putting a map would require me to sign up and get an API key.
@@ -43,7 +43,7 @@ In addition, using [web safe fonts](https://www.w3schools.com/cssref/css_websafe
 
 ### Works in any browser
 
-![mdn compatibility](https://imgur.com/Zve08Yy.png)
+![mdn compatibility](/assets/images/2020-10-06-weather-pwa-2.png)
 
 When reading through MDN documents, one can easily encounter a table that shows the compatibility of the feature with various browsers.
 Some npm modules might work well with Chrome but not with Safari.
@@ -88,7 +88,7 @@ In order to make it installable, it requires an installable script and an app ic
 There are plenty of [guides](https://web.dev/customize-install/) online for the script.
 I recommend using [Favicon Generator](https://realfavicongenerator.net/) for creating icons for various platforms and also a web manifest for it.
 
-![installable icon on Chrome](https://imgur.com/c81Pvud.png)
+![installable icon on Chrome](/assets/images/2020-10-06-weather-pwa-3.png)
 
 Once everything is set and installable, on Chrome for example, the install icon should be visible.
 

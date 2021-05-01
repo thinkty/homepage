@@ -35,7 +35,7 @@ So, it seemed to have some spots where I would have to create my own workarounds
 
 After countless commits and hours fixing the layout and tweaking the configs, I decided to accept the fact that it does not always have to be perfect with rainbows and unicorns.
 
-![result](https://imgur.com/nvrOnqI.png)
+![result](/assets/images/2021-01-23-cross-language-1.png)
 
 Now, one can switch languages at the main page sidebar.
 Although it's quite sad looking at the amount of effort that has been put in compared to the result, there has been made a lot of minor changes to the blog such as the 404 pages, layouts, and a bunch of configurations to support multiple languages.

@@ -62,14 +62,15 @@ aws s3 sync _site s3://example.com --profile johndoe
 After the files have been uploaded, check it in the console page to see if the files are actually there and also test your endpoint url.
 Your endpoint url should be specified in the properties tab which looks something like this:
 
-![testing_endpoint](https://imgur.com/up9Ajtz.png)
+![testing_endpoint](/assets/images/2020-07-04-aws_complete_tutorial-1.png)
+
 Image from the AWS guide.
 
 
 ## Connecting your website to your domain name
 Now that the static website is on the internet and available to the public, we should be able to connect our domain name and be done. Right?
 
-![not so fast](https://i.imgur.com/fEyWqUs.jpg)
+![not so fast](https://i.kym-cdn.com/entries/icons/original/000/028/596/dsmGaKWMeHXe9QuJtq_ys30PNfTGnMsRuHuo_MUzGCg.jpg)
 
 We can connect our domain using Route 53 to our bucket and use it. However, there is one thing we missed: [**HTTPS**](https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/).
 
@@ -80,7 +81,7 @@ In order to setup HTTPS, we need an [SSL/TLS certificate](https://www.cloudflare
 An SSL/TLS certificate is used to encrypt your data that is transmitted across the web.
 AWS also provides a service to provide public SSL certificates for free called ACM.
 
-![virginia](https://imgur.com/W1J5m9a.png)
+![virginia](/assets/images/2020-07-04-aws_complete_tutorial-1.png)
 
 As of date, you must create the certificate in Virginia to make it work with CloudFront which I will explain later.
 
@@ -126,7 +127,7 @@ In order to connect your domain to CloudFront,
 
 Finally, after all those services, we have our website ready.
 
-![not so fast](https://i.imgur.com/fEyWqUs.jpg)
+![not so fast](https://i.kym-cdn.com/entries/icons/original/000/028/596/dsmGaKWMeHXe9QuJtq_ys30PNfTGnMsRuHuo_MUzGCg.jpg)
 
 Your website is ready, but you will probably see something like *Access Denied* or some error when you go to your website.
 If not and if you think your website is pretty and ready, you can rest and feel proud of yourself.

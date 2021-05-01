@@ -31,13 +31,13 @@ If you want, you can
 The amount of freedom is overwhelming and together with the beautiful scenary and the heavily detailed ships, it just creates a master piece.
 Below are some *in-game* screenshots.
 
-![In-game screenshot](https://imgur.com/Pm5elAJ.png)
+![In-game screenshot](/assets/images/2020-06-07-star_citizen-1.jpg)
 
 The city that the user is seeing in the image can be visited and there are many other places like these in the universe.
 The user can request to land in the hangar and actually park the ship near the city.
 There on, the user can take a metro to other places and explore the city.
 
-![In-game screenshot](https://imgur.com/ORtLyZC.png)
+![In-game screenshot](/assets/images/2020-06-07-star_citizen-2.jpg)
 
 In the picture above, the user can actually land or explore the plant which they are flying over.
 

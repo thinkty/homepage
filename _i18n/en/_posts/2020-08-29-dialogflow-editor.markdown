@@ -42,12 +42,12 @@ The main components are the graph component from [Uber](https://github.com/uber/
 The editor currently has the bare minimum to create a flow for a chatbot and you can actually try it out at https://editor.thinkty.net/ .
 Enough said, I will explain how this editor solves the problems mentioned in the overview with pictures.
 
-![Dialogflow Console](https://imgur.com/QfYZ9iF.png)
+![Dialogflow Console](/assets/images/2020-08-29-dialogflow-editor-1.png)
 
 The first image is the Dialogflow console where the user can add/edit/delete intents and do tons of cool stuff.
 However, as I mentioned before, it doesn't have a graph that shows the flow.
 
-![Dialogflow Editor](https://imgur.com/fABOX4k.png)
+![Dialogflow Editor](/assets/images/2020-08-29-dialogflow-editor-2.png)
 
 This is the Dialogflow Editor with a graph that shows the flow of the chatbot (agent) and it also has all the required fields in the node editor such as training phrases, pools of responses, fallback, events, actions, contexts, and more.
 However, it does not have support for entities yet.

@@ -36,7 +36,7 @@ The procedure to register the chatbot was quite simple.
 After trying the quick setup, I got the hang of development.
 
 ### The Structure
-![structure](https://imgur.com/h6D2pay.png)
+![structure](/assets/images/2020-06-09-frankie-chatbot-1.png)
 
 The structure is very simple.
 The users sends messages to the facebook page via the Facebook Messenger Platform.

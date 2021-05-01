@@ -22,7 +22,7 @@ Similar to drawing, an image of the result should be in one's mind in order to c
 I find it very hard to come up with a complete image from the start.
 Therefore, I like to first **set a goal** for the project.
 
-![goal](https://imgur.com/41fX4xM.png)
+![goal](https://images.unsplash.com/photo-1500930540495-e92875696a16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1364&q=80)
 
 The goal can be very simple such as
 > I want to learn a specific framework such as React
@@ -61,7 +61,7 @@ While searching for resources I like to take notes and save the links in a docum
 To organize the details of the project, I just use Google Documents as I am familiar with it.
 The profile document for Warden can be found [here](https://docs.google.com/document/d/1CCaho7XLu1c27VuMRCmVzJIO-enP5MR5lbMtxfy2_mQ/edit?usp=sharing).
 
-![profile](https://imgur.com/m68y91V.png)
+![profile](/assets/images/2020-11-17-starting-a-project-1.png)
 
 This is my current state of the document.
 As one can see, there is a brief description on the project with links to helpful materials.
@@ -69,8 +69,6 @@ I still have a lot to search through and prepare for.
 
 Another aspect to consider while planning is the **scale** of the project.
 In my opinion, starting small and simple but expandable is always the way.
-
-![start small](https://imgur.com/FUu5qK5.png)
 
 In the case of Warden, it is quite expandable by allowing modules to be added and when planning, I should always try to make it future proof to allow any type of module.
 
@@ -80,7 +78,7 @@ When the planning phase is done, the coding and hacking part should be swift.
 With a nicely thought out plan, the tasks should be clear and detailed enough so that there are no time wasted figuring out what to do next.
 I like to keep in track of the status of the tasks by utilizing Github's [project board](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-project-boards).
 
-![project board](https://imgur.com/AHjxq3C.png)
+![project board](/assets/images/2020-11-17-starting-a-project-2.png)
 
 I like to use Github's project board for several reasons.
 First of all, it is free and is easily accessible along with the project.
@@ -99,7 +97,7 @@ One must have the patience and the eagerness to play the long game for the final
 In addition to managing a single project with the project board, I also organize multiple projects so I can keep track of them.
 For this purpose, I use Google Spreadsheet like in the image shown below.
 
-![project sheet](https://imgur.com/Ul2TynN.png)
+![project sheet](/assets/images/2020-11-17-starting-a-project-3.png)
 
 By having a short description about the project, a link to the repository or a profile page, and a status field, one can easily get back on track even if he/she/it was on a break for a while.
 

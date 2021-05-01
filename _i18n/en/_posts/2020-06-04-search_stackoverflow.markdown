@@ -19,7 +19,7 @@ To achieve this, I needed a good search API that can get me and the users satisf
 
 The API provided by StackExchange is very simple to use and one can try it right away in the [website](https://api.stackexchange.com/docs/search).
 
-![Filter Demo](https://i.imgur.com/5dKkk2m.png)
+![Filter Demo](/assets/images/2020-06-04-search_stackoverflow-1.png)
 In the demo, one can set the page number, number of questions per page, and more.
 It is very simple, but this is also a problem as it is too simple.
 When I try to search for the following:
@@ -77,4 +77,4 @@ render() {
 
 With the script ready, when I reload the app, my customized search bar appears.
 
-![custom search bar](https://imgur.com/2Z6ZImg.png)
+![custom search bar](/assets/images/2020-06-04-search_stackoverflow-2.png)

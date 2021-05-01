@@ -7,7 +7,7 @@ toc: true
 
 When I started getting into web development, I would sometimes run into this error.
 
-![cors error](https://imgur.com/Qo2adks.png)
+![cors error](/assets/images/2020-08-17-cors-1.png)
 
 At the time, I had no clue of what it meant even after searching it up and looking at the [official MDN page](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
 However, after taking a course that briefly went over networking, I really wanted to be clear of what CORS is, and why I get this error on certain occasions.
@@ -54,7 +54,7 @@ As mentioned above, these simple requests do not trigger the **CORS preflight**.
 I would like to explain more about this with the image from MDN.
 
 ## How does CORS work?
-![cors flow](https://imgur.com/BPbQFA0.png)
+![cors flow](/assets/images/2020-08-17-cors-2.png)
 
 Based on the image from MDN, when requesting a resource that is not a simple request, the client (browser) must first ask whether the server will allow the request.
 To "ask" the server, the client sends a request with the `OPTION` method along with additional CORS related headers.

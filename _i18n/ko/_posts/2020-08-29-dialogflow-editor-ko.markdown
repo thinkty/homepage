@@ -34,7 +34,7 @@ Dialogflow 를 사용하여 깊이있는 챗봇을 만들 수도 있겠지만 �
 
 ### 에디터
 
-![dialogflow editor](https://imgur.com/OfWKkHT.png)
+![dialogflow editor](/assets/images/2020-08-29-dialogflow-editor-3.png)
 
 Dialogflow Editor (에디터) 는 [React](https://reactjs.org/) 와 Uber 사의 [react-digraph](https://github.com/uber/react-digraph)를 활용하여 로 만든 그래프 편집기이다.
 에디터의 주 요소로는 노드 편집기가 있다.
@@ -42,13 +42,13 @@ Dialogflow Editor (에디터) 는 [React](https://reactjs.org/) 와 Uber 사의 
 현재, [https://editor.thinkty.net/](https://editor.thinkty.net/) 에서 직접 사용해서 챗봇의 흐름을 제작할 수 있다.
 구체적으로 어떻게 앞서 언급한 문제점들을 해결하는지 사진을 통해서 보자.
 
-![Dialogflow Console](https://imgur.com/QfYZ9iF.png)
+![Dialogflow Console](/assets/images/2020-08-29-dialogflow-editor-1.png)
 
 위 사진은 Google 의 **Dialogflow 콘솔**이다.
 콘솔을 통해 사용자는 의도(Intent)를 추가/수정/삭제할 수 있다.
 그러나, 앞서 언급한 문제점처럼, 직감적으로 챗봇의 흐름을 볼 수는 없다.
 
-![Dialogflow Editor](https://imgur.com/fABOX4k.png)
+![Dialogflow Editor](/assets/images/2020-08-29-dialogflow-editor-2.png)
 
 위 사진은 **Dialogflow Editor** 의 메인 화면이다.
 Dialogflow 콘솔처럼 의도(Intent)를 추가/수정/삭제할 수 있고, 더 나아가 단축키로 훨씬 빠르고 간단하게 새로운 의도를 생성하거나 삭제할 수 있다.
@@ -74,7 +74,7 @@ Dialogflow Editor 에서는 모두 자동으로 정해지므로 완성된 그래
 
 ### 서버
 
-![server layout](https://imgur.com/o0VtSQj.png)
+![server layout](/assets/images/2020-08-29-dialogflow-editor-4.png)
 
 서버에서는 Source Chat 라는 프로그램이 실행되며 크게 두 가지 기능을 한다.
 - 전송된 그래프를 처리 (에디터 모듈)
@@ -102,7 +102,7 @@ Dialogflow Editor 에서 그래프를 전송 받으면 총 3 단계를 거쳐서
 State Table 의 자료구조는 Nested HashMap 으로 형식은 <code>Map&lt;String, Map&lt;String, String[]&gt;&gt;</code> 과 같다.
 바깥쪽 Map 의 key 는 input context 이고 value 에 해당하는 Map 은 intent 와 다음 input context 들을 담고있다.
 
-![State Table 예시 그림](https://i.imgur.com/VKE1j6R.png)
+![State Table 예시 그림](/assets/images/2020-08-29-dialogflow-editor-5.png)
 
 그림 예시와 함께 설명하자면, 현재 사용자의 맥락(위치)이 Hello-1 일 경우, key 가 Hello-1 이며 value 에 있는 Map 은 Hello-4 와 Hello-5 가 각 엔트리의 key 가 되며 Hello-2 와 Hello-3 가 각 key 의 value 가 된다.
 
@@ -125,7 +125,7 @@ Entity 지원도 도입해야 하고, 다양한 형태의 메시지도 지원해
 
 ## 추신
 
-![dialogflow cx](https://imgur.com/Rw5VwCk.png)
+![dialogflow cx](/assets/images/2020-08-29-dialogflow-editor-6.png)
 
 며칠전에 Google 에서 [DialogflowCX](https://cloud.google.com/dialogflow/cx/docs) 라는 제품을 출시했으며 그래프 에디터를 도입한 점에서 역시 구글이라는 생각이 들었다.
 사용해봤을 때, 물론 내가 만든 것보다 훨씬 좋지만, 베타 버젼이라 그런지 아직은 다듬어질 부분이 좀 있는 것처럼 느껴졌다.

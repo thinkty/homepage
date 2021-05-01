@@ -5,7 +5,7 @@ categories: Projects
 toc: true
 ---
 
-![Logo of University Discourse](https://i.imgur.com/CihIR7a.png)
+![Logo of University Discourse](/assets/images/2020-06-03-unidiscourse-1.png)
 
 ## Intro
 University Discourse is a web application that my team and I made for CS 307: Software Engineering. 
