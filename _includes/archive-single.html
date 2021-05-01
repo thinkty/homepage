@@ -45,6 +45,8 @@
     </p>
     <!-- end dvhart date read-time meta line -->
 
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    <p class="archive__item-excerpt" itemprop="description">
+      {{ post.content | markdownify | strip_html | truncate: 160 }}
+    </p>
   </article>
 </div>
