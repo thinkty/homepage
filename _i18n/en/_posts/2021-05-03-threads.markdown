@@ -1,5 +1,5 @@
 ---
-title:  "Difference between software threads and hardware threads?"
+title:  "Software Threads VS Hardware Threads"
 date:   2021-05-03
 categories: Thoughts
 ---
@@ -9,7 +9,7 @@ As I went through the CPU scheduling chapter, I stumbled upon *hardware threads*
 
 If you took an introductory course on computer science, you might have learned about threads and concurrency.
 The threads used in this context are the *software* threads.
-One of the most common implementation of threads in software is network servers where a process could have a pool of threads listening (waiting) for a request (connection) to occur from a client.
+One of the most common implementation of threads in software is a server where the process could have a pool of threads listening (waiting) for a request (connection) to occur from a client.
 By utilizing threads through a library such as [pthreads](https://man7.org/linux/man-pages/man7/pthreads.7.html), one can create a responsive and efficient program.
 
 In contrary to software threads, the *hardware* threads are the ones in the CPU.
@@ -30,7 +30,7 @@ Even if the speed of accessing memory was on par with the execution speed of the
 
 The image above shows the hierarchy of memory.
 The higher it is in the hierarchy, it is much faster to access, but the capacity is limited and expensive.
-Therefore, an L1 cache is faster than the main memory (RAM), but the amount of data it can store is significantly around few KiB.
+Therefore, an L1 cache is faster than the main memory (RAM), but the amount of data it can store is significantly around few KiB (or MiB).
 Since the cache is too small compared to main memory, it cannot hold all the memory stacks of all the running processes.
 Therefore, occasionally, the computer will have to look for the data that is not found in the caches.
 This situation is described as a cache miss.
@@ -52,4 +52,6 @@ The image above shows many software threads being assigned to the hardware threa
 The latter has already been discussed above (except for how it is scheduled).
 The former is managed by the operating system.
 Commonly, the operating system interprets the hardware threads as individual CPUs (logical CPUs) and schedules the software threads to the hardware threads using algorithms such as round-robin, priority queue, and more complex algorithms.
-In some cases, the operating system might recognize the hardware threads to be distinct from logical CPUs and actually assign software threads on a completely different core to fully benefit the multi-core processor.
+In some cases, the operating system might recognize the hardware threads (distinct from logical CPUs) and actually assign software threads on a completely different core rather than a hardware thread to actually benefit the multi-core processor.
+
+Long story short, in summary, the operating system schedules software threads on hardware threads to execute the instructions.
