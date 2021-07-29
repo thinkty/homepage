@@ -1,0 +1,57 @@
+---
+title:  "Status update for 2021.07"
+date:   2021-07-29
+categories: Thoughts
+---
+
+Amidst all the struggle and nothing new worth sharing, I thought I would put a status update to toss some fuel on this blog.
+In short, I finally got the second dose of the Pfizer vaccine and I also started working on some projects.
+
+The vaccination experience was way more painful than the first one, but I was able to recover quite well after the first night.
+The first night was utterly terrifying.
+
+I went to sleep at 9 PM as it was extremely challenging to keep my eyes open.
+I didn't take any pills yet since the doctor instructed to take it when the symptoms arrive.
+This could have been a mistake, but I woke up at 1 AM to my whole body shivering.
+My body was shaking, and I felt cold with a mild headache even though the room was not even remotely close to being cold. 
+I was sweating, but I still wanted to crawl into the blankets to keep myself warm.
+
+What I was experiencing was probably fever and aches all over my body.
+Even though my body was getting sweaty and making it very uncomfortable to sleep, I wanted to sleep.
+I was just too tired to get out of bed, search the cabinet for pills, get a cup of water, take the pills, and come back to bed.
+At that moment, I was lazy like a sloth.
+I tried to force myself to sleep.
+I even tried meditating by controlling my breath.
+That's when I realized I was out of breath.
+Out of fear, I got out of bed immediately and took the pills.
+Probably few minutes have passed, I was back to sleep.
+
+In the morning, the conditions were a lot better.
+Just a mild fever and aches.
+I drank a lot of water to cope with the fever, which seemed to work.
+After lunch, I took another pill and a quality nap.
+I really think sleeping might be one of the best methods to heal yourself.
+After an hour nap, I was almost back to normal.
+10/10 would recommend.
+
+Today is my second day since the vaccination, and here I am back to coding.
+As of late, I've been really slacking with the projects.
+I might have underestimated the scale of the projects, and now I am afraid to work on it.
+
+One of the projects that I've been working on is a *simple* [XMPP client/server](https://github.com/thinkty/sxc).
+It was supposed to be simple, until it wasn't.
+At the planning stage, I did my research and prepared resources for this project, and I thought I did quite a good job on it.
+However, I should have expected to face many hurdles as possible since I was basically going into the dark side of the moon.
+I intended this project to be step for me to learn modern c++ features and I sure am learning a lot!
+As I progressed with the project, I realized that the project was too big for me to handle.
+So currently, I'm trying to focus on the client part and test it with other XMPP servers.
+
+In addition, I also started a side project: [gundam-uc](https://github.com/thinkty/gundam-uc) which is a simple (I seem to use simple a lot and incorrectly) React website to show the storyline of the famous science fiction franchise: Gundam.
+I started this project as a break from the XMPP one.
+Some might see it as an escape, and they are right.
+However, this was not an escape.
+I remembered another reason why I started the XMPP client/server project: I didn't want to deal with CSS anymore.
+
+> You could not live with your own failure. Where did that bring you? Back to me. - Thanos
+
+Put the memes aside, I think this will be a great time.
