@@ -51,7 +51,7 @@
 }
 // End post list item
 
-// Start Paginator
+// Start Paginator (Homepage & Postpage)
 .pagination {
   margin-top: 1em;
   padding: 0;
@@ -59,3 +59,9 @@
   float: right;
 }
 // End Paginator
+
+// Start post page
+.page .page__inner-wrap  {
+  margin-top: 5em;
+}
+// End post page
