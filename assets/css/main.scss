@@ -1,0 +1,53 @@
+---
+---
+// Above is an empty front matter for the main.scss file
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// Custom styles
+
+// Start post list item
+.archive__item {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.archive__item::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.archive__item:hover::before {
+  opacity: 1;
+}
+
+.archive__item-title {
+  margin-top: 0;
+
+  a {
+    color: black;
+    text-decoration-line: none;
+  }
+
+  a:visited {
+    color: grey;
+  }
+}
+
+.archive__item-excerpt {
+  margin-bottom: 0;
+}
+
+// End post list item
