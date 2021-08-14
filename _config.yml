@@ -164,7 +164,7 @@ defaults:
       comments: false
       author_profile: false
       share: true
-      related: true
+      related: false
   - scope:
       path: ""
       type: category
