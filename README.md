@@ -29,5 +29,9 @@ bundle exec jekyll build
 ```
 before deploying to replace the `localhost`s in the links
 
+## Overriding Styles
+Edit the [assets/css/main.scss](https://github.com/thinkty/homepage/blob/master/assets/css/main.scss) file to override the previous styles.
+Find the `classname` or `id` through the inspector of your browser and add/edit to main.scss to your taste.
+
 ## License
 MIT
