@@ -1,0 +1,34 @@
+---
+title:  "Status update for 2021.10"
+date:   2021-11-04
+categories: Thoughts
+---
+
+Unfortunately, I skipped September because I was too busy with my military service.
+If September was hitting the lowest, October was skyrocketing through the roof 🚀.
+I cleaned my room, bought some new clothes, made some cool cash selling old books, and read some books that I found while cleaning.
+Related to CS, I was able to work on the side projects and learn something new!
+
+Starting with the main project: [**SXC**](https://github.com/thinkty/sxc), I got stuck while trying to read/write from the socket at the same time (concurrently).
+I think my lack of knowledge on threading and the [Boost.Asio](https://www.boost.org/doc/libs/1_77_0/doc/html/boost_asio.html) library which I am using for the networking stuff is the culprit.
+In the issue that I have opened, I commented a possible solution but haven't implemented yet.
+
+The [**Gundam UC**](https://github.com/thinkty/gundam-uc) side project has most of the frames ready, and I just need to finish filling in the data.
+Although I am not done filling in the data, I made the website available and anyone can view it by going to [gundam-uc.thinkty.net](https://gundam-uc.thinkty.net/).
+While putting in some data, especially the ones with fifty or so episodes, I found the design to be a bit unappealing.
+The long list of episodes isn't even that informative and seems unnecessary.
+So, I might remove it in the future.
+Also, I like showing the preview of the mobile suits but the white background and the differing dimensions between images just isn't good enough.
+Instead of chips, I'm thinking of using a carousel to preload the images and make it more mobile-friendly.
+At this point, some may say that I am focusing too much on design, but I really want to give it my all to make it as beautiful and appetizing as possible so that it mirrors the quality of the Gundam universe.
+
+I started another side project [Whiteboard](https://github.com/thinkty/whiteboard) which features a customizable grid great for a homepage.
+The main focus is learning TypeScript, and I am feeling very optimistic about it so far.
+Although my initial goal was to have various widgets like weather, clock, and maybe Spotify, but I found it to be too much for a side project.
+I plan to just implement URL shortcuts with minimal style.
+
+Enough with the side projects, I want to talk about my other networking project which I have been postponing for quite a time now.
+I am planning on an IOT project using Arduinos and a Raspberry Pi.
+There will be multiple Arduinos reading sensor values or controlling other modules and communicate with the Raspberry Pi using Bluetooth.
+The Pi will then be used as a user interface through a form of local website.
+I recently started learning Golang and Bluetooth protocols and will post an update on a separate post or on the next update.
