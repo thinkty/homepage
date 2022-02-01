@@ -53,10 +53,12 @@
 
 // Start Paginator (Homepage & Postpage)
 .pagination {
-  margin-top: 1em;
   padding: 0;
-  width: auto;
+  width: 100%;
   float: right;
+  a {
+    color: black;
+  }
 }
 // End Paginator
 
@@ -65,3 +67,21 @@
   margin-top: 5em;
 }
 // End post page
+
+// Start post table of contents
+// @media only screen and (max-width: 600px) {
+//   .sidebar__right {
+//     position: sticky;
+//     top: 20px;
+//     z-index: 10;
+//   }
+// }
+
+@media only screen and (min-width: 64em) {
+  .sidebar__right {
+    position: sticky;
+    top: 20px;
+    float: right;
+  }
+}
+// End post table of contents
