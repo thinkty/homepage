@@ -28,11 +28,9 @@ subtitle              : "Personal blog"
 name                  : "Tae Yoon Kim"
 description           : >- # this means to ignore newlines until "baseurl:"
   A personal blog to share my thoughts and projects.
-languages             : ["en", "ko"]
-exclude_from_localizations: ["assets"]
 baseurl               : "" # the subpath of your site, e.g. /blog
 url                   : "https://thinkty.net" # the base hostname & protocol for your site
-repository            : "thinkty/homepage-jekyll"
+repository            : "thinkty/homepage"
 head_scripts          : # add scripts to the <head>
 footer_scripts        : # add scripts to the </body>
 future                : true
@@ -80,7 +78,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:just4ink007@gmail.com"
+      url: "mailto:the.thinkty@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github-square"
       url: "https://github.com/thinkty"
@@ -96,7 +94,7 @@ footer:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:just4ink007@gmail.com"
+      url: "mailto:the.thinkty@gmail.com"
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/thinkty"
@@ -184,7 +182,6 @@ plugins:
   - jekyll-paginate
   - jekyll-archives
   - jemoji
-  - jekyll-multiple-languages-plugin
 
 # Archiving
 category_archive:

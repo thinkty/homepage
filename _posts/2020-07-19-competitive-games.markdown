@@ -1,7 +1,7 @@
 ---
 title:  "Games: now vs then"
 date:   2020-07-19
-categories: Thoughts
+categories: Updates
 header:
   image: https://imgur.com/oX2sSUr.png
   caption: "Photo from [playstation.com](https://www.playstation.com/en-us/games/tom-clancys-rainbow-six-siege-ps4/beginners-guide-to-rainbow-six-siege/)"

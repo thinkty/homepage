@@ -1,7 +1,7 @@
 ---
 title:  "Such negativity everywhere?"
 date:   2020-06-14
-categories: Thoughts
+categories: Updates
 ---
 As of late, It seems that there are more negative contents on the internet than ever before.
 COVID-19, racism, and all types of provocative media on the internet that people post to get views or likes.

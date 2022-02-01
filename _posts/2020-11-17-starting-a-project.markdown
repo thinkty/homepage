@@ -1,7 +1,7 @@
 ---
 title:  "How to start a project - V1"
 date:   2020-11-26
-categories: Thoughts
+categories: Updates
 toc: true
 ---
 

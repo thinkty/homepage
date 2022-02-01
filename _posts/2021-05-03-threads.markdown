@@ -1,7 +1,7 @@
 ---
 title:  "Software Threads VS Hardware Threads"
 date:   2021-05-03
-categories: Thoughts
+categories: Updates
 ---
 
 Recently, I've been reading the [Dinosaur Book](https://www.wiley.com/en-us/Operating+System+Concepts%2C+10th+Edition-p-9781119320913) to learn about the fundamentals of an operating system.
