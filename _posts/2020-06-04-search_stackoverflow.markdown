@@ -1,7 +1,7 @@
 ---
 title:  "Searching with StackExchange VS GoogleCustomSearch"
 date:   2020-06-04
-categories: Thoughts
+categories: Updates
 toc: true
 ---
 

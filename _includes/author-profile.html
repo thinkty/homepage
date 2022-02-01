@@ -31,21 +31,10 @@
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
-      <!-- Start custom link to other language -->
-      {% capture cross_link %}
-        {{ site.baseurl_root }}{% translate cross.link %}
-      {% endcapture %}
-
-      <li>
-        <a href="{{ cross_link }}" itemprop="url" rel="nofollow noopener noreferrer">
-          <i class="fas fa-language" aria-hidden="true"></i><span class="label">{% translate cross.desc %}</span>
-        </a>
-      </li>
-      <!-- End custom link to other language -->
 
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{% translate cross.location %}</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Indiana & Seoul</span>
         </li>
       {% endif %}
 

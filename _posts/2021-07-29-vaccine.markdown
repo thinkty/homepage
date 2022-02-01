@@ -1,7 +1,7 @@
 ---
 title:  "Status update for 2021.07"
 date:   2021-07-29
-categories: Thoughts
+categories: Updates
 ---
 
 Amidst all the struggle and nothing new worth sharing, I thought I would put a status update to toss some fuel on this blog.

@@ -1,7 +1,7 @@
 ---
 title:  "Going global for 2021"
 date:   2021-01-23
-categories: Thoughts
+categories: Updates
 ---
 
 Leaving the horrendous year 2020 behind, I wanted to start 2021 with goals that I have been procrastinating for too long.

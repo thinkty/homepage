@@ -1,7 +1,7 @@
 ---
 title:  "Animal Kingdom: Forgotten Language"
 date:   2020-06-14
-categories: Thoughts
+categories: Updates
 ---
 
 Here is a little plot that just came to my mind and I just wanted to save it here.

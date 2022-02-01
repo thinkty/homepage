@@ -1,7 +1,7 @@
 ---
 title:  "Status update for 2021.10"
 date:   2021-11-04
-categories: Thoughts
+categories: Updates
 ---
 
 Unfortunately, I skipped September because I was too busy with my military service.

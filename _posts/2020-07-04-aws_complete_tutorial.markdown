@@ -1,7 +1,7 @@
 ---
 title:  "The long path (but a fun one) to host your blog on AWS with HTTPS"
 date:   2020-07-04
-categories: Thoughts
+categories: Updates
 toc: true
 ---
 

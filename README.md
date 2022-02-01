@@ -1,15 +1,15 @@
 # Homepage
 
-This my personal blog where I post my projects and thoughts.
+This my personal blog where I post my projects and updates.
 It is made with [Jekyll](https://jekyllrb.com/) and is using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme.
 
 ## Categories
-Currently, there are two categories to the blog: *projects* and *thoughts*.
+Currently, there are two categories to the blog: *projects* and *updates*.
 
 ### Projects
 Here, you can see my projects with short descriptions about the project and details into the layout.
 
-### Thoughts
+### Updates
 Most of my posts will be here where I write about almost all kinds of things starting from hobbies, tutorials, games, and more.
 
 ## Installation

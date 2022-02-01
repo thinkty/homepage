@@ -1,16 +1,11 @@
-<!-- 
-  This file overrides the default masthead with multilingual navigation links
- -->
-
-{% capture logo_path %}{{ site.logo }}{% endcapture %}
-
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <!-- Custom home url as site.baseurl doesn't seem to be working -->
-        {% capture home %}{% if site.lang == "en" %}{{ site.baseurl_root }}/{% else %}{{ site.baseurl }}{% endif %}{% endcapture %}
+        {% capture home %}{{ site.baseurl }}/{% endcapture %}
         <!---->
+        {% capture logo_path %}{{ site.logo }}{% endcapture %}
         {% unless logo_path == empty %}
           <!-- start custom logo -->
           <a class="site-logo" href="{{ home }}"><img src="{{ logo_path | relative_url }}" alt=""></a>
@@ -18,29 +13,27 @@
         {% endunless %}
         <!-- start custom title -->
         <a class="site-title" href="{{ home }}">
-          {% translate global.title %}
+          Meerkatz
           <span class="site-subtitle">
-            {% translate global.subtitle %}
+            Personal Blog
           </span>
         </a>
         <!-- end custom title -->
         <ul class="visible-links">
           <!-- start custom navigation -->
           <li class="masthead__menu-item">
-            <a href="{% translate_link about %}">
-              {% translate about %}
+            <a href="/about">
+              About
             </a>
           </li>
           <li class="masthead__menu-item">
-            {% capture projects_link %}{{ site.baseurl }}{% translate projects_link %}{% endcapture %}
-            <a href="{{ projects_link }}">
-              {% translate projects %}
+            <a href="/categories/projects/">
+              Projects
             </a>
           </li>
           <li class="masthead__menu-item">
-            {% capture thoughts_link %}{{ site.baseurl }}{% translate thoughts_link %}{% endcapture %}
-            <a href="{{ thoughts_link }}">
-              {% translate thoughts %}
+            <a href="/categories/updates/">
+              Updates
             </a>
           </li>
           <!-- end custom navigation -->
