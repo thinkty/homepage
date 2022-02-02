@@ -33,15 +33,6 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
-        {% if page.toc %}
-          <aside class="sidebar__right">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-compass"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
-              {% include toc.html sanitize=true html=content h_min=2 h_max=3 class="toc__menu" %}
-            </nav>
-          </aside>
-        {% endif %}
-
         <!-- dvhart: date read-time meta line -->
         <p class="page__meta">
           {% if page.last_modified_at %}
@@ -55,6 +46,15 @@ layout: default
           {% endif %}
         </p>
         <!-- end dvhart date read-time meta line -->
+
+        {% if page.toc %}
+          <aside class="sidebar__right">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-compass"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
+              {% include toc.html sanitize=true html=content h_min=2 h_max=3 class="toc__menu" %}
+            </nav>
+          </aside>
+        {% endif %}
 
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
