@@ -1,0 +1,68 @@
+---
+title:  "SoSiZi - Monthly News Delivery Application"
+date:   2022-02-20
+categories: Projects
+toc: true
+---
+
+More than an year ago, I started my military service here at South Korea.
+My duty is to assist with the social welfare services provided to the people that live in the administrative jurisdiction of the station that I'm assigned to.
+Out of many tasks, one of the most difficult task is delivering the monthly town news.
+Every 25th, my coworkers and I divide 6000 papers into 24 groups to drop them at 24 locations.
+
+The hardest part is the delivery.
+Although we have the address of the individual delivery points, the specific details of where/how to put the payloads are memorized by individuals and passed on to the next person that signs up.
+In addition, the route and order of delivery is also crucial.
+In order to finish the job precise and quick, the optimal route is also memorized by the drivers.
+To sum up the current situation, although it is very unlikely, but if we all finish our service without being able to pass it on to the next person, that person is surely gonna have one hell of a good time.
+
+I saw this as a major problem that could possible happen.
+Although the risks were relatively low, the effort of memorizing all the spots seemed like too much of a hassle for a job that only needed to be done once a month.
+So, I decided to create an app that solves this tiny inconvenience.
+
+## Overview
+The application is made with Typescript React and uses Node with Express to host on Heroku.
+Very cliche but does the job fast and easy.
+For rendering the actual map, I found [Naver Maps API](https://www.ncloud.com/product/applicationService/maps) to be a bit overkill for this project since the area that I need is very limited.
+However, I decided to go with it as it was the easiest to use, tons of examples, and most importantly, the feature that I needed (web dynamic map) was free.
+One major downside was that it didn't have a library for React.
+(There was one for React but it wasn't maintained anymore)
+So, it was a bit of a hassle to integrate the API into my React application and I think I'm doing it wrong.
+I feel like this might be a great opportunity for me to actually get my hands on React libraries but I have some doubts as the API itself was very proprietary.
+
+The pictures used in the application to show the exact position of where the payloads must go were served with Node/Express.
+At first, I planned to hardcode it into the project, but then it would have been extremely hard for others to update it in the future.
+So, I decided to place them in the `images` folder at the root level and serve it at a different url.
+
+## Features
+
+![sosizi](/assets/images/2022-02-20-sosizi-01.png)
+
+I feel like the application is very intuitive but I may be biased since I am the one that developed it.
+There are three types of interaction points: the markers, image viewer, delivery mode.
+
+The markers are the delivery points on the map.
+If it's a number, it shows the order of delivery.
+If it's an icon of a walking person, it means it should be delivered on foot.
+The user can click on each marker to get more information about it such as the address, quantity, images, and notes.
+The image viewer is used to view the images on where the payload should exactly be placed.
+The delivery mode is just a minor convenience keep in track of the delivery status.
+
+Also, since no one will be taking a laptop or a tablet while on delivery, the application is mobile-view-friendly.
+
+![sosizi mobile](/assets/images/2022-02-20-sosizi-02.png)
+
+## Plans
+The application is very crude and it has the minimum necessary to fulfill its purpose.
+However there are some things I want to do before my service ends.
+There are currently a bug with the React component to view the images which I will fix before the upcoming delivery.
+In addition, I found that the images seem to load very slow and it must be because the image files are just too heavy.
+I think I can pre-load the images to reduce the loading time or lower the quality of the photos since it doesn't need to be so high-definition.
+
+Most important of all, unlike personal projects, I will leave the post someday and someone else will have to maintain the application and update it with the latest information.
+Before I leave, I should add a detailed instruction on how to update or add new delivery points and images.
+Currently, the image file management seems straightforward but the delivery points are a mass.
+The points are hardcoded inside the code.
+It should be separated into a JSON file and try to make it easier to edit.
+However, the chances of next person knowing how to create a pull-request through Github is extremely rare.
+So, this might all be useless once I'm gone. 🤞
