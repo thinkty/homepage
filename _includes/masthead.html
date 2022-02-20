@@ -8,7 +8,7 @@
         {% capture logo_path %}{{ site.logo }}{% endcapture %}
         {% unless logo_path == empty %}
           <!-- start custom logo -->
-          <a class="site-logo" href="{{ home }}"><img src="{{ logo_path | relative_url }}" alt=""></a>
+          <a class="site-logo" href="{{ home }}"><img id="logo" src="{{ logo_path | relative_url }}" alt=""></a>
           <!-- end custom logo -->
         {% endunless %}
         <!-- start custom title -->

@@ -9,6 +9,16 @@
 
 // Custom styles
 
+// Images
+img {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#logo {
+  box-shadow: none;
+}
+//
+
 // Start post list item
 .archive__item {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
