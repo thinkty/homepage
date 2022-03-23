@@ -88,6 +88,10 @@ In order to make it installable, it requires an installable script and an app ic
 There are plenty of [guides](https://web.dev/customize-install/) online for the script.
 I recommend using [Favicon Generator](https://realfavicongenerator.net/) for creating icons for various platforms and also a web manifest for it.
 
+As Lillian Mesber pointed out, `Favicon Generator` only takes file sizes up to 2 MB.
+For files up to 5 MB, one can use [websiteplanet.com](https://www.websiteplanet.com/webtools/favicon-generator/).
+`Website Planet` lacks the cross-platform aspect and outputs a single `png` file, but it can be used with `Favicon Generator` to make it available on every platform.
+
 ![installable icon on Chrome](/assets/images/2020-10-06-weather-pwa-3.png)
 
 Once everything is set and installable, on Chrome for example, the install icon should be visible.
