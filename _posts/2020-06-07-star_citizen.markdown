@@ -3,7 +3,7 @@ title:  "My Thoughts on Star Citizen"
 date:   2020-06-07
 categories: Updates
 header:
-  image: https://imgur.com/F0h76en.png
+  image: https://wallpapermemory.com/uploads/807/star-citizen-wallpaper-dual-screen-5120x2048-244819.jpg
   caption: "Photo from [wallpapermemory.com](https://wallpapermemory.com/desktop-backgrounds/gaming-video-game/star-citizen/dual-monitor)"
 
 ---
@@ -73,9 +73,6 @@ Out of those 5 missions, I would atleast have 3 or 4 missions (regardless of typ
 The game would sometimes lose connection although I have a fairly moderate ping and spec.
 Also, an object inside the game might just decide not to work for some unknown reason.
 There are many reasons why something might not work and the number of times that happens it just too damn high.
-
-![\_/](https://media.tenor.com/images/1aa27212986028256262da8f06c0ebce/tenor.gif)
-
 Once or twice in the entire gameplay would not really matter that much, but almost once a mission?
 This kind of mistakes really make me take back what I have said above and it is one of the reasons I stopped playing.
 
