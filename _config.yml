@@ -47,6 +47,8 @@ algolia:
   index_name          : "meerkatz"
   search_only_api_key : "64845f9080f01e8f53cba4cc457fca1c"
   powered_by          : true
+  files_to_exclude    :
+    - about.md
 
 # SEO Related do this after you get a domain name
 # google_site_verification : Done through DNS
