@@ -1,0 +1,52 @@
+---
+title:  "Status update for 2022.03 - About Page, AWS Lambda, Heroklock"
+date:   2022-04-12
+categories: Updates
+---
+
+Updating my About page was an objective which I have been postponing for quite a while.
+The task wasn't too hard, but it just wasn't enticing enough for me to work on it.
+But one day, I just sat down and went f\*\*k it let's **just do it** and began to fancify my About page.
+These encounters of **just do it**s seems inevitable in my life but always happen when it is least expected.
+I guess that's just how it is.
+
+By updating the About page, I wanted to include a brief history of my career although it has just begun and there isn't really much to put on display.
+Currently, it looks almost identical to my resume with the academics, internships, and projects.
+However, as time goes on, I expect to fill it with new experiences and projects while keeping the old ones too while my resume will only have the latest ones.
+
+After working on the About page and pushing the changes to the S3 bucket, I went to check on the results.
+While checking the new About page, I noticed that the `.jpg` image files were all returning a `404 NOT FOUND` error.
+At first, I thought there was a typo with the image link.
+But then I noticed the error also appearing in my old posts that had `.jpg` image files.
+However, everything seemed fine on my local machine.
+I quickly realized that the problem was coming from the Lambda function I had written decades ago to redirect the request to the correct `index.html` page by handling the `slash \` at the end of the request URL.
+The post covering this issue can be found [here](/updates/aws_complete_tutorial/) and [this](https://medium.com/@chrispointon/default-files-in-s3-subdirectories-using-cloudfront-and-lambda-edge-941100a3c629) is the post that I referenced.
+
+In addition to the Lambda@Edge function introduced in the post, I thought handling the file extensions such as `.js`, `.css`, `.svg`, etc. inside the function would provide extra security to my website (which I am not sure though).
+However, the downside to this additional step was that I had to specify every file type served from my website.
+Based on the information above, the fix was simple:
+
+1. Add the `.jpg` to also be handled in the Lambda function
+2. Make sure to deploy the updated Lambda function and publish a new version
+3. Go to CloudFront and select the appropriate distribution
+4. Edit the behavior to update the Lambda function in the `Viewer request` to the correct version
+5. Save changes and wait for the redeployment
+6. Pat yourself on the back
+
+The fix was quick but the method seems pretty laborous compared to the result.
+I might also update the Lambda function but I am not sure.
+
+Along with updating the homepage, I started a new Golang project called Heroklock.
+I got stuck on the previous Golang project Warden with the multithreading aspect of the application, so I decided to work on something more simple to get comfortable with Golang and its features.
+
+Heroklock is a simple application to keep the free Heroku [dynos](https://www.heroku.com/dynos) awake for a period of time.
+The project started from my previous project [SoSiZi](https://github.com/thinkty/sosizi) which is a simple web application that utilizes the free Heroku dyno since it only has to run once a month.
+However, a small problem was that the free dyno server would go to sleep after 30 minutes of inactivity.
+I needed the dyno to stay awake and be responsive just for one day (approx. 8 hours) in the entire month.
+So, I decided to make Heroklock.
+
+There is already a convinient app called [Kaffeine](https://kaffeine.herokuapp.com/) that keeps the Heroku app alive forever.
+However, the app does not have a timer option.
+I know creating a full fledged Golang application just to solve the problem of keeping my application awake for a limited amount of time seems like an overkill since it can be done with few lines of shell script.
+But as I mentioned earlier, I'm trying to get familiar with Golang.
+I hope to finish this project ASAP and get back on track with Warden.
