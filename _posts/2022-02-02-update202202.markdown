@@ -1,0 +1,39 @@
+---
+title:  "Status update for 2022.01"
+date:   2022-02-02
+categories: Updates
+---
+
+A lot has happened since the last update.
+I recently started preparing to return to campus.
+However, there was a slight inconvenience.
+The deadline for returning students to apply for on-campus housing was way due so I will probably have to go off-campus for 2022 Fall and 2023 Spring 😢.
+Guess I will have to start looking for off-campus rooms and roommates.
+
+Another bad news is that I lost my phone and lost all the 2FA with it.
+I don't know why, but I didn't save the 2FA backup passwords and had to reset most of my accounts.
+I even had to create new accounts for some.
+Losing my Discord account was a real bummer 🤦.
+Now that I've learned a good lesson, I keep all the backup passwords safe and sound.
+
+There has been a major change to the blog.
+I decided to remove the Korean version of it as it was too much of a hassle to write the same thing in two languages.
+Some may say that I am lazy, but I like to think it is a strategical distribution of focus. (Nope, just lazy.)
+In addition to the removal of the multilingual feature, I'm also planning a lot of changes to this website which can be found in the [project page](https://github.com/thinkty/homepage/projects/1) at Github.
+
+On the matter of projects, there has been some ups and downs.
+I was mainly focusing on [Warden](https://github.com/thinkty/warden), an IoT project written in Go & Typescript.
+At first, I was trying to handle communication through internet and bluetooth.
+The users will interact with the dashboard through an html page delivered via internet, and the data collection from individual sensors was planned to be done through bluetooth.
+However, while debugging, I found a lot of issues with the HC-06 bluetooth module which I was using since it was cheap and easy to program with.
+I bought HC-06 modules from various companies but some seemed to be malfunctioning and wasn't able to connect with other bluetooth peripherals.
+So, I moved from bluetooth to wifi using the NodeMCU board instead of the Arduino Nano.
+I haven't tested the wifi feature of the board but I am also facing some other issues with the Warden project.
+Aside from migrating to wifi, I've been having trouble detecting the wards in the local area network.
+Since Warden will not be aware of the individual IP addresses of each wards, in order to communicate with the wards, Warden will need a way to discover the individual wards in the local network.
+I'm currently planning to use the UDP broadcast method, but there seems to be issues with the firewall.
+I'm still in the early stages of learning, so it will take some time for me to figure things out.
+
+Overall, I think things are going smoothly compared to last year.
+COVID is still here, but I'm just used to it now.
+I hope things will get better in 2022.
