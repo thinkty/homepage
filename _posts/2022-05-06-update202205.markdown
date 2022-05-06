@@ -1,0 +1,29 @@
+---
+title:  "Status update for 2022.04 - Foobar, Java Spring"
+date:   2022-05-06
+categories: Updates
+---
+
+A couple of days ago, I finished working on [Heroklock](https://github.com/thinkty/heroklock).
+The goal of the project was to get familiar with the Golang programming language and multithreaded programming using goroutine.
+Despite having the title of *multithreaded programming*, the Heroklock application only has two threads...
+<sub><sup>It's still multithreaded, right?</sup></sub>
+One thread served the HTTP server and the other was set to run at an interval to keep the Heroku apps online.
+In the end, Golang made it very easy to implement multithreaded applications using the ```go``` keyword and the communication between threads were straight forward.
+
+After finishing the project, I was just surfing the web and searching for all things related to programming until I was suddenly invited to [Foobar](https://foobar.withgoogle.com/).
+Foobar is Google's secret hiring process that challenges the user with multiple programming tasks.
+The website is invitation-only.
+So if you want to give yourself a challenge, here is a link that one of you can use. <sub><sup>Not so *secret* now ha!</sup></sub>
+
+> [https://foobar.withgoogle.com/?eid=p2PsE](https://foobar.withgoogle.com/?eid=p2PsE)
+
+There are multiple levels in the process and the tasks get incrementally difficult.
+The tasks were very similar to the questions at Hackerrank and it encouraged me to start preparing for coding interviews as I witnessed my abysmal attempts to solve it.
+Therefore, starting today, I will put my best effort to complete the [1 week preparation kit](https://www.hackerrank.com/interview/preparation-kits/one-week-preparation-kit/one-week-day-one/challenges) from [Hackerrank](https://www.hackerrank.com/) and maybe take another attempt at Foobar if lucky.
+
+While going through Foobar, I mostly used Java to solve questions.
+Not sure if that affected my YouTube preferences, but as of late, I started getting recommended a lot of videos related to Java.
+A lot of the videos were related to [Spring](https://spring.io/), a popular Java framework that seems to do everything (idk never used it before) and is used by a lot of places and programs.
+So, I decided to start a new project using Spring that basically acts as Google Analytics but at a much lower quality that I shouldn't even call it an analyzing tool 😂.
+Through this project, I plan to get familiar with actual project development with Java, the Spring framework, and also some minor details such as build tools and more.
