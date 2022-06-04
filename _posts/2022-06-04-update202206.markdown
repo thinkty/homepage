@@ -1,0 +1,30 @@
+---
+title:  "Status update for 2022.05 - Local Election, LeetCode"
+date:   2022-06-04
+categories: Updates
+---
+
+May was a very busy month due to the Local Election.
+At work, we had to go around town and put up election posters and announcements, pack leaflet/flyers in mails to send to all the residents, transport various equipments, and more.
+On the voting day, I got up early in the morning and got to the place beforehand to make sure all the devices were in place and ready.
+The voting went on from 6 AM to 18 PM.
+For 30 minutes, we equipped ourselves with protective gear to prepare for the voting for the ones with COVID-19.
+People who were in self-quarantine were able to leave their house between 18:30 and 19:30 to vote.
+The voting ended at 19:30 and we started cleaning up the place that we rented out for the election.
+The whole process ended around 20:30 and it surely was a long day.
+On the next several days, we went around town to clean up everything that we put around town for the election and it was a truckful.
+It weighed around 500 kilos (about 1000 lbs) and I never knew an election would produce this much waste.
+Keeping in mind that this is just from one town and there are about 426 (or 467 depending on the perspective) towns in Seoul, the fact that so much is buried or burnt has blew my mind.
+I really hope elections could be done online but there will obviously be some issues mostly with security.
+
+Some might have noticed, but I explained what I did all this month as an excuse to the poor progress with the projects.
+Honestly, I am a bit burned out even though it feels like I haven't really done anything.
+So, I plan to give a little rest before I continue with the projects.
+Also, my military service is almost over and I am preparing my way back to Purdue.
+I already got my Visa, a plane ticket, and a place to stay once I get back.
+I know the world is a bit in the state of unrest due to the war, so I have my expectations low.
+
+On my last update, I mentioned HackerRank and recently, I got a chance to look at LeetCode.
+Personally, I found LeetCode to be better than HackerRank and have been solving some problems in it.
+While I rest for a while, playing with LeetCode seems like a great idea to prepare myself for the projects in pause.
+This Was a short update and I hope to get back to the projects soon!
