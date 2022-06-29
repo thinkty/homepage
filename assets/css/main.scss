@@ -37,7 +37,7 @@
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   margin-bottom: 20px;
   margin-top: 50px;
 }
@@ -47,9 +47,7 @@
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  gap: 10px;
-  padding-left: 10px;
-  border: solid 2px black;
+  border: solid thin black;
   border-radius: 20px;
   width: fit-content;
   margin-bottom: 20px;
@@ -57,14 +55,21 @@
 }
 
 .project-item {
+  padding-left: 10px;
   padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   margin-bottom: 0px;
   margin-top: 0px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
 }
 
 .about-item-header-timestamp {
   color: black;
-  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .about-item-header-chip {
@@ -75,11 +80,6 @@
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 20px;
-}
-
-.about-item-header-sub {
-  color: black;
-  font-weight: bold;
 }
 
 .about-link {
