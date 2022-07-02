@@ -17,14 +17,13 @@ It weighed around 500 kilos (about 1000 lbs) and I never knew an election would 
 Keeping in mind that this is just from one town and there are about 426 (or 467 depending on the perspective) towns in Seoul, the fact that so much is buried or burnt has blew my mind.
 I really hope elections could be done online but there will obviously be some issues mostly with security.
 
-Some might have noticed, but I explained what I did all this month as an excuse to the poor progress with the projects.
+This month, progress with the projects were not up to the standards.
 Honestly, I am a bit burned out even though it feels like I haven't really done anything.
-So, I plan to give a little rest before I continue with the projects.
+So, I plan to give a little break before I continue with the projects.
 Also, my military service is almost over and I am preparing my way back to Purdue.
 I already got my Visa, a plane ticket, and a place to stay once I get back.
 I know the world is a bit in the state of unrest due to the war, so I have my expectations low.
 
 On my last update, I mentioned HackerRank and recently, I got a chance to look at LeetCode.
 Personally, I found LeetCode to be better than HackerRank and have been solving some problems in it.
-While I rest for a while, playing with LeetCode seems like a great idea to prepare myself for the projects in pause.
-This Was a short update and I hope to get back to the projects soon!
+While I rest for a while, playing with LeetCode seems like a great idea.
