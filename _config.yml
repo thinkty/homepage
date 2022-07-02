@@ -24,7 +24,7 @@ theme                 : "minimal-mistakes-jekyll"
 minimal_mistakes_skin : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # locale                : "en-US" # ko-KR , en-US
 title                 : "Meerkatz"
-subtitle              : "Personal blog"
+subtitle              : "Thinkty's Personal Blog"
 name                  : "Tae Yoon Kim"
 description           : >- # this means to ignore newlines until "baseurl:"
   A personal blog to share my thoughts and projects.
