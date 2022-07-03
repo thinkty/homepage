@@ -1,0 +1,29 @@
+---
+title:  "Status update for 2022.06 - RPI server, Numerous Updates"
+date:   2022-07-02
+categories: Updates
+---
+
+In June, I setup a local server with the Raspberry Pi.
+I needed a server that was free and easy to manage.
+The Raspberry Pi 3B+ that I had in hand was a perfect choice.
+I know the Raspberry Pi is not free but I didn't have to pay a monthly fee for it.
+
+After searching the web, I found No-IP, a DDNS service that has a free tier which allows the user to have one public domain for free.
+In order to configure the DDNS with my Pi, I went into my router's configuration page and setup a static IP for my Pi.
+Surprisingly, the router actually had No-IP support out of the box, so I didn't need to run a separate service on my Pi to update its IP with No-IP.
+With port forwarding enabled, the bare minimum was met to connect to my Pi outside the local network.
+
+Now, I can enter the url on my phone in a different network and access the basic html page that is being served from the Pi.
+With basic HTTP working, the next step is HTTPS.
+I already got myself a certificate from Let's Encrypt, but there are some issues which I am actively looking into.
+I'm not sure but I think I made a mistake while issuing the certificate so the browser recognizes the certificate but says it is invalid.
+
+In addition to this little Pi project, there has been some updates to the About page.
+There has been minor style updates and I rewrote most of the work experience descriptions.
+The major change was done to the projects section by utilizing emojis and just going for a more simpler look in general.
+
+There has also been updates to the Sosizi app which is a web application that I use at my job for monthly news delivery.
+This application also got some style updates and changes to some of the delivery points.
+By using the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API), the user can see his/her location on the map directly but it isn't really that accurate compared to other navigation applications native to the platform.
+I guess that is just the limit of web apps?
