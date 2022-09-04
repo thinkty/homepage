@@ -1,0 +1,40 @@
+---
+title:  "Status update for 2022.08 - AWS Node.js update, Migration"
+date:   2022-09-04
+categories: Updates
+---
+
+Fall semester has started and it's been two weeks into it already.
+This semester, I'm taking Operating Systems and Networking for my CS major and a bunch of electives for my degree.
+This will be the last semester with non-CS electives and I'm not sure how it will go next semester with no electives and CS courses all the way. (Maybe it might be better?)
+
+It's almost season for career fairs, and I've already got a chance to take a technical interview which I feel like I did a decent job, but I guess not.
+Pretty sure there will be a lot of rejections coming in, and I guess I'll just have to keep on applying and applying.
+
+I've recently received an email from AWS about the *end-of-life* for Node.js version 12.
+The *lambda* function that I was using to serve my React applications were using Node.js version 12 and I was able to update it to version 16 without a hassle.
+Going back to my [post](https://thinkty.net/updates/aws_complete_tutorial/) about how to serve static pages on AWS really helped although the UI for the AWS console changed a bit.
+
+In addition to the Node.js update, there has been an announcement from Heroku which states that starting from November 28, 2022, there will no longer be free Heroku dynos.
+This was a bit of an issue as I was serving [Sosizi](https://github.com/thinkty/sosizi) on the free dyno to help my buddies who were still serving in my last military post.
+I asked one of them if they were still using the service and I honestly didn't expect them to be using it still.
+That moment when an application you've created was still being used and was really needed felt so good.
+So, I decided to migrate the application from Heroku to AWS.
+
+One of the main reason I was using Heroku instead of AWS aside from it being free was to serve the delivery point lists from a server so that if I were to update the list, the update would be registered immediately whereas if I were serving from a static website, I would have to wait until the CDNs updated their cache.
+However, although I can't verify on this or looked up on it, one thing I've recently noticed is that AWS has gotten quicker (about a few hours) with updating their CDN cache nowadays compared to when I first started using it (where I would have to wait about a day) so I guess the above issue wasn't too important anymore.
+Also, the application wasn't being used everyday, so even if the updates were slow, it wouldn't really matter.
+I know that AWS also has an EC2 instance where I can serve my server instead of a static webpage, but to me, it was too expensive even with the cheapest option (maybe I've configured it wrong?).
+
+So, I've moved all of the delivery points to a simple JSON data structure and shipped it along with my React application.
+In addition, I've updated the design and added some new features so that it looks a bit more decent now.
+Another reason I didn't want to serve it on AWS was because it would be using my *thinkty.net* domain with an application that was being used by others.
+If I could afford another domain, I would've gotten a separate domain and play around with Route53 to manage two domains at once.
+Also, I could have gone with other platforms that offer free options to serve static pages, but I've just decided to pay few more cents and just use my domain.
+
+I plan to add some more features to the app.
+For example, a form to request changes, highlight current delivery marker, show delivery points in an overview, etc.
+For the feature to request changes, I hope I can somehow integrate Github so that it could automatically create issues with a specified form or atleast send an email.
+
+I hope this semester ends well without any new pandemics or disasters popping out from here and there.
+I really hope I could get an internship since I'm kinda afraid that being away from the academics due to the military might have gotten my skills rusty.
