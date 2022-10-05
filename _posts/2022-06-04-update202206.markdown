@@ -1,5 +1,5 @@
 ---
-title:  "Status update for 2022.05 - Local Election, LeetCode"
+title:  "2022.05 - Local Election, LeetCode"
 date:   2022-06-04
 categories: Updates
 ---

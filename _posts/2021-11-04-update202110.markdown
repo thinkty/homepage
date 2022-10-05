@@ -1,5 +1,5 @@
 ---
-title:  "Status update for 2021.10"
+title:  "2021.10"
 date:   2021-11-04
 categories: Updates
 ---

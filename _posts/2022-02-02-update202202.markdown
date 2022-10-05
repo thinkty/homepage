@@ -1,5 +1,5 @@
 ---
-title:  "Status update for 2022.01"
+title:  "2022.01"
 date:   2022-02-02
 categories: Updates
 ---

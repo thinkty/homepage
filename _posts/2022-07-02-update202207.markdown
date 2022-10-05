@@ -1,5 +1,5 @@
 ---
-title:  "Status update for 2022.06 - RPI server, Numerous Updates"
+title:  "2022.06 - RPI server"
 date:   2022-07-02
 categories: Updates
 ---

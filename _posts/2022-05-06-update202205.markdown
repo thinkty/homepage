@@ -1,5 +1,5 @@
 ---
-title:  "Status update for 2022.04 - Foobar, Java Spring"
+title:  "2022.04 - Foobar, Java Spring"
 date:   2022-05-06
 categories: Updates
 ---

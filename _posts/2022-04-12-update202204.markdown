@@ -1,5 +1,5 @@
 ---
-title:  "Status update for 2022.03 - About Page, AWS Lambda, Heroklock"
+title:  "2022.03 - About Page, AWS Lambda, Heroklock"
 date:   2022-04-12
 categories: Updates
 ---
