@@ -1,0 +1,50 @@
+---
+title:  "2022.10 - Storm"
+date:   2022-11-04
+categories: Updates
+---
+
+![storm](/assets/images/2022-11-04-update-01.jpg)
+<sub>
+Photo by <a href="https://unsplash.com/@heytowner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">JOHN TOWNER</a> on <a href="https://unsplash.com/s/photos/storm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+</sub>
+
+In my last update, I said that I was caught in a storm, not knowing what to do.
+In October, I was really trying to find my way out of the storm and currently, I don't know if I actually made it out of the storm or I'm just in the eye.
+
+October was quite rough.
+Just last week, an assignment in my operating systems class had some problems and the instructor had to change the assignment.
+I was a little disturbed as I spent so much time and effort into it.
+So, was it all for nothing?
+No.
+After hearing what the problem was with the assignment, I immediately changed my mind and I felt like I learned something even more.
+
+The assignemnt was about the producer-consumer problem and for this assignment, we built it using semaphores to control access to the underlying bounded buffer.
+Quite versatile, but I was able to learn that it was also quite vulnerable if not handled appropriately.
+
+Although I submitted an implementation, I later found out it was just a partial solution.
+The instructor mentioned the edge cases I missed and I realized that there could be more edge cases that we just don't know yet.
+And as if it was some kind of fate, I stumbled upon this [post](https://medium.com/@amar_36225/a-lesson-from-the-past-building-real-time-systems-is-hard-e54bcc0a65ab) that described a specific bug in the 1997 Mars Pathfinder mission where the Pathfinder would sometimes reset itself due to a crash that was later found to be due to mutexes and different priorities between processes.
+Now I knew that these problems are *really* difficult.
+
+So, how is this assignment connected to me getting out of the storm?
+From the start of the semester, I got interested in the field of operating systems.
+Although we are learning with the [XINU](https://xinu.cs.purdue.edu/) operating system in class, I think it is a proper operating system and it helped me understand a lot about the roles and functions of the operating system.
+While doing the assignments, I got to know more about the system and the more I get to know, it felt like I had total control (like some great power).
+It was like seeing the magic unveil before my eyes.
+
+So, I've decided that I want my career to be in systems programming and the latest assignment really solidified that.
+Although I'm a bit clear on what to do, systems programming is still quite a large field.
+So, currently I'm giving a try in embedded systems.
+In the post that I mentioned about the Pathfinder, after the researchers found the bug, they *sent* a patch to fix it.
+It's insane how they managed to send a patch through space to a computer millions of kilometers away.
+Also, in order to make sure the patch is applied correctly, they must have a reliable transport and also for the patch to be applied, they must have some policy in applying patches to real time systems.
+This all sounds very interesting to me and now my desire to learn is in an all time high.
+
+In my current state, I have some experience with Arduino and ESP32, but I'm not confident as they weren't exactly multi-process.
+I'm also learning about the basics of systems programming, but I wanted something more.
+So, I decided to take a course next semester about embedded systems and I also talked to some professors for undergraduate research.
+
+Undergraduate research seems like a great opportunity for me to learn in-depth as an undergraduate, but I also worry that I lack the basic skills to participate in research.
+Yet, I'm gonna give it a try because you never know if you don't like it or not without tasting it.
+
