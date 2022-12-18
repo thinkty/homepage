@@ -8,6 +8,10 @@ permalink: /about/
 
 <img id="profile-pic" src="https://avatars.githubusercontent.com/u/38105214" alt="github profile picture">
 
+<h1 align="center">
+  Tae Yoon Kim · 김태윤
+</h1>
+
 <p align="center">
   <a class="profile-badge" href="mailto:the.thinkty@gmail.com" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
@@ -23,38 +27,33 @@ permalink: /about/
   </a>
 </p>
 
-## About
-
-My name is Tae Yoon Kim and I'm a sophomore in computer science at Purdue University.
-
-I'm currently taking the Software Engineering track and I am also interested in taking the Systems Software track.
-Currently, I am trying out various projects/techs to find what I really want to do.
+Hi, I am a junior in Computer Science at Purdue University in the Systems Software and Security tracks.
+I'm currently interested in embedded systems and specifically device firmware update.
 
 ## Experience
+
+<div class="about-item-header">
+  <div class="about-item-header-chip">Military Service</div>
+  <div class="about-item-header-timestamp">2020 Oct ~ 2022 Jul @<a target="_blank" class="about-link" href="http://www.army.mil.kr/webapp/user/indexMain.do?siteId=english">ROKA</a></div>
+</div>
+Provided public services at the city office and center for the disabled.
+Developed an application (Sosizi) to aid in my task while I was in service.
 
 <div class="about-item-header">
   <div class="about-item-header-chip">Internship</div>
   <div class="about-item-header-timestamp">2020 Summer @<a target="_blank" class="about-link" href="https://www.haii.co.kr/">HAII</a></div>
 </div>
-- Paired with a senior developer, using React and Nodejs, implemented an internal web application and a service that allowed employees to create chatbot flowcharts using the graph editor, automate training with Dialogflow's NLP API, update the trained chatbot agents using an internal state transition table, and deploy to multiple platforms (slack, facebook messenger, discord) for testing.
-- Don't have exact numbers on how much it increased productivity but automated a lot of work that were previously done by hand.
+Reduced development time of agents by 40% through automation of chatbot flow management for Alzheimer’s disease digital therapeutics.
+Implemented an internal tool to create chatbot flowcharts, train with Dialogflow, update the trained chatbot agents with a state transition table, and deploy to multiple messenger platforms.
 
 <div class="about-item-header">
   <div class="about-item-header-chip">Internship</div>
   <div class="about-item-header-timestamp">2019 Summer @<a target="_blank" class="about-link" href="https://www.haii.co.kr/">HAII</a></div>
 </div>
-- Collaborated with a junior developer and 2 interns to develop a chatbot for teaching primary education on the Facebook Messenger Platform utilizing Dialogflow's NLP API with Nodejs & MongoDB.
-- With two junior developers, developed a dating app like Tinder but using voice recordings alongside with images.
-- Implemented a chat server using Nodejs & SocketIO and several UI layouts for the chat functionality and authentication.
+Collaborated with a senior developer to develop a chatbot for the English version of digital therapeutics on the Facebook Messenger Platform utilizing Dialogflow’s NLP API with Nodejs & MongoDB.
+Developed a chat server using Nodejs w/ Socket.IO, multiple UI layouts for chat and user management.
 
 ## Projects
-
-```
-> 🚧 : Work In Progress
-> 🧰 : Actively Maintained
-> 🚀 : Demo Available (Click Me!)
-> 💖 : Open Source
-```
 
 <div class="about-item-header-container">
   <div class="about-item-header project-item">
@@ -95,7 +94,7 @@ A template server for updating intents on Dialogflow, manage chatbots in multipl
 
 <div class="about-item-header-container">
   <div class="about-item-header project-item">
-    React Digraph 💖
+    React Digraph
   </div>
   <div class="about-item-header-link">
     <a href="https://github.com/uber/react-digraph" target="_blank">
@@ -115,10 +114,10 @@ A template server for updating intents on Dialogflow, manage chatbots in multipl
   </div>
 </div>
 
-A library for creating directed graph editors.
+A library for creating directed graph editors. Contributed to the open source library to implement node copy/paste on mouse position and the option to disable backspace key to delete currently selected nodes.
 
 <div class="about-item-header-container">
-  <div class="about-item-header project-item">Sosizi 🧰<a href="https://sosizi.herokuapp.com/" target="_blank" class="about-link">&nbsp;🚀</a></div>
+  <div class="about-item-header project-item">Sosizi<a href="https://sosizi.herokuapp.com/" target="_blank" class="about-link">&nbsp;🚀</a></div>
   <div class="about-item-header-link">
     <a href="https://github.com/thinkty/sosizi" target="_blank">
       <svg class="about-item-header-link-svg" fill="#000" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
@@ -135,7 +134,7 @@ A library for creating directed graph editors.
 A simple logistics web application for delivering monthly news in Wangsimni, Seoul using Naver Maps API.
 
 <div class="about-item-header-container">
-  <div class="about-item-header project-item">React Chat 🚧</div>
+  <div class="about-item-header project-item">React Chat</div>
   <div class="about-item-header-link">
     <a href="https://github.com/thinkty/react-chat" target="_blank">
       <svg class="about-item-header-link-svg" fill="#000" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
@@ -147,73 +146,4 @@ A simple logistics web application for delivering monthly news in Wangsimni, Seo
 </div>
 
 A React component for chat interface with a focus on customization.
-
-<div class="about-item-header-container">
-  <div class="about-item-header project-item">Gundam UC<a href="https://gundam-uc.thinkty.net/" target="_blank" class="about-link">&nbsp;🚀</a></div>
-  <div class="about-item-header-link">
-    <a href="https://github.com/thinkty/gundam-uc" target="_blank">
-      <svg class="about-item-header-link-svg" fill="#000" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-    </a>
-    <a href="https://thinkty.net/updates/vaccine/" target="_blank">
-      <svg class="about-item-header-link-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
-        <title>Post</title>
-        <path xmlns="http://www.w3.org/2000/svg" d="M4 4C4 2.89543 4.89543 2 6 2H14C14.2652 2 14.5196 2.10536 14.7071 2.29289L19.7071 7.29289C19.8946 7.48043 20 7.73478 20 8V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20V4ZM17.5858 8L14 4.41421V8H17.5858ZM12 4L6 4V20H18V10H13C12.4477 10 12 9.55228 12 9V4ZM8 13C8 12.4477 8.44772 12 9 12H15C15.5523 12 16 12.4477 16 13C16 13.5523 15.5523 14 15 14H9C8.44772 14 8 13.5523 8 13ZM8 17C8 16.4477 8.44772 16 9 16H15C15.5523 16 16 16.4477 16 17C16 17.5523 15.5523 18 15 18H9C8.44772 18 8 17.5523 8 17Z" fill="#0D0D0D"></path>
-      </svg>
-    </a>
-  </div>
-</div>
-
-A guide to the Universal Century of the animated serie: Gundam.
-
-<div class="about-item-header-container">
-  <div class="about-item-header project-item">Heroklock</div>
-  <div class="about-item-header-link">
-    <a href="https://github.com/thinkty/heroklock" target="_blank">
-      <svg class="about-item-header-link-svg" fill="#000" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-    </a>
-    <a href="https://thinkty.net/updates/update202204/" target="_blank">
-      <svg class="about-item-header-link-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
-        <title>Post</title>
-        <path xmlns="http://www.w3.org/2000/svg" d="M4 4C4 2.89543 4.89543 2 6 2H14C14.2652 2 14.5196 2.10536 14.7071 2.29289L19.7071 7.29289C19.8946 7.48043 20 7.73478 20 8V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20V4ZM17.5858 8L14 4.41421V8H17.5858ZM12 4L6 4V20H18V10H13C12.4477 10 12 9.55228 12 9V4ZM8 13C8 12.4477 8.44772 12 9 12H15C15.5523 12 16 12.4477 16 13C16 13.5523 15.5523 14 15 14H9C8.44772 14 8 13.5523 8 13ZM8 17C8 16.4477 8.44772 16 9 16H15C15.5523 16 16 16.4477 16 17C16 17.5523 15.5523 18 15 18H9C8.44772 18 8 17.5523 8 17Z" fill="#0D0D0D"></path>
-      </svg>
-    </a>
-  </div>
-</div>
-
-A simple Go application to keep your free-tier Heroku dyno alive.
-
-<div class="about-item-header-container">
-  <div class="about-item-header project-item">Arduino Remote</div>
-  <div class="about-item-header-link">
-    <a href="https://github.com/thinkty/arduino-remote" target="_blank">
-      <svg class="about-item-header-link-svg" fill="#000" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-    </a>
-    <a href="https://thinkty.net/projects/infrared-remote-tv/" target="_blank">
-      <svg class="about-item-header-link-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
-        <title>Post</title>
-        <path xmlns="http://www.w3.org/2000/svg" d="M4 4C4 2.89543 4.89543 2 6 2H14C14.2652 2 14.5196 2.10536 14.7071 2.29289L19.7071 7.29289C19.8946 7.48043 20 7.73478 20 8V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20V4ZM17.5858 8L14 4.41421V8H17.5858ZM12 4L6 4V20H18V10H13C12.4477 10 12 9.55228 12 9V4ZM8 13C8 12.4477 8.44772 12 9 12H15C15.5523 12 16 12.4477 16 13C16 13.5523 15.5523 14 15 14H9C8.44772 14 8 13.5523 8 13ZM8 17C8 16.4477 8.44772 16 9 16H15C15.5523 16 16 16.4477 16 17C16 17.5523 15.5523 18 15 18H9C8.44772 18 8 17.5523 8 17Z" fill="#0D0D0D"></path>
-      </svg>
-    </a>
-  </div>
-</div>
-
-A quick gist for controlling an LG TV with infrared remote on an arduino device.
-
-<div class="about-item-header-container">
-  <div class="about-item-header project-item">Weather</div>
-  <div class="about-item-header-link">
-    <a href="https://github.com/thinkty/weather" target="_blank">
-      <svg class="about-item-header-link-svg" fill="#000" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-    </a>
-    <a href="https://thinkty.net/projects/weather-pwa/" target="_blank">
-      <svg class="about-item-header-link-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
-        <title>Post</title>
-        <path xmlns="http://www.w3.org/2000/svg" d="M4 4C4 2.89543 4.89543 2 6 2H14C14.2652 2 14.5196 2.10536 14.7071 2.29289L19.7071 7.29289C19.8946 7.48043 20 7.73478 20 8V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20V4ZM17.5858 8L14 4.41421V8H17.5858ZM12 4L6 4V20H18V10H13C12.4477 10 12 9.55228 12 9V4ZM8 13C8 12.4477 8.44772 12 9 12H15C15.5523 12 16 12.4477 16 13C16 13.5523 15.5523 14 15 14H9C8.44772 14 8 13.5523 8 13ZM8 17C8 16.4477 8.44772 16 9 16H15C15.5523 16 16 16.4477 16 17C16 17.5523 15.5523 18 15 18H9C8.44772 18 8 17.5523 8 17Z" fill="#0D0D0D"></path>
-      </svg>
-    </a>
-  </div>
-</div>
-
-A crude PWA weather application.
-
 
