@@ -1,0 +1,86 @@
+---
+title:  "Terminal Sudoku"
+date:   2022-12-17
+categories: Projects
+---
+
+One of my favorite classic game is Sudoku.
+Sudoku is a 9-by-9 square grid game where the player has to fill in each cell from 1 to 9 in a way that there isn't a duplicate in the row, column, and the 3-by-3 box.
+
+![sudoku](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg/1024px-Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg.png)
+
+For the past following weeks, I've been addicted to Sudoku.
+The rules are very simple, but it is often times quite challenging and it's a great way to feel like a genius with minimum effort.
+
+I usually play Sudoku on the web browser, but I wanted to make a Sudoku application for the terminal (emulator) just because I can.
+For the user interface, I used the [ncurses](https://en.wikipedia.org/wiki/Ncurses) library.
+The ncurses library is a simple text-based user interface (tui) with optimized screen changes and it was surprisingly intuitive to use.
+
+The development was swift and the result was quite satisfying.
+
+<script id="asciicast-sfO3LFRV7c633hb33PNYm0rmU" src="https://asciinema.org/a/sfO3LFRV7c633hb33PNYm0rmU.js" async></script>
+
+The code is available on [Github](https://github.com/thinkty/tsdk), but it needs to be compiled and I've only confirmed it to be running on my x86 64-bit machine running Linux.
+One of my goal is to submit it to AUR but I'm currently working on another project so I'm not sure if the future me will do that or just procrastinate to tomorrowland.
+
+The controls are quite straightforward as arrow keys are used to navigate, `enter` to select or check your input, and numbers through 0 ~ 9 are used to set the value for the cell.
+
+The most difficult part for this small project was the algorithm to check the answer.
+Although one could check for duplicates in each row, column, and box as specified in the rule, that would be quite inefficient if there are multiple cells to check.
+So, I decided solve the Sudoku grid first and then just compare the current input grid with the answer on every check.
+
+The Sudoku grid is solved through the backtracking approach where it starts with the first empty cell and tries a number from 1 to 9.
+In each try, the corresponding row, column, and box is checked to make sure that there are no duplicates.
+If the number is valid, move on to the next cell and do the same recursively until all cells are filled.
+If none of the number can fit, it *backtracks* to the previous cell and try with the next number.
+
+```
+// From https://github.com/thinkty/tsdk/blob/main/src/solve.c#L10
+
+int solve(char * answ, int index)
+{
+	if (answ == NULL || index < 0) {
+		return ERR;
+	}
+
+	/* Base case where all the cells have been checked */
+	if (index >= SDK_LEN * SDK_LEN) {
+		return OK;
+	}
+
+	/* If the cell at the given index has already been filled, move on */
+	if (answ[index] != '0') {
+		return solve(answ, index+1);
+	}
+
+	/* Try 1 ~ 9 and check if there are no duplicates */
+	int i;
+	for (i = 1; i <= SDK_LEN; i++) {
+		answ[index] = '0' + i;
+
+		/* If there are duplicates, try the next number */
+		if (checkrow(answ, index) != OK ||
+			checkcol(answ, index) != OK ||
+			checkbox(answ, index) != OK) {
+			continue;
+		}
+
+		/* If the placement is valid, move on to next cell */
+		if (solve(answ, index+1) == OK) {
+			break;
+		}
+	}
+
+	/* Not a single number is valid, reset the field and return ERR */
+	if (i > SDK_LEN) {
+		answ[index] = '0';
+		return ERR;
+	}
+
+	return OK;
+}
+```
+
+The code is simple, easy to understand, and I love it.
+I wanted to use this project as a stepping stone to get more comfortable writing in C and creating a simple user interface.
+Next, I want to try and somehow integrate communication over the network with multiple threads to implmement a simple online multiplayer. 
