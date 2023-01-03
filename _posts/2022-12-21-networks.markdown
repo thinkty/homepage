@@ -1,0 +1,283 @@
+---
+title:  "Brief Overview of the Network"
+date:   2022-12-21
+categories: Updates
+toc: true
+---
+
+This semester, I've taken the *Computer Networks* course and I think it is one of the most valuable lectures to me.
+So, I intend to write this post to leave some notes for the future me and others that might be interested.
+My goal is to keep it as compact as possible while covering (what I think are) some of the most important components of the network.
+As the course was covering the entire network stack in one semester, I doubt I will be correct on everything, so please let [me](mailto:the.thinkty@gmail.com) know 😎.
+
+## Intro
+
+There were so many topics to cover and the course tried to put as much as it can in one semester while approaching it top-down into the network stack.
+Although there seems to be quite a discrepancy on how to divide the network stack into layers, in this course, we started from the *application* layer with protocols like HTTP, FTP, SMTP, etc. 
+Then, we covered the *transport* layer (UDP/TCP/QUIC) with quite a focus on TCP.
+Next, we continued to the *network* layer where we learned about the Internet Protocol and various inter-AS (BGP) & intra-AS (linked state & distance vector) protocols.
+Finally, we went over the *link* layer (MAC) with a short trip to the *physical* layer.
+One of the key things to keep in mind is the fact that the layers are *quite* independent of each other.
+For example, when we implement a simple HTTP server to host our webpage, we don't usually consider how the `html` file would travel through the congested network or how it would get fragmented in the IP layer.
+We simply use the API that handles the HTTP as instructed and go on our lives.
+A beauty of abstraction.
+
+There were also various components of the network like DNS (and its various records), CDN, client-server vs P2P, web caches & proxies, circuit switching vs packet switching, clustering coefficients, and more.
+However, the course was mostly focused on the transport layer and how the IP packets actually traverse through the net using various protocols.
+
+## The Delay
+
+Before starting with the application layer, I think it's crucial to know about the various *delays* that are in the network.
+The most common case of experiencing delays is through online multiplayer games.
+Some online games show the delay using the term *ping*.
+With a high ping, the player will experience significant discomfort and lag.
+Sometimes, one could even get disconnected from the server.
+
+The delays are categorized into 4 types: Propagation, Transmission, Processing, and Queueing.
+- Propagation delay is the time it takes to travel through the physical medium such as the Ethernet cables or WiFi.
+If two points are far away, the propagation delay would increase proportionate to the distance.
+- Transmission delay is the time it takes to send bits into the link.
+When sending massive HTTP requests compared to small DHCP requests, the HTTP request would take longer to transmit.
+This delay is calculated by dividing the packet size by the bandwidth of the link.
+- Processing delay is the time it takes to handle the packet.
+To see if the packet is corrupted, checksum is often used.
+When calculating the checksum of the packet, it often differs by protocol, length, and other factors.
+- Queueing delay is the time it takes for a packet to wait in queue for it to be handled.
+There could be various reasons for the queue.
+For example, the router on the other end could be busy due to a sudden increase in traffic.
+In extreme cases, the sent packet could be dropped.
+
+Compared to other I/O (File, Memory, etc), network delays (latency) are oftentimes highest and there are so many factors that contribute to the delay.
+So, it's always crucial to keep in mind of these delays when implementing network operations.
+
+## Application Layer
+
+Finally starting with the application layer, this is the layer that most applications interact with.
+Although there are various protocols, I want to focus on HTTP and its versions.
+HTTP usually is built on TCP for its reliability.
+TCP is able to be quite reliable due to its handshake process.
+During the handshake process, there is a sequence of packets sent and received between the two hosts to ensure that they are ready to exchange data.
+
+### HTTP
+
+One of the key aspects of HTTP/1.0, was that the connection was non-persistent. Everytime it needed to send a file or object, the hosts had to go through the handshake process.
+
+In HTTP/1.1, the connection became persistent and it also included support for pipelining where multiple objects could be transferred at once.
+
+Next came HTTP/2.0 where a lot of changes were made. There were client-specified object priority to get certain objects quicker. Also, the server could *push* unrequested objects to the client proactively instead of waiting for the client to request it. A significant improvement was the feature to divide an object into frames and sending the frames from different objects intertwined. This mitigated the Head-Of-Line blocking where other objects would wait on a large one in front.
+
+In HTTP/3.0, security was one of the focus and there was per object error-control to mitigate packet loss recovery that stalled transmission.
+
+Although there are other protocols such as SMTP (to push emails from/to mail servers), and FTP (a stateful protocol that has different ports for command and data : out-of-band), I think looking at the evolution of HTTP was quite interesting as the shift of focus could be seen.
+
+### DNS
+
+In addition to HTTP, a key component in the network is the Domain Name System.
+This is crucial especially to humans as we are more familiar to the website by its name rather than its IP address.
+DNS is built using UDP since it usually doesn't have much to send and it values the speed of UDP over the consistency of TCP.
+When we visit the website `www.example.com`, our browser does a DNS lookup to get the IP address corresponding to `www.example.com`.
+Although there are two ways to handle the lookup (iterative or recursive), it is usually done iteratively by the local DNS to distribute the work.
+Starting from the [Root DNS](https://en.wikipedia.org/wiki/DNS_root_zone) that is managed by [IANA](https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority), it tells us the `.com` [Top Level Domain](https://en.wikipedia.org/wiki/Top-level_domain) DNS to query for domains that end in `.com`.
+Then, the `.com` Top Level Domain DNS would tell us the Authoritative DNS for `example.com`.
+These authoritative DNS is managed independently from ICANN and it could be managed by a corporate, a school, an individual, or anything.
+Once we query the authoritative DNS for `www.example.com`, it would tell the IP address and also some additional information in the form of [DNS records](https://en.wikipedia.org/wiki/List_of_DNS_record_types).
+
+Oftentimes, before reaching the root DNS, the DNS lookup could be handled by your local DNS that caches some DNS entries.
+As seen throughout the field of computer science, these caches are crucial for performance.
+
+## Transport Layer
+
+In the transport layer, there are two main protocols: [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) and [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol).
+[QUIC](https://en.wikipedia.org/wiki/QUIC) is an emerging protocol that is built on UDP with the reliability of TCP.
+
+### UDP
+
+Compared to TCP, UDP is quite barebone as it has no handshake process and without acknowledgements like TCP it is prone to packet loss.
+Unlike the byte-streamed TCP, UDP ensures message boundaries, but the messages may arrive out of order.
+However, due to its barebone characteristic, it is fast and could be a versatile protocol for customization.
+In the game StarCraft, I remember seeing the option to connect to a UDP server since lower latency is prioritized the most in competitive online games.
+Also, since it is not connection oriented, it also supports broadcasting which is used in protocols like [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol).
+
+### TCP
+
+I enjoyed the approach to learning TCP by implementing your own TCP in class.
+In this exercise, we assume that the link is highly unreliable and that a packet corruption or packet loss can definitely occur.
+
+Starting with a simple [Stop-And-Wait](https://en.wikipedia.org/wiki/Stop-and-wait_ARQ) mechanism, each packet would be sent one-by-one in order with a checksum included to check for packet corruption.
+This way, we can ensure that the packets will arrive in order on the recieving side.
+If the receiver has detected packet corruption, it will send a Negative ACKnowledgement to let the sender send the packet again.
+
+However, the ACK or NACK could also be corrupted.
+For example, a corrupted NACK could be perceived as an ACK and sender will send the next packet which is not the desired action.
+To solve this problem, we use a *sequence number*.
+If the sender receives a corrupted ACK/NACK, it will send a packet with the same sequence number just to be sure.
+When the receiver actually sent an ACK and recieves the packet with the same sequence number, it will simply discard that packet as it is not needed.
+
+With the use of sequence numbers, NACK seems like a waste as it can be replaced with an ACK that has a duplicate sequence number.
+For example, when the receiver gets a packet that is corrupted, it will send an ACK with the current sequence number instead of the next sequence number to let the sender know that it has to send it again.
+
+With the NACK out of the way thanks to *duplicate ACK*, there is another problem: packet loss.
+In a unreliable or highly congested path, the packet could get lost entirely.
+For example, if the packet sent from the sender or the ACK sent from the receiver is lost, the sender would wait for the packet indefinitely.
+To prevent the infinite wait, a *timer* can be handy.
+After sending the packet, the sender will start the timer and wait for a certain value.
+If there is no ACK received, the sender will take it as a packet loss and send the same packet again.
+However, there could be a case where the response from the receiver just arrives late.
+In those cases, it is no big deal as the receiver will just discard the duplicate packet sent earlier.
+
+Currently, our Stop-And-Wait TCP has a low utilization rate as more time is spent doing the round trip from and to the receiver rather than sending data.
+We can improve the performance by *pipelining*: sending multiple packets at once.
+With pipelining, there are unique optimizations with regards to ACKs.
+The *Go-Back-N*, or *Cumulative ACK*, allows the receiver to send a single ACK to acknowledge all the previous ACKs.
+However, since the receiver does not buffer out-of-order packets, when a packet arrives out-of-order, it will send a duplicate ACK.
+Once a duplicate ACK is received by the sender, it will send a certain number (window size) of packets again.
+Although it may seem like a lot of repetitive task, there is an advantage that the receiver does not have to send multiple ACKs as a single ACK can be sent to let the sender know that all is well.
+Contrary to the Go-Back-N, there is also *Selective Repeat*.
+The receiver now buffers the packets arriving out of order.
+
+In summary, it is quite complicated to build a reliable transport layer on top of a unreliable link.
+Furthermore, several versions (reno, cubic) of TCP currently used in real life are far more complicated since they need to support *flow control* and *congestion control*.
+
+Unlike the barebone UDP, TCP is a lot more *conscious* of the network.
+It tries its best to make the connection reliable by not only just making sure the packet arrives, but by also making sure the traffic doesn't get too congested as a packet loss can occur in a busy network.
+*Flow control* and *congestion control* can be seem similar, but flow control focuses on the receiver while congestion control focuses on the link that is used to get to the receiver.
+
+Between the two, flow control is much more easier to implement than congestion control.
+The receiver simply has to let the sender know the buffer size (window size) or how many packets it can receive at the moment.
+This can be sent inside the ACK packet to let the sender know of the availability.
+
+[Congestion control](https://en.wikipedia.org/wiki/TCP_congestion_control), on the other hand, is a lot more complicated.
+It is very hard to estimate how congested the network is especially when the sender or the receiver doesn't know what routes the packets are using.
+However, the receiver can know whether the packet got lost or is delayed.
+Commonly in TCP, it takes several steps to avoid making the link too busy since traffic increases unreliability.
+First, at the start of transmission, it goes into the *slow start*  phase where the congestion window is doubled on every round-trip-time (RTT) until the threshold is met.
+When the congestion window is at the threshold, it goes into the *congestion avoidance* phase.
+In the *congestion avoidance* phase, it follows the *additive increase / multiplicative decrease* algorithm where the congestion window increases by 1 [MSS](https://en.wikipedia.org/wiki/Maximum_segment_size) on every RTT and halve the congestion window and threshold on triple duplicate ACKnowledgements.
+However, if an ACKnowledgement never arrives and a timeout occurs, it is a definite loss that can possibly indicate a busy traffic.
+In that case, the threshold is still halved but the congestion window is set to 1 MSS.
+This is a very cautious approach to congestion control and the performance loss on a packet loss is heavy.
+Other TCP versions may use a different approach and I think it is quite an interesting topic for further discussion. 
+
+To conclude, TCP is very complex.
+There are tons of detail that are not mentioned in this post such as timeout estimation, delayed ACKs, fast retransmit, TCP throughput estimation formula, and more.
+I believe TCP itself deserves its own course due to so many aspects required in order to make a reliable transport layer protocol.
+
+## Network Layer
+
+The network layer mostly works with the [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol) and it's the layer that handles moving the IP packet from one host to another through routing and forwarding.
+IP address is like the address in real life and the IP packets are like the post mails.
+IP address written in the packet is used to find the route to get to the destination to successfully deliver the packet.
+
+### IPv4
+
+First, there was only IP version 4 (ex: 192.100.10.1) that consists of four 1-byte (0 ~ 255) fields (32 bits).
+Due to its limited size, there can be atmost 4 billion unique IP addresses.
+Although it may be a lot, people got concerned with running out of IP addresses as an individual may use about 2 to 4 or more IP addresses (mobile, laptop, tablet, desktop, IoT devices, etc).
+
+So, IPv6 was born.
+However, as one might notice, we still use IPv4 and there were three mechanisms that allowed this to happen: *subnet*, *DHCP*, and *NAT*.
+Subnet is a network inside a network or a subdivision inside a network, and it allows efficient routing of the network.
+An example could be written as "192.0.0.1/8" where it would be a network that includes all IP addresses that match the first 8 bits of the address.
+The subnet could be classful (A, B, C) with a fixed length, or classless ([CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)) with variable length.
+By using the subnet, an isolated network could then use DHCP: dynamic allocation of IP addresses.
+Using DHCP, instead of having a static IP address, it could request an IP address to use for a while from the DHCP server.
+Furthermore, that DHCP server could be your router and that router could also handle NAT: network address translation.
+Although the introduction of NAT was controversial as the router now had to check upto the transport layer for the port number, I think NAT is the key player that allowed the continued usage of IPv4.
+With subnet, DHCP, and NAT, the local network can be isolated from other networks with dynamic IP addresses and also a bonus of blocking access from external hosts.
+The router acting as a gateway, when a host inside the local network sends a packet outside, the router will record the IP & port of the source and destination.
+There are various ways NAT is implemented (such as symmetric NAT, full-cone NAT, etc.) and due to NAT, unique problems arise with Peer-to-Peer connections which I think is quite an interesting as there are also ways to go around this problem (TURN, STUN, ICE, etc.).
+
+### Routing
+
+Now that the address part is somewhat covered, let's go over the routing and forwarding aspects of IP.
+The internet is managed in units of [Autonomous Systems](https://en.wikipedia.org/wiki/Autonomous_system_%28Internet%29).
+Each AS has its own AS number and they are the administative entities for managing the various routes inside its area.
+Each AS will run a routing protocol and for packets that need to traverse through multiple ASes, it uses the [Border Gateway Protocol](https://en.wikipedia.org/wiki/Border_Gateway_Protocol).
+
+There are various intra-AS routing protocols and it can be categorized into [link-state](https://en.wikipedia.org/wiki/Link-state_routing_protocol) protocols such as OSPF or IS-IS and [distance-vector](https://en.wikipedia.org/wiki/Distance-vector_routing_protocol) protocols like RIP.
+I think the biggest difference between the two is that in the link-state protocol, all the routers have complete topology of the network by flooding the network and in the distance-vector protocol, each routers only know the route information from adjacent routers.
+There are various advantages and disadvantages to the two.
+Flooding the network could be quite time and resource heavy, but as all the routes are known, most efficient routes can be calculated through the Dijkstra's algorithm.
+On the other hand, communicating only with the neighbors will definitely have a lower traffic than the former, but the routes may not be so accurate and when a cost of a route suddenly increases, a [count-to-infinity](https://en.wikipedia.org/wiki/Distance-vector_routing_protocol#Count_to_infinity_problem) problem can occur.
+
+When communicating between ASes (inter-AS), BGP is used separate from the intra-AS routing protocol as it is meant for packets outside the current AS.
+The BGP session can be divided into eBGP for routes between ASes and iBGP for routes inside the AS.
+The BGP routing protocol is a [path-vector](https://en.wikipedia.org/wiki/Path-vector_routing_protocol) protocol that is similar to the distance-vector protocol, but it also contains information about the specific path to take in addition to the distance.
+Through the protocol, it first obtains subnet reachability (advertisement) and propagate the advertisement to all routers inside the AS. Then, specific paths are determined based on BGP policy set by the AS.
+A common policy consists of several steps that helps the packet determine which path to take and it often starts with the local preference set by the AS, the shortest path in the AS, lowest origin type, and more.
+In the end, the policy and the intra-AS routing protocols are the actors that create the routing table.
+Then, from the routing table, the forwarding table is formed with the best selection that the router uses to determine which interface to send the incoming packet to using the longest prefix matching.
+
+I think this is the most important layer in networking as it is where all the packet routing actually occurs.
+In addition to IP, [MPLS](https://en.wikipedia.org/wiki/Multiprotocol_Label_Switching) is often used to carry additional information useful for routing to the ISP or the administrator that manages the AS.
+
+## Link Layer
+
+In the link layer, the Media Access Control, also known as [MAC](https://en.wikipedia.org/wiki/Medium_access_control), takes the spotlight.
+In MAC, similar to IP, each interface has a 48-bit MAC address.
+However, as a layer lower than the internet protocol, it is what actually carries the individual bits from one interface to the other.
+The main focus is on collision handling as the link used for transfer of individual bits is often shared.
+For example, with wireless connection, the link is the specific radio frequency that is shared by all the devices/interfaces in the area.
+Thus, an adequate collision handling is required to avoid filling the link with gibberish.
+There are various implementations of media access control (channel partitioning - fixed assigned, random access, and controlled access - demand assigned), but I want to focus on random access and especially on various carrier-sense multiple access or [CSMA](https://en.wikipedia.org/wiki/Carrier-sense_multiple_access).
+
+### CSMA
+
+As the name implicates, carrier-sense means that the interface will listen before transmitting to make sure that the link is not busy.
+However, even if carrier-sense mechanism is used, collision can still occur due to propagation delay where the signal isn't transmitted immediately in long distances over a slow medium.
+So, there are multiple ways to handle (detect or avoid) collision: [CSMA/CD](https://en.wikipedia.org/wiki/Carrier-sense_multiple_access_with_collision_detection) and [CSMA/CA](https://en.wikipedia.org/wiki/Carrier-sense_multiple_access_with_collision_avoidance).
+
+### CSMA/CD
+
+In CSMA/CD, the CD stands for collision detection.
+When a collision is detected, a jam signal is broadcasted to let others know and the interfaces go into an exponential backoff where it waits for a random time in the range from 0 to (2<sup>m</sup>-1) * 512 bit time where `m` is the number of successive collision.
+The efficiency of CSMA/CD depends on propagation delay and transmission delay.
+With a lower propagation delay, the signals are transferred faster, thus carrier sense and collision detection can happen much quicker.
+With a higher transmission delay, if more time is spent sending bits down the link, the link is more utilized.
+However, as there is a limit to the bandwidth and maximum transfer unit, the efficiency is limitted.
+CSMA/CD was mostly used in ethernet until the advent of ethernet repeaters like hubs and switches that handle the collision in place.
+
+### CSMA/CA
+
+In CSMA/CA, the CA stands for collision avoidance.
+It is a much careful approach to collision handling than CSMA/CD.
+Through the use of timeouts (DIFS, SIFS) before & after transmission and the Request-to-Send & Clear-to-Send signals, the link is reserved for the sender to send data collision free.
+Also, after sending data through the link, the sender will send an acknowledgement signal to the receiver to make the link somewhat reliable.
+
+### ARP
+
+In addition to the various MAC protocols, Address Resolution Protocol or [ARP](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) is used to find the MAC address of a host by its IPv4 address (for IPv6, [NDP](https://en.wikipedia.org/wiki/Neighbor_Discovery_Protocol) is used).
+In a typical scenario, once a computer is connected to the network, it first obtains its IP through DHCP.
+Then, when it needs to send a packet to another host, it first looks up the ARP table for the MAC address for that host's IP address.
+If the entry does not exist, it does an ARP broadcast where the host with the IP address replies with its MAC address.
+Finally, the individual bits for the ethernet frame can be sent to that host through the link.
+Different from similar lookup protocols like IP routing protocols or DNS lookup, ARP is unique that it is a plug-and-play protocol where it fills its ARP table automatically.
+
+## Flow
+
+To summarize, although a lot of details were skipped, the general flow of access to a website on the internet can be seen using all the layers of the network.
+Starting with the boot of the computer, once the computer is connected to a router, it acquires its IP address through *DHCP*.
+
+Then, the user opens the browser and enters the domain name such as `example.com`.
+To get the IP address corresponding to the domain name, it performs a DNS lookup.
+To perform the DNS lookup, it needs the MAC address of the DNS server.
+Often times, the DNS server's IP address is the router or some static value set by the user.
+
+So, the host interface performs an ARP query and once the router's MAC address is retrieved, the DNS lookup UDP message is tranmitted to the router.
+Once the router receives the DNS lookup request, if it has an entry in the DNS cache, it will answer the request.
+However, in other cases where the router cannot fulfill the request, the request will be sent to the root DNS server, TLD DNS server, authoritative server, etc. until its request can be fulfilled.
+When the request needs to go out into the internet, it needs to leave the local area network through the router.
+
+Starting from the host, it reaches the router where it has NAT implemented.
+The NAT puts an entry into the NAT table where the IP address and port of the source (host) and destination (DNS server) is saved.
+
+Once the packet enters the AS, it follows the forwarding table formed by the routing protocol such as OSPF, IS-IS, RIP, etc. to navigate to the destination.
+When it needs to go to a different AS, it will proceed to the border gateway router to transmit via BGP.
+
+Once the DNS lookup is handled, it will first store the entry to the DNS cache.
+Then, with the retrieved target website's IP address, the HTTP request is formed and sent using TCP.
+After the TCP handshake, the HTTP request is sent and the HTTP response is received.
+Depending on the HTTP and TCP version, the data transfer could be pipelined, and multiple objects could be transferred at once.
+Once all transaction is done, the browser will display the webpage to the user and wait for the next input.
+In each transmission, every layer of the network is used and the abstraction is used to separate each layers.
+
