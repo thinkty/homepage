@@ -22,9 +22,9 @@
 # Site settings
 theme                 : "minimal-mistakes-jekyll"
 minimal_mistakes_skin : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-# locale                : "en-US" # ko-KR , en-US
-title                 : "Meerkatz"
-subtitle              : "Thinkty's Personal Blog"
+locale                : "en-US" # ko-KR , en-US
+title                 : "Blog"
+subtitle              : ""
 name                  : "Tae Yoon Kim"
 description           : >- # this means to ignore newlines until "baseurl:"
   A personal blog to share my thoughts and projects.
@@ -34,7 +34,7 @@ repository            : "thinkty/homepage"
 head_scripts          : # add scripts to the <head>
 footer_scripts        : # add scripts to the </body>
 future                : true
-logo                  : "/assets/icons/logo.png"
+logo                  : "https://avatars.githubusercontent.com/u/38105214"
 breadcrumbs           : false
 words_per_minute      : 200 # for estimating reading time
 email                 : "the.thinkty@gmail.com"
@@ -55,14 +55,6 @@ algolia:
 # bing_site_verification   : 
 # yandex_site_verification :
 naver_site_verification  : "eaa1419db9b1c75438ab6fd30f85df2ef9aefcfc"
-
-# Social Sharing
-social:
-  type                : "Person"
-  name                : "Tae Yoon Kim"
-  links:
-    - "https://www.linkedin.com/in/thinkty/"
-    - "https://github.com/thinkty"
 
 # Analytics
 analytics:
@@ -95,17 +87,17 @@ author:
       url: "https://docs.google.com/document/d/1ZUj5d5h8V0unP5-slkiXX6VEMkW4nEuMmBy4Kiy7Ais/edit?usp=sharing"
 
 # Site Footer
-footer:
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:the.thinkty@gmail.com"
-    - label: "Github"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/thinkty"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/thinkty/"
+# footer:
+#   links:
+#     - label: "Email"
+#       icon: "fas fa-fw fa-envelope-square"
+#       url: "mailto:the.thinkty@gmail.com"
+#     - label: "Github"
+#       icon: "fab fa-fw fa-github"
+#       url: "https://github.com/thinkty"
+#     - label: "LinkedIn"
+#       icon: "fab fa-fw fa-linkedin"
+#       url: "https://www.linkedin.com/in/thinkty/"
 
 # Reading Files
 include:

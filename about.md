@@ -1,6 +1,7 @@
 ---
 layout: about
 title: About
+author_profile: true
 
 namespace: about
 permalink: /about/
