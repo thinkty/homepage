@@ -18,50 +18,28 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-
 # Site settings
-theme                 : "minimal-mistakes-jekyll"
-minimal_mistakes_skin : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+theme                 : no-style-please
 locale                : "en-US" # ko-KR , en-US
 title                 : "Blog"
 subtitle              : ""
 name                  : "Tae Yoon Kim"
-description           : >- # this means to ignore newlines until "baseurl:"
-  A personal blog to share my thoughts and projects.
+description           : ""
 baseurl               : "" # the subpath of your site, e.g. /blog
 url                   : "https://thinkty.net" # the base hostname & protocol for your site
 repository            : "thinkty/homepage"
 head_scripts          : # add scripts to the <head>
 footer_scripts        : # add scripts to the </body>
-future                : true
 logo                  : "https://avatars.githubusercontent.com/u/38105214"
-breadcrumbs           : false
 words_per_minute      : 200 # for estimating reading time
 email                 : "the.thinkty@gmail.com"
 github_username       : "thinkty"
-search                : true
-search_full_content   : true
-search_provider       : "algolia" # default is lunr
-algolia:
-  application_id      : "4UJ1WD4AIU"
-  index_name          : "meerkatz"
-  search_only_api_key : "64845f9080f01e8f53cba4cc457fca1c"
-  powered_by          : true
-  files_to_exclude    :
-    - about.md
 
 # SEO Related do this after you get a domain name
 # google_site_verification : Done through DNS
 # bing_site_verification   : 
 # yandex_site_verification :
 naver_site_verification  : "eaa1419db9b1c75438ab6fd30f85df2ef9aefcfc"
-
-# Analytics
-analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          : "UA-172628080-1"
-    anonymize_ip         : false
 
 # Site Author
 author:
@@ -105,7 +83,6 @@ include:
   - _pages
 exclude:
   - .sass-cache/
-  - .jekyll-cache/
   - gemfiles/
   - Gemfile
   - Gemfile.lock
@@ -158,7 +135,7 @@ defaults:
       read_time: true  # add 'read_time: false' to front matter to override
       comments: false
       author_profile: false
-      share: true
+      share: false
       related: false
   - scope:
       path: ""
@@ -166,28 +143,7 @@ defaults:
     values:
       comments: false
 
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: America/Chicago
-
 # Plugins
 plugins:
   - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-paginate
-  - jekyll-archives
   - jemoji
-
-# Archiving
-category_archive:
-  type: jekyll-archives
-  path: /categories/
-jekyll-archives:
-  enabled:
-    - categories
-  layouts:
-    category: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
