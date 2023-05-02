@@ -1,0 +1,14 @@
+
+{% assign author = page.author | default: page.authors[0] | default: site.author %}
+
+<div itemscope itemtype="https://schema.org/Person">
+    <div class="links">
+
+        {% for link in author.links %}
+            <a class="link" target="_blank" href="{{ link.url }}" rel="nofollow noopener noreferrer">
+                {% include {{ link.icon }} %}
+            </a>
+        {% endfor %}
+
+    </div>
+</div>
