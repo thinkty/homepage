@@ -19,21 +19,16 @@
 # in the templates via {{ site.myvariable }}.
 
 # Site settings
-locale                : "en-US" # ko-KR , en-US
-title                 : "Blog"
-subtitle              : ""
-name                  : "Tae Yoon Kim"
-description           : ""
-baseurl               : "" # the subpath of your site, e.g. /blog
-url                   : "https://thinkty.net" # the base hostname & protocol for your site
-repository            : "thinkty/homepage"
-logo                  : "https://avatars.githubusercontent.com/u/38105214"
-words_per_minute      : 200 # for estimating reading time
-email                 : "the.thinkty@gmail.com"
-github_username       : "thinkty"
+locale           : "en-US" # ko-KR , en-US
+title            : "Blog"
+description      : ""
+baseurl          : "" # the subpath of your site, e.g. /blog
+url              : "https://thinkty.net" # the base hostname & protocol for your site
+words_per_minute : 200 # for estimating reading time
+email            : "the.thinkty@gmail.com"
 
 # Theme settings
-favicon               : "assets/icons/favicon.ico"
+favicon               : "assets/favicons/favicon.ico"
 theme                 : no-style-please
 
 # SEO Related do this after you get a domain name
@@ -44,39 +39,21 @@ naver_site_verification  : "eaa1419db9b1c75438ab6fd30f85df2ef9aefcfc"
 
 # Site Author
 author:
-  name             : "Tae Yoon Kim"
-  # avatar           : "assets/icons/profile.png"
-  bio              : ""
-  location         : "Indiana & Seoul"
+  name: "Tae Yoon Kim"
   links:
+    - label: "Portfolio"
+      icon: "icons/portfolio.html"
+      url: "https://portfolio.thinkty.net/"
     - label: "Email"
-      icon: "fas fa-fw fa-envelope"
+      icon: "icons/email.html"
       url: "mailto:the.thinkty@gmail.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"
-      url: "https://twitter.com/_thinkty_"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "icons/github.html"
       url: "https://github.com/thinkty"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
+      icon: "icons/linkedin.html"
       url: "https://www.linkedin.com/in/thinkty/"
-    - label: "Resume"
-      icon: "fab fa-fw fa-google-drive"
-      url: "https://docs.google.com/document/d/1ZUj5d5h8V0unP5-slkiXX6VEMkW4nEuMmBy4Kiy7Ais/edit?usp=sharing"
 
-# Site Footer
-# footer:
-#   links:
-#     - label: "Email"
-#       icon: "fas fa-fw fa-envelope-square"
-#       url: "mailto:the.thinkty@gmail.com"
-#     - label: "Github"
-#       icon: "fab fa-fw fa-github"
-#       url: "https://github.com/thinkty"
-#     - label: "LinkedIn"
-#       icon: "fab fa-fw fa-linkedin"
-#       url: "https://www.linkedin.com/in/thinkty/"
 
 # Reading Files
 include:
@@ -107,7 +84,6 @@ sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
@@ -133,10 +109,22 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: "post"
+      layout: post
       read_time: true  # add 'read_time: false' to front matter to override
+
+# Archiving
+jekyll-archives:
+  enabled:
+    - categories
+  layouts:
+    category: archive
+  permalinks:
+    category: /categories/:name/
 
 # Plugins
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-archives
   - jemoji
