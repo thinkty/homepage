@@ -30,6 +30,7 @@ body {
   margin: 0;
   min-height: 100%;
   overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .post-meta { text-align: right; }
@@ -37,6 +38,8 @@ body {
 h2, h3, h4, h5, h6 { margin-top: 3rem; }
 
 hr { margin: 2rem 0; }
+
+a { color: #ffa500; }
 
 p { margin: 1rem 0; }
 
@@ -67,8 +70,10 @@ table, th, td {
 }
 
 code {
-  color: white;
-  background: black;
+  background: #383838;
+  border-radius: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 div.highlighter-rouge code {
