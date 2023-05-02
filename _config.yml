@@ -19,7 +19,6 @@
 # in the templates via {{ site.myvariable }}.
 
 # Site settings
-theme                 : no-style-please
 locale                : "en-US" # ko-KR , en-US
 title                 : "Blog"
 subtitle              : ""
@@ -28,12 +27,14 @@ description           : ""
 baseurl               : "" # the subpath of your site, e.g. /blog
 url                   : "https://thinkty.net" # the base hostname & protocol for your site
 repository            : "thinkty/homepage"
-head_scripts          : # add scripts to the <head>
-footer_scripts        : # add scripts to the </body>
 logo                  : "https://avatars.githubusercontent.com/u/38105214"
 words_per_minute      : 200 # for estimating reading time
 email                 : "the.thinkty@gmail.com"
 github_username       : "thinkty"
+
+# Theme settings
+favicon               : "assets/icons/favicon.ico"
+theme                 : no-style-please
 
 # SEO Related do this after you get a domain name
 # google_site_verification : Done through DNS
@@ -92,6 +93,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - script/
+  - _archived/
   - README.md
   - LICENSE
 keep_files:
@@ -129,19 +131,10 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "single"
+      layout: "post"
       read_time: true  # add 'read_time: false' to front matter to override
-      comments: false
-      author_profile: false
-      share: false
-      related: false
-  - scope:
-      path: ""
-      type: category
-    values:
-      comments: false
 
 # Plugins
 plugins:
