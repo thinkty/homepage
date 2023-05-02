@@ -1,7 +1,7 @@
 ---
-title:  "Using the AWS Cost Explorer to Stop Bill Bombs"
+title:  "Using The AWS Cost Explorer"
 date:   2022-10-05
-categories: Updates
+categories: general
 ---
 
 From time to time, I see posts on reddit where a user accidentally gets charged with stupendous amounts of bill due to some mistake they made in the past.

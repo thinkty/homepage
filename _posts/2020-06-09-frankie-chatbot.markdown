@@ -1,7 +1,7 @@
 ---
-title:  "Frankie: a chatbot to train your cognitive health"
+title:  "Frankie - Cognitive Health Training With A Chatbot"
 date:   2020-06-09
-categories: Projects
+categories: projects
 toc: true
 ---
 ## Intro

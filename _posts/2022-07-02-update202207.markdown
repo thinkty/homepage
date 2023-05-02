@@ -1,7 +1,7 @@
 ---
 title:  "2022.06 - RPI server"
 date:   2022-07-02
-categories: Updates
+categories: updates
 ---
 
 In June, I setup a local server with the Raspberry Pi.

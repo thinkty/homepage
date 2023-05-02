@@ -1,7 +1,7 @@
 ---
 title:  "2022.05 - Local Election, LeetCode"
 date:   2022-06-04
-categories: Updates
+categories: updates
 ---
 
 May was a very busy month due to the Local Election.

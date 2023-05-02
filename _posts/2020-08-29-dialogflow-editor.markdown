@@ -1,7 +1,7 @@
 ---
-title:  "Source Chat: a platform to manage your chatbots with an intuitive editor"
+title:  "Source Chat - Chatbot Platform Using Dialogflow NLP"
 date:   2020-08-29
-categories: Projects
+categories: projects
 toc: true
 ---
 

@@ -1,7 +1,7 @@
 ---
-title:  "Searching with StackExchange VS GoogleCustomSearch"
+title:  "Searching With StackExchange"
 date:   2020-06-04
-categories: Updates
+categories: general
 toc: true
 ---
 
@@ -52,7 +52,7 @@ In the previously mentioned website, the author creates a method to dynamically 
 However, since we are using React, I think it will be better to put it in the *componentDidMount* method so that the script will automatically be loaded as soon as our component is mounted.
 The example code would be like the following:
 
-{% highlight javascript %}
+```
 componentDidMount() {
 
   // create element and set parameters
@@ -73,7 +73,7 @@ render() {
     <div className="gcse-search"/>
   );
 }
-{% endhighlight %}
+```
 
 With the script ready, when I reload the app, my customized search bar appears.
 

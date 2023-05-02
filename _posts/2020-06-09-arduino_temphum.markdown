@@ -1,7 +1,7 @@
 ---
-title:  "Using the Arduino Uno as a portable climate reader"
+title:  "Arduino Sensor"
 date:   2020-06-09
-categories: Projects
+categories: projects
 toc: true
 ---
 
@@ -43,7 +43,7 @@ In addition, you will have to manually download the libraries for the dependenci
 ### Actual Code
 Now that the required library is installed, let's go into the code used for the tasks.
 
-{% highlight c %}
+```
 #include <DHT.h>
 
 #define BIT_PER_SEC 9600
@@ -88,11 +88,10 @@ void loop() {
   Serial.print(" *C  |  Light: ");
   Serial.println(sunlight);
 }
-{% endhighlight %}
+```
 
 The code is really simple as it just reads from the sensors every 250 ms and print the values.
-The printed values can be checked using the `Serial Monitor`
-> `Tool` > `Serial Monitor`
+The printed values can be checked using the `Serial Monitor` > `Tool` > `Serial Monitor`
 
 Result:
 ![console_log](/assets/images/2020-06-09-arduino_temphum-2.png)

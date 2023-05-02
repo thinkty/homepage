@@ -1,7 +1,7 @@
 ---
 title:  "My Second Internship"
 date:   2020-06-22
-categories: Updates
+categories: general
 ---
 
 It has been a while since I wrote a post.

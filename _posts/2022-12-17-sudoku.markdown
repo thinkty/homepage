@@ -1,14 +1,11 @@
 ---
 title:  "Terminal Sudoku"
 date:   2022-12-17
-categories: Projects
+categories: projects
 ---
 
 One of my favorite classic game is Sudoku.
 Sudoku is a 9-by-9 square grid game where the player has to fill in each cell from 1 to 9 in a way that there isn't a duplicate in the row, column, and the 3-by-3 box.
-
-![sudoku](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg/1024px-Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg.png)
-
 For the past following weeks, I've been addicted to Sudoku.
 The rules are very simple, but it is often times quite challenging and it's a great way to feel like a genius with minimum effort.
 

@@ -1,7 +1,7 @@
 ---
-title:  "SoSiZi - Monthly News Delivery Application"
+title:  "SoSiZi - Local News Delivery App"
 date:   2022-02-20
-categories: Projects
+categories: projects
 toc: true
 ---
 

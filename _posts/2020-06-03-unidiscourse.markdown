@@ -1,13 +1,10 @@
 ---
-title:  "University Discourse: RateMyProfessor but for courses"
+title:  "University Discourse - RateMyProfessor For Courses"
 date:   2020-06-03
-categories: Projects
+categories: projects
 toc: true
 ---
 
-![Logo of University Discourse](/assets/images/2020-06-03-unidiscourse-1.png)
-
-## Intro
 University Discourse is a web application that my team and I made for CS 307: Software Engineering. 
 In simple words, University Discourse is [RateMyProfessor](https://www.ratemyprofessors.com/) but for courses and it it more focused on socializing.
 It is very similar to [Reddit](https://www.reddit.com/) and its [subreddit pages for schools](https://www.reddit.com/r/Purdue) where students often post questions about specific courses and share thoughts on it.

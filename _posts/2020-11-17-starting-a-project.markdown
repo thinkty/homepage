@@ -1,7 +1,7 @@
 ---
-title:  "How to start a project - V1"
+title:  "How To Start A Project"
 date:   2020-11-26
-categories: Updates
+categories: general
 toc: true
 ---
 

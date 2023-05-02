@@ -1,7 +1,7 @@
 ---
-title:  "Switching to Manjaro Linux (+ Installation Guide)"
+title:  "Switching To Manjaro Linux (+ Installation Guide)"
 date:   2020-09-04
-categories: Updates
+categories: general
 ---
 
 I did it.

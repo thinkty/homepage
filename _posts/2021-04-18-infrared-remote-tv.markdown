@@ -1,7 +1,7 @@
 ---
-title:  "Arduino TV remote"
+title:  "Arduino TV Remote"
 date:   2021-04-18
-categories: Projects
+categories: projects
 toc: true
 ---
 
@@ -37,7 +37,7 @@ The cables are spaghetti, but it works!
 Let's go through the codes line by line.
 (also for the future me when I decide to come back to it)
 
-{% highlight cpp %}
+```
 // IR
 // LG has data bits similar to NEC but in reverse (Most Significant Bit first)
 #define IR_SEND_PIN 8
@@ -132,7 +132,7 @@ void loop() {
   // PushButton input
   readPushButton();
 }
-{% endhighlight %}
+```
 
 [Github](https://github.com/thinkty/arduino-remote)
 
@@ -142,13 +142,13 @@ In addition, the user can navigate through the menu screen using the joystick.
 
 Starting from the beginning,
 
-{% highlight cpp %}
+```
 // IR
 // LG has data bits similar to NEC but in reverse (Most Significant Bit first)
 #define IR_SEND_PIN 8
 #include <IRremote.h>
 IRData IRSendData;
-{% endhighlight %}
+```
 
 This part is getting the IR library and declaring the variables necessary for sending the IR signals.
 As stated in the comments, LG has a similar protocol to NEC.
@@ -161,7 +161,7 @@ The protocol that I have just explained is very similar to NEC.
 
 Since the code for sending in NEC protocol sends it LSB first, I used the MSB first method. (which is the LG way)
 
-{% highlight cpp %}
+```
 // Joystick
 #define JOY_X A0
 #define JOY_Y A1
@@ -179,11 +179,11 @@ dir current;
 // Confirm Button
 #define CONFIRM_BUTTON 5
 #define CONFIRM_CMD 0x20DF22DD
-{% endhighlight %}
+```
 
 Here, the variables (such as pin and command) related to the buttons and joystick used for user input is initialized.
 
-{% highlight cpp %}
+```
 // Function to read the direction of the joystick based on x and y values
 void readJoystick() {
   int x = analogRead(JOY_X);
@@ -219,12 +219,12 @@ void readJoystick() {
     }
   }
 }
-{% endhighlight %}
+```
 
 This is the function for reading joystick input where x and y values are used to decide the direction.
 I think this part could have been coded better.
 
-{% highlight cpp %}
+```
 // Function to read from multiple (power, settings, confirm) push-buttons
 void readPushButton() {
   if (digitalRead(POWER_BUTTON) == HIGH) {
@@ -242,12 +242,12 @@ void readPushButton() {
     delay(110);
   }
 }
-{% endhighlight %}
+```
 
 Same as the function for the joystick, this is the function for the push buttons.
 On push, ```IrSender.sendNECMSB()``` is called which is the function for sending the MSB first.
 
-{% highlight cpp %}
+```
 void setup() {
   Serial.begin(9600);
   pinMode(POWER_BUTTON, INPUT);
@@ -264,7 +264,7 @@ void loop() {
   // PushButton input
   readPushButton();
 }
-{% endhighlight %}
+```
 
 This last part quite summarizes the whole code in one page.
 Here, the buttons and the IR module are initialized and awaits for user input to send.
