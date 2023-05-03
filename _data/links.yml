@@ -1,0 +1,14 @@
+
+entries:
+  - label: "Portfolio"
+    icon: "icons/portfolio.html"
+    url: "https://portfolio.thinkty.net/"
+  - label: "Email"
+    icon: "icons/email.html"
+    url: "mailto:the.thinkty@gmail.com"
+  - label: "GitHub"
+    icon: "icons/github.html"
+    url: "https://github.com/thinkty"
+  - label: "LinkedIn"
+    icon: "icons/linkedin.html"
+    url: "https://www.linkedin.com/in/thinkty/"
