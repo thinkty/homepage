@@ -15,9 +15,9 @@ entries:
   - title: Categories
     entries:
       - title: Updates
-        url: categories/updates
+        url: categories/updates/
       - title: General
-        url: categories/general
+        url: categories/general/
       - title: Projects
-        url: categories/projects
+        url: categories/projects/
 
