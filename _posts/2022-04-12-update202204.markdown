@@ -1,7 +1,7 @@
 ---
 title:  "2022.03 - About Page, AWS Lambda, Heroklock"
 date:   2022-04-12
-categories: Updates
+categories: updates
 ---
 
 Updating my About page was an objective which I have been postponing for quite a while.

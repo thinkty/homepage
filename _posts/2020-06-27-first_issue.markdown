@@ -1,6 +1,7 @@
 ---
-title:  "Just opened my first issue on Github"
+title:  "My First Issue On Github"
 date:   2020-06-27
+categories: general
 ---
 2 days ago (2020-06-25), I opened my first [issue](https://github.com/uber/react-digraph/issues/227) on Github.
 The issue was related to the graphing component provided by Uber called [React-Digraph](https://github.com/uber/react-digraph), which is extremely easy to use and customize.

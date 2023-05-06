@@ -1,14 +1,14 @@
 ---
-title:  "Brief Overview of the Network"
+title:  "Computer Networks"
 date:   2022-12-21
-categories: Updates
+categories: general
 toc: true
 ---
 
 This semester, I've taken the *Computer Networks* course and I think it is one of the most valuable lectures to me.
 So, I intend to write this post to leave some notes for the future me and others that might be interested.
 My goal is to keep it as compact as possible while covering (what I think are) some of the most important components of the network.
-As the course was covering the entire network stack in one semester, I doubt I will be correct on everything, so please let [me](mailto:the.thinkty@gmail.com) know 😎.
+As the course was covering the entire network stack in one semester, I doubt I will be correct on everything, so please let [me](mailto:the.thinkty@gmail.com) know.
 
 ## Intro
 

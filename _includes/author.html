@@ -1,0 +1,68 @@
+<h3>
+  Experience
+</h3>
+
+<ul>
+  {% for item in site.data.author.experiences %}
+  <li>
+    <div>
+      <div>
+        <a target="_blank" href="{{ item.url }}" rel="nofollow noopener noreferrer">{{ item.name }}</a>
+        <strong>
+          {{ item.label }}
+        </strong>
+      </div>
+      <div>
+        <code>
+          {{ item.from }}
+          ~
+          {{ item.to }}
+        </code>
+      </div>
+    </div>
+    <p>{{ item.description }}</p>
+  </li>
+  {% endfor %}
+</ul>
+
+<h3>
+  Projects
+</h3>
+
+<ul>
+  {% for item in site.data.author.projects %}
+  <li class="projects">
+
+    <div class="header">
+    {{ item.label }}
+
+    {% if item.repo %}
+      <a class="link" target="_blank" href="{{ item.repo }}" rel="nofollow noopener noreferrer">
+        {% include icons/github.html %}
+      </a>
+    {% endif %}
+
+    {% if item.video %}
+      <a class="link" target="_blank" href="{{ item.video }}" rel="nofollow noopener noreferrer">
+        {% include icons/video.html %}
+      </a>
+    {% endif %}
+
+    {% if item.demo %}
+      <a class="link" target="_blank" href="{{ item.demo }}" rel="nofollow noopener noreferrer">
+        {% include icons/demo.html %}
+      </a>
+    {% endif %}
+
+    {% if item.post %}
+      <a class="link" target="_blank" href="{{ item.post }}" rel="nofollow noopener noreferrer">
+        {% include icons/post.html %}
+      </a>
+    {% endif %}
+    </div>
+
+    <p>{{ item.description }}</p>
+  </li>
+  {% endfor %}
+</ul>
+

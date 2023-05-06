@@ -1,0 +1,23 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  - title: About Me
+    url: about
+
+  - title: Posts
+    post_list:
+      limit: 7
+      show_more: true
+      show_more_text: More...
+      show_more_url: posts
+
+  - title: Categories
+    entries:
+      - title: Updates
+        url: categories/updates/
+      - title: General
+        url: categories/general/
+      - title: Projects
+        url: categories/projects/
+

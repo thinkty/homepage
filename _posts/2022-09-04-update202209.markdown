@@ -1,7 +1,7 @@
 ---
 title:  "2022.08 - AWS Node.js update, Migration"
 date:   2022-09-04
-categories: Updates
+categories: updates
 ---
 
 Fall semester has started and it's been two weeks into it already.

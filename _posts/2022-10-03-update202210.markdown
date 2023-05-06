@@ -1,7 +1,7 @@
 ---
 title:  "2022.09 - Courses, Internship, Portfolio"
 date:   2022-10-03
-categories: Updates
+categories: updates
 ---
 
 I feel like a sail boat caught in a tide, trying its best not to get sucked into a maelstrom.
