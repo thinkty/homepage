@@ -1,0 +1,9 @@
+---
+title:  "Delta Over-The-Air Device Firmware Update"
+date:   2023-05-07
+categories: projects
+---
+
+
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OVTAAwbDiMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
