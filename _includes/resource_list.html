@@ -1,0 +1,17 @@
+
+{% for list in include.collection %}
+    <h2>{{ list.name }}</h2>
+
+    <ul>
+        {% for item in list.entries %}
+            <li>
+                <a href="{{ item.url }}">{{ item.name }}</a>
+
+                {% if item.desc %}
+                    :
+                    {{ item.desc }}
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endfor %}

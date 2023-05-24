@@ -5,6 +5,9 @@ entries:
   - title: About Me
     url: about
 
+  - title: Resources
+    url: resources
+
   - title: Posts
     post_list:
       limit: 7
