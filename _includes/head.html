@@ -2,6 +2,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="naver-site-verification" content="98b5fdc4dc43700435b3b8df6e39626b80ac3d15" />
 
   <title>
     {%- if page.title -%}
@@ -11,9 +12,8 @@
     {%- endif -%}
   </title>
 
-  {%-seo title=false-%}
-  {%-feed_meta-%}
-
+  {% seo title=false %}
+  {% feed_meta %}
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">

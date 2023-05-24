@@ -26,16 +26,16 @@ baseurl          : "" # the subpath of your site, e.g. /blog
 url              : "https://thinkty.net" # the base hostname & protocol for your site
 words_per_minute : 200 # for estimating reading time
 email            : "the.thinkty@gmail.com"
+author           : "Tae Yoon Kim"
 
 # Theme settings
 favicon               : "assets/favicons/favicon.ico"
 theme                 : no-style-please
 
 # SEO Related do this after you get a domain name
-# google_site_verification : Done through DNS
+# google_site_verification : Done through DNS record
 # bing_site_verification   : 
 # yandex_site_verification :
-naver_site_verification  : "eaa1419db9b1c75438ab6fd30f85df2ef9aefcfc"
 
 # Reading Files
 include:
