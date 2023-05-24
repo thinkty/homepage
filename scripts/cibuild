@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-# Halt script on error
-set -e
-
-# Build the Jekyll page and push the contents to Algolia index
-bundle exec jekyll build
-bundle exec jekyll algolia
