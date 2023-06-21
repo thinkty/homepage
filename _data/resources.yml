@@ -43,6 +43,9 @@ entries:
     - name: ICANN Lookup
       url: https://lookup.icann.org/en
       desc: Look up registration data for domain names and internet number resources.
+    - name: RegExr
+      url: https://regexr.com/
+      desc: Quickly test your regular expression.
   - name: Misc
     entries:
     - name: 프로그래머스
