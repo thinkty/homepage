@@ -1,6 +1,17 @@
 
 name: "Tae Yoon Kim"
 experiences:
+  - label: "Internship"
+    name: "Samsung Electronics"
+    url: "https://www.samsung.com/sec/about-us/company-info/"
+    from: "2023 June"
+    to: "Present"
+  - label: "Internship"
+    name: "HTX"
+    url: "https://www.htx-global.com/"
+    from: "2023 May"
+    to: "2023 June"
+    description: "Designed a micro-service architecture diagram for the Platform as a Service product with close supervision from the CTO. Composed a software design document specifying the purpose, goals, and requirements to fulfill the HIPAA rules (security, privacy) with case-specific sequence diagrams."
   - label: "Military Service"
     name: "ROKA"
     url: "http://www.army.mil.kr/webapp/user/indexMain.do?siteId=english"
