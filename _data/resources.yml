@@ -46,7 +46,7 @@ entries:
     - name: RegExr
       url: https://regexr.com/
       desc: Quickly test your regular expression.
-  - name: Misc
+  - name: Algorithm Practice
     entries:
     - name: 프로그래머스
       url: https://programmers.co.kr/
@@ -56,6 +56,8 @@ entries:
       url: https://www.acmicpc.net/
     - name: LeetCode
       url: https://leetcode.com/problemset/all/
+  - name: Misc
+    entries:
     - name: 원티드
       url: https://www.wanted.co.kr/
     - name: picoCTF
