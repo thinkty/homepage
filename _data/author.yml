@@ -6,6 +6,7 @@ experiences:
     url: "https://www.samsung.com/sec/about-us/company-info/"
     from: "2023 June"
     to: "Present"
+    description: "Joined the Modem S/W team in the Network division and implemented an SPA to improve the process of debugging/monitoring the devices connected to the network by visualizing logs from the gNB (5G) Distributed Units in the form of interactive and intuitive graphs."
   - label: "Internship"
     name: "HTX"
     url: "https://www.htx-global.com/"
