@@ -46,6 +46,9 @@ entries:
     - name: RegExr
       url: https://regexr.com/
       desc: Quickly test your regular expression.
+    - name: Pinout
+      url: https://pinout.xyz/#
+      desc: Raspberry Pi GPIO pinout
   - name: Algorithm Practice
     entries:
     - name: 프로그래머스
