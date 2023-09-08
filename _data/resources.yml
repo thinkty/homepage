@@ -49,6 +49,9 @@ entries:
     - name: Pinout
       url: https://pinout.xyz/#
       desc: Raspberry Pi GPIO pinout
+    - name: MermaidJS
+      url: https://mermaid.live/
+      desc: Diagramming and charting tool
   - name: Algorithm Practice
     entries:
     - name: 프로그래머스
