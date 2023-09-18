@@ -52,6 +52,9 @@ entries:
     - name: MermaidJS
       url: https://mermaid.live/
       desc: Diagramming and charting tool
+    - name: Elixir
+      url: https://elixir.bootlin.com/linux/latest/source
+      desc: Web-based Linux cross referencer
   - name: Algorithm Practice
     entries:
     - name: 프로그래머스
