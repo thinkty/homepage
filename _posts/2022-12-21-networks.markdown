@@ -5,70 +5,41 @@ categories: general
 toc: true
 ---
 
-This semester, I've taken the *Computer Networks* course and I think it is one of the most valuable lectures to me.
-So, I intend to write this post to leave some notes for the future me and others that might be interested.
-My goal is to keep it as compact as possible while covering (what I think are) some of the most important components of the network.
-As the course was covering the entire network stack in one semester, I doubt I will be correct on everything, so please let [me](mailto:the.thinkty@gmail.com) know.
+This semester, I’ve taken the Computer Networks course, and I think it is one of the most valuable lectures to me. So, I intend to write this post to leave some notes for future me and others that might be interested. My goal is to keep it as compact as possible while covering (what I think are) some of the most important components of the network. As the course covered the entire network stack in one semester, I doubt I will be correct on everything, so please let [me](mailto:the.thinkty@gmail.com) know.
 
 ## Intro
 
-There were so many topics to cover and the course tried to put as much as it can in one semester while approaching it top-down into the network stack.
-Although there seems to be quite a discrepancy on how to divide the network stack into layers, in this course, we started from the *application* layer with protocols like HTTP, FTP, SMTP, etc. 
-Then, we covered the *transport* layer (UDP/TCP/QUIC) with quite a focus on TCP.
-Next, we continued to the *network* layer where we learned about the Internet Protocol and various inter-AS (BGP) & intra-AS (linked state & distance vector) protocols.
-Finally, we went over the *link* layer (MAC) with a short trip to the *physical* layer.
-One of the key things to keep in mind is the fact that the layers are *quite* independent of each other.
-For example, when we implement a simple HTTP server to host our webpage, we don't usually consider how the `html` file would travel through the congested network or how it would get fragmented in the IP layer.
-We simply use the API that handles the HTTP as instructed and go on our lives.
-A beauty of abstraction.
+There were so many topics to cover, and the course tried to go over as much as it could in one semester while approaching it top-down in the network stack. Although there seems to be quite a discrepancy on how to divide the network stack into layers, in this course, we started from the application layer with protocols like HTTP, FTP, SMTP, etc. Then, we covered the transport layer (UDP/TCP/QUIC) with quite a focus on TCP. Next, we continued to the network layer, where we learned about the Internet Protocol and various inter-AS (BGP) and intra-AS (linked state and distance vector) protocols. Finally, we went over the link layer (MAC) with a short trip to the physical layer. One of the key things to keep in mind is the fact that the layers are quite independent of each other. For example, when we implement a simple HTTP server to host our webpage, we don’t usually consider how the HTML file would travel through the congested network or how it would get fragmented in the IP layer. We simply use the API that handles the HTTP as instructed and go on with our lives. The beauty of abstraction.
 
-There were also various components of the network like DNS (and its various records), CDN, client-server vs P2P, web caches & proxies, circuit switching vs packet switching, clustering coefficients, and more.
-However, the course was mostly focused on the transport layer and how the IP packets actually traverse through the net using various protocols.
+There were also various components of the network, like DNS (and its various records), CDN, client-server vs. P2P, web caches and proxies, circuit switching vs. packet switching, clustering coefficients, and more. However, the course was mostly focused on the transport layer and how IP packets actually traverse through the net using various protocols.
 
 ## The Delay
 
-Before starting with the application layer, I think it's crucial to know about the various *delays* that are in the network.
-The most common case of experiencing delays is through online multiplayer games.
-Some online games show the delay using the term *ping*.
-With a high ping, the player will experience significant discomfort and lag.
-Sometimes, one could even get disconnected from the server.
+Before starting with the application layer, I think it’s crucial to know about the various *delays* that are in the network. The most common way to experience delays is through online multiplayer games. Some online games show the delay using the term *ping*. With a high ping, the player will experience significant discomfort and lag. Sometimes, one could even get disconnected from the server.
 
-The delays are categorized into 4 types: Propagation, Transmission, Processing, and Queueing.
-- Propagation delay is the time it takes to travel through the physical medium such as the Ethernet cables or WiFi.
-If two points are far away, the propagation delay would increase proportionate to the distance.
-- Transmission delay is the time it takes to send bits into the link.
-When sending massive HTTP requests compared to small DHCP requests, the HTTP request would take longer to transmit.
-This delay is calculated by dividing the packet size by the bandwidth of the link.
-- Processing delay is the time it takes to handle the packet.
-To see if the packet is corrupted, checksum is often used.
-When calculating the checksum of the packet, it often differs by protocol, length, and other factors.
-- Queueing delay is the time it takes for a packet to wait in queue for it to be handled.
-There could be various reasons for the queue.
-For example, the router on the other end could be busy due to a sudden increase in traffic.
-In extreme cases, the sent packet could be dropped.
+The delays are categorized into four types: propagation, transmission, processing, and queueing.
+- Propagation delay is the time it takes to travel through a physical medium such as Ethernet cables or WiFi. If two points are far away, the propagation delay would increase proportionate to the distance.
+- Transmission delay is the time it takes to send bits into the link. When sending massive HTTP requests compared to small DHCP requests, the HTTP request would take longer to transmit. This delay is calculated by dividing the packet size by the bandwidth of the link.
+- Processing delay is the time it takes to handle the packet. To see if the packet is corrupted, a checksum is often used. When calculating the checksum of the packet, it often differs by protocol, length, and other factors.
+- Queueing delay is the time it takes for a packet to wait in the queue for it to be handled. There could be various reasons for the queue. For example, the router on the other end could be busy due to a sudden increase in traffic. In extreme cases, the sent packet could be dropped.
 
-Compared to other I/O (File, Memory, etc), network delays (latency) are oftentimes highest and there are so many factors that contribute to the delay.
-So, it's always crucial to keep in mind of these delays when implementing network operations.
+Compared to other I/O (file, memory, etc.), network delays (latency) are oftentimes the highest, and there are so many factors that contribute to the delay. So, it’s always crucial to keep in mind these delays when implementing network operations.
 
 ## Application Layer
 
-Finally starting with the application layer, this is the layer that most applications interact with.
-Although there are various protocols, I want to focus on HTTP and its versions.
-HTTP usually is built on TCP for its reliability.
-TCP is able to be quite reliable due to its handshake process.
-During the handshake process, there is a sequence of packets sent and received between the two hosts to ensure that they are ready to exchange data.
+Finally, starting with the application layer, this is the layer that most applications interact with. Although there are various protocols, I want to focus on HTTP and its versions. HTTP is usually built on TCP for its reliability. TCP is able to be quite reliable due to its handshake process. During the handshake process, there is a sequence of packets sent and received between the two hosts to ensure that they are ready to exchange data.
 
 ### HTTP
 
-One of the key aspects of HTTP/1.0, was that the connection was non-persistent. Everytime it needed to send a file or object, the hosts had to go through the handshake process.
+One of the key aspects of HTTP/1.0 was that the connection was non-persistent. Every time it needed to send a file or object, the hosts had to go through the handshake process.
 
-In HTTP/1.1, the connection became persistent and it also included support for pipelining where multiple objects could be transferred at once.
+In HTTP/1.1, the connection became persistent, and it also included support for pipelining, where multiple objects could be transferred at once.
 
-Next came HTTP/2.0 where a lot of changes were made. There were client-specified object priority to get certain objects quicker. Also, the server could *push* unrequested objects to the client proactively instead of waiting for the client to request it. A significant improvement was the feature to divide an object into frames and sending the frames from different objects intertwined. This mitigated the Head-Of-Line blocking where other objects would wait on a large one in front.
+Next came HTTP/2.0, where a lot of changes were made. There were client-specified object priorities to get certain objects faster. Also, the server could push unrequested objects to the client proactively instead of waiting for the client to request them. A significant improvement was the feature of dividing an object into frames and sending the frames from different objects intertwined. This mitigated the Head-Of-Line blocking where other objects would wait on a large one in front.
 
-In HTTP/3.0, security was one of the focus and there was per object error-control to mitigate packet loss recovery that stalled transmission.
+In HTTP/3.0, security was a focus, and there was per-object error control to mitigate packet loss recovery that stalled transmission.
 
-Although there are other protocols such as SMTP (to push emails from/to mail servers), and FTP (a stateful protocol that has different ports for command and data : out-of-band), I think looking at the evolution of HTTP was quite interesting as the shift of focus could be seen.
+Although there are other protocols such as SMTP (to push emails from or to mail servers) and FTP (a stateful protocol that has different ports for command and data out-of-band), I think looking at the evolution of HTTP was quite interesting as the shift of focus could be seen.
 
 ### DNS
 
