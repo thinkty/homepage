@@ -8,13 +8,6 @@ entries:
   - title: Resources
     url: resources
 
-  - title: Posts
-    post_list:
-      limit: 7
-      show_more: true
-      show_more_text: More...
-      show_more_url: posts
-
   - title: Categories
     entries:
       - title: Updates
@@ -24,3 +17,9 @@ entries:
       - title: Projects
         url: categories/projects/
 
+  - title: Posts
+    post_list:
+      limit: 7
+      show_more: true
+      show_more_text: More...
+      show_more_url: posts
