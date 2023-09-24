@@ -34,6 +34,31 @@
   align-items: center;
   justify-content: center;
 
+  .letters {
+    display: flex;
+    flex-direction: row;
+
+    .letter {
+      margin: 3px;
+      text-decoration: none;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        padding: 5px;
+        background: #ffa500;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .divider {
+    width: 160px;
+    height: 1px;
+    background-color: white;
+    margin: -3px 0 3px 0;
+  }
+
   .links {
     display: flex;
     flex-direction: row;
