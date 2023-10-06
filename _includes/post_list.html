@@ -12,15 +12,11 @@
 {% endif %}
 
 {% if posts.size > 0 %}
-  <ul>
-    {% for post in posts limit: include.limit %}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </li>
-    {% endfor %}
+  {% for post in posts limit: include.limit %}
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  {% endfor %}
 
-    {% if include.show_more and limit_exceeded %}
-      <li><a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "Show more..." }}</a></li>
-    {% endif %}
-  </ul>
+  {% if include.show_more and limit_exceeded %}
+    <a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "Show more..." }}</a>
+  {% endif %}
 {% endif %}

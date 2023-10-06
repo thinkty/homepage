@@ -2,24 +2,29 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: About Me
+  - type: link
+    name: About Me
     url: about
 
-  - title: Resources
+  - type: link
+    name: Resources
     url: resources
 
-  - title: Categories
+  - type: menu
+    name: Categories
     entries:
-      - title: Updates
+      - type: link
+        name: Updates
         url: categories/updates/
-      - title: General
+      - type: link
+        name: General
         url: categories/general/
-      - title: Projects
+      - type: link
+        name: Projects
         url: categories/projects/
 
-  - title: Posts
-    post_list:
-      limit: 7
-      show_more: true
-      show_more_text: More...
-      show_more_url: posts
+  - type: posts
+    name: Posts
+    limit: 7
+    show_more_url: posts/
+    show_more_text: ...

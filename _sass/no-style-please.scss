@@ -93,7 +93,9 @@ blockquote {
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
   display: block;
   margin: 0 auto;
+  border: solid 3px white;
+  border-radius: 5px;
 }
