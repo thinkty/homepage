@@ -6,9 +6,15 @@
 
 // Custom styles
 
+.post-title {
+  text-align: center;
+}
+
 .post-meta {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  color: grey;
 }
 
 .page-404 {
@@ -33,7 +39,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10vh 0 18px 0;
+  margin: 5vh 0 32px 0;
 
   .letters {
     display: flex;
@@ -115,8 +121,26 @@
   gap: 3px;
   font-size: large;
 
-  p.submenu {
+  .submenu {
     margin: 0;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    .divider {
+      flex: 1;
+      border: thin dashed grey;
+    }
+
+    p {
+      margin: 0;
+      color: lightgrey;
+      user-select: none;
+    }
   }
 }
 
