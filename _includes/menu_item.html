@@ -10,13 +10,21 @@
 
       {% when "menu" %}
 
-        <p class="submenu">{{ item.name }}</p>
+        <div class="submenu">
+          <div class="divider"></div>
+          <p>{{ item.name }}</p>
+          <div class="divider"></div>
+        </div>
 
         {% include menu_item.html collection=item.entries %}
 
       {% when "posts" %}
 
-        <p class="submenu">{{ item.name }}</p>
+        <div class="submenu">
+          <div class="divider"></div>
+          <p>{{ item.name }}</p>
+          <div class="divider"></div>
+        </div>
 
         {% include post_list.html
           limit=item.limit
@@ -30,30 +38,3 @@
   {% endfor %}
 
 </div>
-
-<!-- <ul>
-  {% for item in include.collection %}
-    <li>
-      {% case item.type %}
-
-        {% when "link" %}
-
-          <a href="{{ item.url }}">{{ item.name }}</a>
-
-        {% when "posts" %}
-
-          Posts :&nbsp;
-
-          {% for category in item.categories %}
-            <a href="{{ category.url }}">{{ category.name }}</a>&nbsp;&nbsp;&nbsp;
-          {% endfor %}
-
-          {% include post_list.html
-            tags=item.tags
-            limit=item.limit
-          %}
-
-      {% endcase %}
-    </li>
-  {% endfor %}
-</ul> -->
