@@ -40,14 +40,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 12px;
   margin: 5vh 0 32px 0;
 
   .letters {
     display: flex;
     flex-direction: row;
+    gap: 18px;
 
     .letter {
-      margin: 3px;
       text-decoration: none;
 
       svg {
@@ -74,20 +75,12 @@
     }
   }
 
-  .divider {
-    width: 160px;
-    height: 3px;
-    background-color: white;
-    border-radius: 100px;
-    margin: -3px 0 3px 0;
-  }
-
   .links {
     display: flex;
     flex-direction: row;
+    gap: 18px;
   
     .link {
-      margin: 3px;
       text-decoration: none;
 
       svg {
