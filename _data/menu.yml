@@ -27,4 +27,3 @@ entries:
     name: Posts
     limit: 7
     show_more_url: posts/
-    show_more_text: ...
