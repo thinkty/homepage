@@ -1,68 +1,57 @@
-<h3>
+
+<h2>
   Experience
-</h3>
+</h2>
 
-<ul>
+<div class="experience_list">
   {% for item in site.data.author.experiences %}
-  <li>
-    <div>
-      <div>
-        <a target="_blank" href="{{ item.url }}" rel="nofollow noopener noreferrer">{{ item.name }}</a>
-        <strong>
-          {{ item.label }}
-        </strong>
+    <a class="item" href="{{ item.url }}" rel="nofollow noopener noreferrer">
+      <div class="date">{{ item.from }} - {{ item.to }}</div>
+      <div class="header">
+        <div class="name">{{ item.name }}</div>
+        <div class="separator">▕ </div>
+        <div class="label">{{ item.label }}</div>
       </div>
-      <div>
-        <code>
-          {{ item.from }}
-          ~
-          {{ item.to }}
-        </code>
-      </div>
-    </div>
-    <p>{{ item.description }}</p>
-  </li>
+      <div class="description">{{ item.description }}</div>
+    </a>
   {% endfor %}
-</ul>
+</div>
 
-<h3>
+<h2>
   Projects
-</h3>
+</h2>
 
-<ul>
+<div class="project_list">
   {% for item in site.data.author.projects %}
-  <li class="projects">
-
-    <div class="header">
-    {{ item.label }}
-
-    {% if item.repo %}
-      <a class="link" target="_blank" href="{{ item.repo }}" rel="nofollow noopener noreferrer">
-        {% include icons/github.html %}
-      </a>
-    {% endif %}
-
-    {% if item.video %}
-      <a class="link" target="_blank" href="{{ item.video }}" rel="nofollow noopener noreferrer">
-        {% include icons/video.html %}
-      </a>
-    {% endif %}
-
-    {% if item.demo %}
-      <a class="link" target="_blank" href="{{ item.demo }}" rel="nofollow noopener noreferrer">
-        {% include icons/demo.html %}
-      </a>
-    {% endif %}
-
-    {% if item.post %}
-      <a class="link" target="_blank" href="{{ item.post }}" rel="nofollow noopener noreferrer">
-        {% include icons/post.html %}
-      </a>
-    {% endif %}
+    <div class="item">
+      <div class="name">{{ item.label }}</div>
+      <div class="description">{{ item.description }}</div>
+      <div class="action">
+        {% if item.repo %}
+          <a class="action_item" href="{{ item.repo }}" rel="nofollow noopener noreferrer">
+            <div class="action_item_icon">{% include icons/github.html %}</div>
+            <div class="action_item_label">Source</div>
+          </a>
+        {% endif %}
+        {% if item.video %}
+          <a class="action_item" href="{{ item.video }}" rel="nofollow noopener noreferrer">
+            <div class="action_item_icon">{% include icons/video.html %}</div>
+            <div class="action_item_label">Video</div>
+          </a>
+        {% endif %}
+        {% if item.demo %}
+          <a class="action_item" href="{{ item.demo }}" rel="nofollow noopener noreferrer">
+            <div class="action_item_icon">{% include icons/demo.html %}</div>
+            <div class="action_item_label">Demo</div>
+          </a>
+        {% endif %}
+        {% if item.post %}
+          <a class="action_item" href="{{ item.post }}" rel="nofollow noopener noreferrer">
+            <div class="action_item_icon">{% include icons/post.html %}</div>
+            <div class="action_item_label">Post</div>
+          </a>
+        {% endif %}
+      </div>
     </div>
-
-    <p>{{ item.description }}</p>
-  </li>
   {% endfor %}
-</ul>
-
+</div>

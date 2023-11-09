@@ -12,18 +12,26 @@
 {% endif %}
 
 {% if posts.size > 0 %}
-  {% for post in posts limit: include.limit %}
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-  {% endfor %}
+
+  <div class="post_list">
+    {% for post in posts limit: include.limit %}
+      <a class="post" href="{{ post.url | relative_url }}" rel="nofollow noopener noreferrer">
+        <div class="date">
+          {{ post.date | date_to_string }}
+        </div>
+        <div class="title">
+          {{ post.title }}
+        </div>
+        <div class="excerpt">
+          {{ post.excerpt | strip_html }}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
 
   {% if include.show_more and limit_exceeded %}
-    <br/>
-    <a href="{{ include.show_more_url }}">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
-        <path xmlns="http://www.w3.org/2000/svg" d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="#ffa500"></path>
-        <path xmlns="http://www.w3.org/2000/svg" d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="#ffa500"></path>
-        <path xmlns="http://www.w3.org/2000/svg" d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="#ffa500"></path>
-      </svg>
+    <a class="showmore" href="{{ include.show_more_url }}" rel="nofollow noopener noreferrer">
+      {% include icons/showmore.html %}
     </a>
   {% endif %}
 {% endif %}

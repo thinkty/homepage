@@ -8,7 +8,26 @@ permalink: /resources
 
 <h1>Resources</h1>
 
-This page is a collection of links that points to useful resources similar to the <a target="_blank" href="https://github.com/sindresorhus/awesome" rel="nofollow noopener noreferrer">awesome list</a>.
-Classified by the type of resource, it contains some of the tools that I use most.
+<div class="resources_description">
+    This page is a collection of useful stuff.
+</div>
 
-{% include resource_list.html collection=site.data.resources.entries %}
+<div class="resource_list_list">
+    {% for list in site.data.resources.entries %}
+        <h2>{{ list.name }}</h2>
+        <div class="resource_list">
+            {% for item in list.entries %}
+                <a class="resource_item" href="{{ item.url }}" rel="nofollow noopener noreferrer">
+                    <div class="resource_item_name">{{ item.name }}</div>
+                    {% if item.desc %}
+                        <div class="resource_item_desc">{{ item.desc }}</div>
+                    {% endif %}
+                </a>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
+
+<a class="go_back" href="javascript:history.back()" rel="nofollow noopener noreferrer">
+    {% include icons/back.html %}
+</a>

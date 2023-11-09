@@ -4,13 +4,17 @@ layout: default
 
 <article>
 
-  <h1 class="post-title">{{ page.title }}</h1>
+  <h1 class="post_title">{{ page.title }}</h1>
 
-  <p class="post-meta">
-    {{ page.categories }}
-    <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
-  </p>
+  <div class="post_data">
+    {{ page.categories[0] | capitalize }}
+    <time datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>
+  </div>
 
   {{ content }}
 
 </article>
+
+<a class="go_back" href="javascript:history.back()" rel="nofollow noopener noreferrer">
+  {% include icons/back.html %}
+</a>

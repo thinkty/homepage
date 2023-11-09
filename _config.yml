@@ -19,18 +19,48 @@
 # in the templates via {{ site.myvariable }}.
 
 # Site settings
-locale           : "en-US" # ko-KR , en-US
-title            : "Blog"
-description      : "My personal blog where I post updates and projects"
-baseurl          : "" # the subpath of your site, e.g. /blog
-url              : "https://thinkty.net" # the base hostname & protocol for your site
-words_per_minute : 200 # for estimating reading time
-email            : "the.thinkty@gmail.com"
-author           : "Tae Yoon Kim"
+locale      : "en-US" # ko-KR , en-US
+title       : "thinkty.net"
+description : "My personal blog where I post updates and projects"
+baseurl     : "" # the subpath of your site, e.g. /blog
+url         : "https://thinkty.net" # the base hostname & protocol for your site
+email       : "the.thinkty@gmail.com"
+author      : "Tae Yoon Kim"
+post_limit  : 4
+posts_url   : "posts/"
+links:
+  - label: "Email"
+    icon: "icons/email.html"
+    url: "mailto:the.thinkty@gmail.com"
+  - label: "GitHub"
+    icon: "icons/github.html"
+    url: "https://github.com/thinkty"
+  - label: "LinkedIn"
+    icon: "icons/linkedin.html"
+    url: "https://www.linkedin.com/in/thinkty/"
+  - label: "About Me"
+    icon: "icons/aboutme.html"
+    url: "about"
+  - label: "Portfolio"
+    icon: "icons/portfolio.html"
+    url: "https://portfolio.thinkty.net/"
+  - label: "Resources"
+    icon: "icons/resources.html"
+    url: "resources"
+post_categories:
+  - label: "Updates"
+    icon: "icons/updates.html"
+    url: "categories/updates/"
+  - label: "General"
+    icon: "icons/general.html"
+    url: "categories/general/"
+  - label: "Projects"
+    icon: "icons/projects.html"
+    url: "categories/projects/"
 
 # Theme settings
-favicon               : "assets/favicons/favicon.ico"
-theme                 : no-style-please
+favicon : "assets/favicons/favicon.ico"
+theme   : 
 
 # SEO Related do this after you get a domain name
 # google_site_verification : Done through DNS record

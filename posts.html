@@ -1,11 +1,15 @@
 ---
 layout: default
-title: Posts
+title: all
 
 namespace: posts
 permalink: /posts/
 ---
 
-<h1>{{ page.title }}</h1>
+<h1>{{ page.title | capitalize }}</h1>
 
-{% include archive_list.html %}
+{% include post_list.html %}
+
+<a class="go_back" href="javascript:history.back()" rel="nofollow noopener noreferrer">
+    {% include icons/back.html %}
+</a>

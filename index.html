@@ -2,6 +2,54 @@
 layout: default
 ---
 
-{% include title.html %}
+<h1>
+    [&nbsp;{{ site.title }}&nbsp;]
+</h1>
 
-{% include menu_item.html collection=site.data.menu.entries %}
+<div class="divider">
+    Links
+</div>
+
+<div class="links">
+    {% for link in site.links %}
+        <a class="link" href="{{ link.url }}" rel="nofollow noopener noreferrer">
+            <div class="icon">
+                {% if link.icon %}
+                    {% include {{ link.icon }} %}
+                {% endif %}
+            </div>
+            <div class="label">
+                {{ link.label }}
+            </div>
+        </a>
+    {% endfor %}
+</div>
+
+<div class="divider">
+    Post Categories
+</div>
+
+<div class="links">
+    {% for category in site.post_categories %}
+        <a class="link" href="{{ category.url }}" rel="nofollow noopener noreferrer">
+            <div class="icon">
+                {% if category.icon %}
+                    {% include {{ category.icon }} %}
+                {% endif %}
+            </div>
+            <div class="label">
+                {{ category.label }}
+            </div>
+        </a>
+    {% endfor %}
+</div>
+
+<div class="divider">
+    New Posts
+</div>
+
+{% include post_list.html
+    limit=site.post_limit
+    show_more=true
+    show_more_url=site.posts_url
+%}

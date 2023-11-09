@@ -4,4 +4,8 @@ layout: default
 
 <h1>{{ page.title | capitalize }}</h1>
 
-{% include archive_list.html category=page.title %}
+{% include post_list.html category=page.title %}
+
+<a class="go_back" href="javascript:history.back()" rel="nofollow noopener noreferrer">
+    {% include icons/back.html %}
+</a>

@@ -6,11 +6,13 @@ namespace: about
 permalink: /about
 ---
 
-<h3>
-  Hi,
-</h3>
+<h1>About Me</h1>
 
 My name is {{ site.data.author.name }} and I am a senior majoring in computer science at Purdue university.
 I am in the systems software track and the security track.
 
 {% include author.html %}
+
+<a class="go_back" href="javascript:history.back()" rel="nofollow noopener noreferrer">
+  {% include icons/back.html %}
+</a>

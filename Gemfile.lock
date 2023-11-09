@@ -72,10 +72,6 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
     minitest (5.19.0)
-    no-style-please (0.1.0)
-      jekyll (~> 4.1)
-      jekyll-feed (~> 0.14)
-      jekyll-seo-tag (~> 2.6)
     nokogiri (1.14.3-x86_64-linux)
       racc (~> 1.4)
     pathutil (0.16.2)
@@ -110,7 +106,6 @@ DEPENDENCIES
   jekyll-sitemap
   jemoji
   kramdown (>= 2.3.0)
-  no-style-please
   tzinfo (~> 2.0)
   tzinfo-data
   wdm (~> 0.1.1)

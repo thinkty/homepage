@@ -33,6 +33,3 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo-data"
   gem "wdm", "~> 0.1.1" # Performance-booster for watching directories on Windows
 end
-
-# For the theme: no-style-please (https://github.com/riggraz/no-style-please)
-gem "no-style-please"
