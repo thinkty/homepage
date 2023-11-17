@@ -86,7 +86,14 @@ li { margin: 0.4rem 0; }
   .divider {
     width: 100%;
     text-align: center;
-    margin: 16px 0;
+    margin: 12px 0;
+    font-size: small;
+    color: #777777;
+    user-select: none;
+
+    &::before, &::after {
+      content: '•';
+    }
   }
 }
 

@@ -6,10 +6,6 @@ layout: default
     [&nbsp;{{ site.title }}&nbsp;]
 </h1>
 
-<div class="divider">
-    Links
-</div>
-
 <div class="links">
     {% for link in site.links %}
         <a class="link" href="{{ link.url }}" rel="nofollow noopener noreferrer">
@@ -26,7 +22,7 @@ layout: default
 </div>
 
 <div class="divider">
-    Post Categories
+    Categories
 </div>
 
 <div class="links">
@@ -45,7 +41,7 @@ layout: default
 </div>
 
 <div class="divider">
-    New Posts
+    Posts
 </div>
 
 {% include post_list.html
