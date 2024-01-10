@@ -3,8 +3,12 @@ layout: default
 ---
 
 <h1>
-    [&nbsp;{{ site.title }}&nbsp;]
+    {{ site.title | upcase }}
 </h1>
+
+<div class="divider">
+    Links
+</div>
 
 <div class="links">
     {% for link in site.links %}

@@ -88,7 +88,7 @@ li { margin: 0.4rem 0; }
     text-align: center;
     margin: 12px 0;
     font-size: small;
-    color: #777777;
+    color: #999999;
     user-select: none;
 
     &::before, &::after {
@@ -427,6 +427,7 @@ article {
 .lost {
   width: 100%;
   margin-top: 30vh;
+  margin-bottom: 5vh;
   text-align: center;
   font-size: 5rem;
   font-weight: bold;
@@ -438,11 +439,6 @@ article {
       -12px 20px 0 #0000ff,
       -16px 25px 0 #4b0082,
       -20px 30px 0 #9400d3;
-
-  .meh {
-    color: transparent;
-    text-shadow: 0 0 8px #ffffff;
-  }
 }
 
 .footer {
