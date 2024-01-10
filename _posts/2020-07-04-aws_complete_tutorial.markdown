@@ -68,37 +68,36 @@ Image from the AWS guide.
 
 
 ## Connecting your website to your domain name
-Now that the static website is on the internet and available to the public, we should be able to connect our domain name and be done. Right?
-
-![not so fast](https://i.kym-cdn.com/entries/icons/original/000/028/596/dsmGaKWMeHXe9QuJtq_ys30PNfTGnMsRuHuo_MUzGCg.jpg)
-
+Now that the static website is on the internet and available to the public, we should be able to connect our domain name and be done, but not yet.
 We can connect our domain using Route 53 to our bucket and use it. However, there is one thing we missed: [**HTTPS**](https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/).
 
-Connecting to Route 53 and calling it a day will leave your website with HTTP, which is not secure at all as anyone can tap in to your packets to see the contents, host, ip addresses and probably more. 
+Connecting to Route 53 and calling it a day will leave your website with HTTP, which is not secure at all as anyone can tap in to your packets to see the contents, host, ip addresses and probably more.
 To encrypt those packets, we need to use HTTPS to communicate.
+Although this is just a blog, we can use this opportunity to learn new things!
 
 In order to setup HTTPS, we need an [SSL/TLS certificate](https://www.cloudflare.com/learning/ssl/what-is-ssl/).
 An SSL/TLS certificate is used to encrypt your data that is transmitted across the web.
 AWS also provides a service to provide public SSL certificates for free called ACM.
+By getting our certificate through AWS, it will take care of renewal of certificates.
 
-![virginia](/assets/images/2020-07-04-aws_complete_tutorial-1.png)
+![virginia](/assets/images/2020-07-04-aws_complete_tutorial-2.png)
 
-As of date, you must create the certificate in Virginia to make it work with CloudFront which I will explain later.
+At the time of writing this post, you must create the certificate in Virginia to make it work with CloudFront which I will explain later.
 
 I highly recommend that you follow [this post](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html) to create a free public certificate.
 
 With the certificate ready and verified with your method of choice, let's move on to distributing our resource (website) using that certificate.
 
 ## Using a CDN to serve your website fast and secure
-What is a CDN?
+What is a Content Delivery Network?
 That is a question which [Wiki](https://en.wikipedia.org/wiki/Content_delivery_network) will answer.
-The way I understood is that it is a bunch of servers and data centers around the world to serve contents faster depending on the client's location.
+My understanding is that it is a bunch of big and small servers around the world to serve contents faster by being physically closer to whoever is requesting.
 
-Amazon provides a CDN service called CloudFront which also has the option to support HTTPS with your public certificate.
+Amazon provides a CDN service called [CloudFront](https://aws.amazon.com/cloudfront/) which also has the option to support HTTPS with your public certificate.
 I would love to just drop the link to the official guide on how to connect your bucket and the public certificate to a CloudFront distribution, but there is something that the guide is missing.
 So, let's do this together!
 
-First, go to the CloudFront service dashboard / main page.
+First, go to the CloudFront service dashboard.
 Click on the blue `Create Distribution` button to create our CloudFront distribution.
 Since we want a web distribution, click on `Get Started` for web.
 
@@ -108,7 +107,7 @@ You can read more about each option by clicking the information icon.
 I highly recommend reading about all of the options as it can also affect the pricing.
 
 Next, under `Distribution Settings`, the option to choose `Custom SSL Certificate` should be available.
-Choose your public certificate.
+Choose your public certificate from earlier.
 Sometimes, it takes several hours after validation of your public certificate for this option to be enabled.
 So, don't panic like me and wander off to google just to end up with the same result.
 With the SSL certificate set, make sure that the distribution state is `enabled` and click on `Create Distribution`.
@@ -131,40 +130,37 @@ Finally, after all those services, we have our website ready.
 
 Your website is ready, but you will probably see something like *Access Denied* or some error when you go to your website.
 If not and if you think your website is pretty and ready, you can rest and feel proud of yourself.
-If you see errors, welcome to **Part 2** of this post.
+If you the errors persist after a few hours, welcome to **Part 2** of this post.
 
-The problem you are facing is probably due to the url.
+The problem you are facing is probably due to the URL.
 The downside of using a CDN is that it tries to fetch exactly what the user has requested.
 
-For example, if I enter the url: 
-```
-example.com
-```
+For example, if I enter the URL:
+> example.com
 
 I expect to see the contents of 
-```
-example.com/index.html
-```
+> example.com/index.html
 
-When you use the host static website option with S3 and just connect to a domain name, this is taken care of.
+When you use the `host static website` option with S3 and just connect to a domain name, this is taken care of.
 However, when CloudFront steps in, it will try to go for exactly what the user has asked.
-So, if you try your website with /index.html, it should show the contents that you wanted.
+So, if you try your website with `/index.html`, it should show the contents that you wanted.
 If it doesn't, it is time for you to go to google and I wish you the best.
 
 To solve this problem, the incoming requests should be modified so that if the target url is a directory, it should try to lead them to the index.html in that directory instead.
-This can be solved using a service called [**Lambda@Edge**](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html).
+~~This can be solved using a service called [Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html)~~
 
-Again, I recommend going through this [post](https://medium.com/@chrispointon/default-files-in-s3-subdirectories-using-cloudfront-and-lambda-edge-941100a3c629) to configure Lambda@Edge for your CloudFront distribution so that the index.html in subdirectories can be shown to the user.
+*edit: per my recent [post](/general/2024/01/10/cloudfront_functions.html), I recommend using Cloudfront Functions instead of Lambda for this use case
+
+~~Again, I recommend going through this [post](https://medium.com/@chrispointon/default-files-in-s3-subdirectories-using-cloudfront-and-lambda-edge-941100a3c629) to configure Lambda@Edge for your CloudFront distribution so that the index.html in subdirectories can be shown to the user.~~
 
 ## Conclusion and the Pricing
 This was my first time using AWS, but I previously used Heroku or Netlify to host applications.
-The main difference about the two groups is that AWS gives me more freedom.
-It feels like I am playing with LEGO blocks to build an amazing set.
-I can combine multiple services that all integrate extremely well with each other to perform some mind blowing tasks.
+The main difference about the two groups is that AWS gives me more freedom in the configuration while the others handle it for me.
 
-Also, the price is significantly cheaper compared to other services.
+Also, the price is significantly cheaper compared to other services, but one must always keep watch on the usage as it can get expensive quick.
 So far, I am only paying 50 cents per month for my blog due to Route 53 and $12 per year for my domain that I have registered on AWS.
-At this price, I think it is definitely worth it compared to Heroku or Netlify.
+However, the price may differ depending on your settings so I highly recommend you read the pricing pages.
+Here's the [link](https://aws.amazon.com/free/) to the free-tier AWS services.
 
 For my blog, I used multiple services to host a static website.
 My plan is to use computational servers to run backend programs and it is already in development :)
