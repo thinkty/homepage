@@ -20,7 +20,7 @@
 
 # Site settings
 locale      : "en-US" # ko-KR , en-US
-title       : "thinkty.net"
+title       : "ThinkTY"
 description : "My personal blog where I post updates and projects"
 baseurl     : "" # the subpath of your site, e.g. /blog
 url         : "https://thinkty.net" # the base hostname & protocol for your site
