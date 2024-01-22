@@ -6,10 +6,13 @@ namespace: about
 permalink: /about
 ---
 
+{% include me.html %}
+
 <h1>About Me</h1>
 
-My name is {{ site.data.author.name }} and I am a senior majoring in computer science at Purdue university.
-I am in the systems software track and the security track.
+<p>My name is {{ site.data.author.name }} and I am a senior majoring in computer science at Purdue university.
+  I am in the systems software track and the security track.</p>
+
 
 {% include author.html %}
 
