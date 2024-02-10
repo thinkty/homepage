@@ -12,6 +12,9 @@ entries:
     - name: unDraw
       url: https://undraw.co/illustrations
       desc: Free & no attribution required illustrations for various scenarios.
+    - name: Text to ASCII Art
+      url: https://patorjk.com/software/taag/
+      desc: Convert text into ASCII art with hundreds of styles.
   - name: News
     entries:
     - name: MOSFET
