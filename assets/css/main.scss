@@ -47,23 +47,9 @@ li { margin: 0.4rem 0; }
   align-items: center;
   justify-content: center;
 
-  h1.title {
-    font-size: 5rem;
-    margin: 30px 0 10px 0;
+  pre.title {
+    font-size: 0.4rem;
     text-align: center;
-    line-height: 1;
-    position: relative;
-
-    &:before {
-      content: attr(data-heading);
-      position: absolute;
-      overflow: hidden;
-      color: skyblue;
-      width: 100%;
-      z-index: 5;
-      left: 0%;
-      text-align: left;
-    }
   }
 
   .links {
