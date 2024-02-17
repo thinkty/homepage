@@ -113,9 +113,13 @@ hr {
 table { width: 100%; }
 
 table, th, td {
-  border: thin solid black;
+  border: thin solid white;
   border-collapse: collapse;
   padding: 0.4rem;
+}
+
+th {
+  background-color: #383838;
 }
 
 code {
