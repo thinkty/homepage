@@ -41,13 +41,68 @@ As someone who is not so familiar with hardware in general, based on what I've f
 So, although this is not exactly comparing bit-by-bit, I went with byte-by-byte comparison.
 The error rates are probably higher than the actual, but my main purpose was to compare between different baudrates.
 
-| Baudrate (bps) | TX Bytes | TX Error Bytes | TX Error Rate |  RX Bytes | RX Error Bytes | RX Error Rate |
-|---|---|---|---|---|---|---|
-| 9600 | 23855 | 0 | 0 % | 27216 | 0 | 0 % |
-| 19200 | 19465 | 1 | 0.005137 % | 27180 | 9 | 0.033113 % |
-| 38400 | 35037 | 171 | 0.488055 % | 27918 | 539 | 1.930654 % |
-| 57600 |  29416 | 76 | 0.258363 % | 12642 | 703 | 5.560829 % |
-| 112500 | 29484 | 3858 | 13.085063 % | 3041 | 1367 | 44.952318 % |
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+            <th>Baudrate (bps)</th>
+            <th>TX Bytes</th>
+            <th>TX Error Bytes</th>
+            <th>TX Error Rate</th>
+            <th>RX Bytes</th>
+            <th>RX Error Bytes</th>
+            <th>RX Error Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>9600</td>
+            <td>23855</td>
+            <td>0</td>
+            <td>0 %</td>
+            <td>27216</td>
+            <td>0</td>
+            <td>0 %</td>
+            </tr>
+            <tr>
+            <td>19200</td>
+            <td>19465</td>
+            <td>1</td>
+            <td>0.005137 %</td>
+            <td>27180</td>
+            <td>9</td>
+            <td>0.033113 %</td>
+            </tr>
+            <tr>
+            <td>38400</td>
+            <td>35037</td>
+            <td>171</td>
+            <td>0.488055 %</td>
+            <td>27918</td>
+            <td>539</td>
+            <td>1.930654 %</td>
+            </tr>
+            <tr>
+            <td>57600</td>
+            <td>29416</td>
+            <td>76</td>
+            <td>0.258363 %</td>
+            <td>12642</td>
+            <td>703</td>
+            <td>5.560829 %</td>
+            </tr>
+            <tr>
+            <td>112500</td>
+            <td>29484</td>
+            <td>3858</td>
+            <td>13.085063 %</td>
+            <td>3041</td>
+            <td>1367</td>
+            <td>44.952318 %</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 ![graph](/assets/images/2024-02-16-software_serial.svg)
 

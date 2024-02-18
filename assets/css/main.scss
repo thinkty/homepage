@@ -110,7 +110,11 @@ hr {
   &:after { content: attr(data-content) '/////' }
 }
 
-table { width: 100%; }
+.table-container {
+  max-width: 98vw;
+  display: flex;
+  overflow: auto;
+}
 
 table, th, td {
   border: thin solid white;
