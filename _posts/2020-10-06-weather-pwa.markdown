@@ -58,7 +58,7 @@ As far as I know, Chrome and Firefox has the developer tools accessible (usually
 Another key point is Viewport.
 According to [W3Schools](https://www.w3schools.com/css/css_rwd_viewport.asp) the viewport is the user's visible area of a web page.
 
-```
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 

@@ -35,7 +35,7 @@ A good starting template for your out-of-tree module can be found [here](https:/
 Below is my recipe for the 7-segment device driver, and some of the additional points to look at would be the md5 checksum on the license, and a subtle update to `SRC_URI` to meet the requirements.
 At the end of the recipe, we append the prefix `kernel-module-` before our recipe name since that is just how it is added by inheriting the `module` class. 
 
-```
+```shell
 SUMMARY = "n7d-module"
 DESCRIPTION = "Numerical 7-segment display device driver"
 LICENSE = "GPL-2.0-or-later"

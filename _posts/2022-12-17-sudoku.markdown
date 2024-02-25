@@ -31,7 +31,7 @@ In each try, the corresponding row, column, and box is checked to make sure that
 If the number is valid, move on to the next cell and do the same recursively until all cells are filled.
 If none of the number can fit, it *backtracks* to the previous cell and try with the next number.
 
-```
+```c
 // From https://github.com/thinkty/tsdk/blob/main/src/solve.c#L10
 
 int solve(char * answ, int index)

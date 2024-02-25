@@ -37,7 +37,7 @@ The cables are spaghetti, but it works!
 Let's go through the codes line by line.
 (also for the future me when I decide to come back to it)
 
-```
+```cpp
 // IR
 // LG has data bits similar to NEC but in reverse (Most Significant Bit first)
 #define IR_SEND_PIN 8
@@ -142,7 +142,7 @@ In addition, the user can navigate through the menu screen using the joystick.
 
 Starting from the beginning,
 
-```
+```cpp
 // IR
 // LG has data bits similar to NEC but in reverse (Most Significant Bit first)
 #define IR_SEND_PIN 8
@@ -161,7 +161,7 @@ The protocol that I have just explained is very similar to NEC.
 
 Since the code for sending in NEC protocol sends it LSB first, I used the MSB first method. (which is the LG way)
 
-```
+```cpp
 // Joystick
 #define JOY_X A0
 #define JOY_Y A1
@@ -183,7 +183,7 @@ dir current;
 
 Here, the variables (such as pin and command) related to the buttons and joystick used for user input is initialized.
 
-```
+```cpp
 // Function to read the direction of the joystick based on x and y values
 void readJoystick() {
   int x = analogRead(JOY_X);
@@ -224,7 +224,7 @@ void readJoystick() {
 This is the function for reading joystick input where x and y values are used to decide the direction.
 I think this part could have been coded better.
 
-```
+```cpp
 // Function to read from multiple (power, settings, confirm) push-buttons
 void readPushButton() {
   if (digitalRead(POWER_BUTTON) == HIGH) {
@@ -247,7 +247,7 @@ void readPushButton() {
 Same as the function for the joystick, this is the function for the push buttons.
 On push, ```IrSender.sendNECMSB()``` is called which is the function for sending the MSB first.
 
-```
+```cpp
 void setup() {
   Serial.begin(9600);
   pinMode(POWER_BUTTON, INPUT);

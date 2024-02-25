@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem "jekyll-archives"
   gem "jemoji"
   gem "kramdown", ">= 2.3.0"
+  gem "rouge"
   gem "webrick", "~> 1.7"
 end
 

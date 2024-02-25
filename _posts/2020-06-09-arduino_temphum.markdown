@@ -43,7 +43,7 @@ In addition, you will have to manually download the libraries for the dependenci
 ### Actual Code
 Now that the required library is installed, let's go into the code used for the tasks.
 
-```
+```cpp
 #include <DHT.h>
 
 #define BIT_PER_SEC 9600
