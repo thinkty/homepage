@@ -20,7 +20,7 @@
 
 # Site settings
 locale      : "en-US" # ko-KR , en-US
-title       : "ThinkTY"
+title       : "thinkty.net"
 description : "My personal blog where I post updates and projects"
 baseurl     : "" # the subpath of your site, e.g. /blog
 url         : "https://thinkty.net" # the base hostname & protocol for your site
@@ -28,22 +28,20 @@ email       : "the.thinkty@gmail.com"
 author      : "Tae Yoon Kim"
 post_limit  : 4
 posts_url   : "posts/"
-links:
+socials:
   - label: "Email"
-    icon: "icons/email.html"
     url: "mailto:the.thinkty@gmail.com"
-  - label: "GitHub"
-    icon: "icons/github.html"
-    url: "https://github.com/thinkty"
   - label: "LinkedIn"
-    icon: "icons/linkedin.html"
     url: "https://www.linkedin.com/in/thinkty/"
+  - label: "Portfolio"
+    url: "https://portfolio.thinkty.net/"
+links:
   - label: "About Me"
     icon: "icons/aboutme.html"
     url: "about"
-  - label: "Portfolio"
-    icon: "icons/portfolio.html"
-    url: "https://portfolio.thinkty.net/"
+  - label: "GitHub"
+    icon: "icons/github.html"
+    url: "https://github.com/thinkty"
   - label: "Resources"
     icon: "icons/resources.html"
     url: "resources"
