@@ -5,16 +5,53 @@ entries:
     entries:
     - name: Mono Icons
       url: https://icons.mono.company/
-      desc: A simple, open-source, no attribution required icon set.
+      desc: A simple open-source icon set. No attribution required.
     - name: Simple Icons
       url: https://simpleicons.org/
-      desc: Free SVG icons for popular brands with no attribution required.
+      desc: Free SVG icons for numerous brands. No attribution required.
     - name: unDraw
       url: https://undraw.co/illustrations
-      desc: Free & no attribution required illustrations for various scenarios.
+      desc: Free illustrations with custom colors. No attribution required.
     - name: Text to ASCII Art
       url: https://patorjk.com/software/taag/
       desc: Convert text into ASCII art with hundreds of styles.
+  - name: Tools
+    entries:
+    - name: Create App
+      url: https://createapp.dev/
+      desc: Frontend build config (Webpack, Parcel, etc.) generator.
+    - name: No-IP
+      url: https://www.noip.com/
+      desc: Limited free dynamic DNS service for quick testing.
+    - name: ngrok
+      url: https://ngrok.com/
+      desc: Expose and test local projects by tunneling.
+    - name: jwt.io
+      url: https://jwt.io/#debugger
+      desc: Encode & decode JSON Web Tokens.
+    - name: ICANN Lookup
+      url: https://lookup.icann.org/en
+      desc: Look up registration data for domain names and internet number resources.
+    - name: RegExr
+      url: https://regexr.com/
+      desc: Test your regular expression.
+    - name: Pinout
+      url: https://pinout.xyz/#
+      desc: Raspberry Pi GPIO pinout.
+    - name: MermaidJS
+      url: https://mermaid.live/
+      desc: Diagramming and charting tool.
+    - name: Elixir
+      url: https://elixir.bootlin.com/linux/latest/source
+      desc: Web-based Linux cross referencer.
+  - name: Misc.
+    entries:
+    - name: Neocities
+      url: https://neocities.org/browse
+      desc: Collection of cool personal websites.
+    - name: picoCTF
+      url: https://play.picoctf.org/practice?category=1&page=1
+      desc: Place to learn security via capture-the-flag.
   - name: News
     entries:
     - name: MOSFET
@@ -28,49 +65,4 @@ entries:
       desc: Social news website focusing on computer science and entrepreneurship.
     - name: Embedsys Weekly
       url: https://embedsysweekly.com/issues/
-      desc: Weekly newsletter on embedded software and hardware articles
-  - name: Tools
-    entries:
-    - name: Create App
-      url: https://createapp.dev/
-      desc: Frontend build config (Webpack, Parcel, etc.) generator.
-    - name: no-ip
-      url: https://www.noip.com/
-      desc: Limited free dynamic DNS service for quick testing.
-    - name: ngrok
-      url: https://ngrok.com/
-      desc: Quickly expose and test local projects by tunneling with ngrok.
-    - name: jwt.io
-      url: https://jwt.io/#debugger
-      desc: Quickly encode & decode JSON Web Tokens
-    - name: ICANN Lookup
-      url: https://lookup.icann.org/en
-      desc: Look up registration data for domain names and internet number resources.
-    - name: RegExr
-      url: https://regexr.com/
-      desc: Quickly test your regular expression.
-    - name: Pinout
-      url: https://pinout.xyz/#
-      desc: Raspberry Pi GPIO pinout
-    - name: MermaidJS
-      url: https://mermaid.live/
-      desc: Diagramming and charting tool
-    - name: Elixir
-      url: https://elixir.bootlin.com/linux/latest/source
-      desc: Web-based Linux cross referencer
-  - name: Algorithm Practice
-    entries:
-    - name: 프로그래머스
-      url: https://programmers.co.kr/
-    - name: CodeSignal
-      url: https://app.codesignal.com/
-    - name: 백준
-      url: https://www.acmicpc.net/
-    - name: LeetCode
-      url: https://leetcode.com/problemset/all/
-  - name: Misc
-    entries:
-    - name: 원티드
-      url: https://www.wanted.co.kr/
-    - name: picoCTF
-      url: https://play.picoctf.org/practice?category=1&page=1
+      desc: Weekly newsletter on embedded software and hardware articles.

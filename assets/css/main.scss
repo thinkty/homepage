@@ -647,39 +647,32 @@ article {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
-  .resource_list {
+  .resource_list_header {
+    margin: 1rem 0;
+    user-select: none;
+  }
+
+  ul {
     width: 100%;
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-auto-rows: 1fr;
-    gap: 1rem;
-  
-    .resource_item {
-      height: 100%;
-      border: thin solid #555555;
-      border-radius: 10px;
-      background-color: #333333;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-      text-decoration: none;
-      padding: 5px;
-  
-      &:hover {
-        background-color: #444444;
-      }
-  
-      .resource_item_name {
-        color: #dddddd;
-        font-size: medium;
-        font-weight: bold;
-      }
-  
-      .resource_item_desc {
-        color: #aaaaaa;
-        font-size: small;
+    list-style-type: circle;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0 1rem;
+
+    li {
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0.5rem;
+
+        a {
+          white-space: nowrap;
+        }
       }
     }
   }

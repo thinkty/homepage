@@ -9,22 +9,26 @@ permalink: /resources
 <h1>Resources</h1>
 
 <div class="resources_description">
-    This page is a collection of useful stuff.
+    This page is a collection of useful resources.
 </div>
 
 <div class="resource_list_list">
     {% for list in site.data.resources.entries %}
-        <h2>{{ list.name }}</h2>
-        <div class="resource_list">
+        <h2 class="resource_list_header">‣ {{ list.name }}</h2>
+        <ul>
             {% for item in list.entries %}
-                <a class="resource_item" href="{{ item.url }}" rel="nofollow noopener noreferrer">
-                    <div class="resource_item_name">{{ item.name }}</div>
-                    {% if item.desc %}
-                        <div class="resource_item_desc">{{ item.desc }}</div>
-                    {% endif %}
-                </a>
+                <li>
+                    <div>
+                        <a href="{{ item.url }}" rel="nofollow noopener noreferrer">
+                            {{ item.name }}
+                        </a>
+                        {% if item.desc %}
+                            <div>{{ item.desc }}</div>
+                        {% endif %}
+                    </div>
+                </li>
             {% endfor %}
-        </div>
+        </ul>
     {% endfor %}
 </div>
 
