@@ -20,7 +20,19 @@ permalink: /about
 <div class="socials">
   {% for social in site.socials %}
     <a class="social" href="{{ social.url }}" rel="nofollow noopener noreferrer">
-      {{ social.label }}
+      <div class="icon">
+        {% if social.icon %}
+            {% include {{ social.icon }} %}
+        {% endif %}
+      </div>
+      <div class="label">
+          {{ social.label}}
+          {% if social.sup %}
+            <sup>
+              {{social.sup}}
+            </sup>
+          {% endif %}
+      </div>
     </a>
   {% endfor %}
 </div>
@@ -29,15 +41,16 @@ permalink: /about
 
 <div class="experience_list">
   {% for item in site.data.author.experiences %}
-    <a class="item" href="{{ item.url }}" rel="nofollow noopener noreferrer">
-      <div class="date">{{ item.from }} - {{ item.to }}</div>
-      <div class="header">
-        <div class="name">{{ item.name }}</div>
-        <div class="separator">▕ </div>
-        <div class="label">{{ item.label }}</div>
-      </div>
-      <div class="description">{{ item.description }}</div>
-    </a>
+    <div class="experience_item">
+      <div class="experience_item_marker">{{ item.from }}</div>
+      <a class="experience_item_content" href="{{ item.url }}" rel="nofollow noopener noreferrer">
+        <div class="title">
+          <div class="name">{{ item.name }}</div>
+          <div class="label">{{ item.label }}</div>
+        </div>
+        <div class="description">{{ item.description }}</div>
+      </a>
+    </div>
   {% endfor %}
 </div>
 

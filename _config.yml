@@ -30,11 +30,15 @@ post_limit  : 4
 posts_url   : "posts/"
 socials:
   - label: "Email"
+    icon: "icons/email.html"
     url: "mailto:the.thinkty@gmail.com"
   - label: "LinkedIn"
+    sup: "®"
+    icon: "icons/linkedin.html"
     url: "https://www.linkedin.com/in/thinkty/"
-  - label: "Portfolio"
-    url: "https://portfolio.thinkty.net/"
+  - label: "Instagram"
+    icon: "icons/instagram.html"
+    url: "https://www.instagram.com/_thinkty_/"
 links:
   - label: "About Me"
     icon: "icons/aboutme.html"
