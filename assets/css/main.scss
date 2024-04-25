@@ -345,6 +345,7 @@ article {
   justify-content: center;
 
   pre.title {
+    user-select: none;
     margin-top: 5rem;
     font-size: 0.4rem;
     text-align: center;
