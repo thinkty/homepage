@@ -1,6 +1,17 @@
 # List of useful resources to be shown in the /resources page.
 
 entries:
+  - name: Books
+    entries:
+    - name: Linux Device Drivers (3rd)
+      url: https://lwn.net/Kernel/LDD3/
+      desc: A little outdated (ex. missing platform_drivers) on the details, but good on the introduction of Linux device drivers.
+    - name: Understanding the Linux Kernel (3rd)
+      url: https://www.cs.utexas.edu/~rossbach/cs380p/papers/ulk3.pdf
+      desc: Deep dive into how Linux works. It's been some years since it was written, but I think it is still relevant.
+    - name: Linux Inside
+      url: https://0xax.gitbooks.io/linux-insides/content/
+      desc: Little bit of typo here and there but overall a very good document on Linux similar to ULK3.
   - name: Art
     entries:
     - name: Mono Icons
