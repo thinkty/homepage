@@ -65,15 +65,15 @@ entries:
       desc: Place to learn security via capture-the-flag.
   - name: News
     entries:
-    - name: MOSFET
-      url: https://mosfet.net/
-      desc: News on latest tech services/products.
-    - name: HACKADAY.IO
-      url: https://hackaday.io/projects
-      desc: Various IoT projects from the community.
+    - name: LWN.net
+      url: https://lwn.net/
+      desc: News related to the Linux kernel and more.
     - name: Hacker News
       url: https://news.ycombinator.com/
       desc: Social news website focusing on computer science and entrepreneurship.
     - name: Embedsys Weekly
       url: https://embedsysweekly.com/issues/
       desc: Weekly newsletter on embedded software and hardware articles.
+    - name: HACKADAY.IO
+      url: https://hackaday.io/projects
+      desc: Various IoT projects from the community.
