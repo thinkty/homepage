@@ -1,17 +1,34 @@
 # List of useful resources to be shown in the /resources page.
 
 entries:
+  - name: News
+    entries:
+    - name: LWN.net
+      url: https://lwn.net/
+      desc: News related to the Linux kernel and more.
+    - name: Hacker News
+      url: https://news.ycombinator.com/
+      desc: Social news website focusing on computer science and entrepreneurship.
+    - name: Embedsys Weekly
+      url: https://embedsysweekly.com/issues/
+      desc: Weekly newsletter on embedded software and hardware articles.
+    - name: HACKADAY.IO
+      url: https://hackaday.io/projects
+      desc: Various IoT projects from the community.
   - name: Books
     entries:
     - name: Linux Device Drivers (3rd)
       url: https://lwn.net/Kernel/LDD3/
       desc: A little outdated (ex. missing platform_drivers) on the details, but good on the introduction of Linux device drivers.
+    - name: Linux Kernel Development (3rd)
+      url: https://www.doc-developpement-durable.org/file/Projets-informatiques/cours-&-manuels-informatiques/Linux/Linux%20Kernel%20Development,%203rd%20Edition.pdf
+      desc: Deep dive into how Linux works. It's been some years since it was written, but I believe it is still relevant.
     - name: Understanding the Linux Kernel (3rd)
       url: https://www.cs.utexas.edu/~rossbach/cs380p/papers/ulk3.pdf
-      desc: Deep dive into how Linux works. It's been some years since it was written, but I think it is still relevant.
+      desc: Deep dive into how Linux works. It's been some years since it was written, but I believe it is still relevant.
     - name: Linux Inside
       url: https://0xax.gitbooks.io/linux-insides/content/
-      desc: Little bit of typo here and there but overall a very good document on Linux similar to ULK3.
+      desc: Little bit of typo here and there but overall a very good documentation on Linux similar to ULK3.
   - name: Art
     entries:
     - name: Mono Icons
@@ -63,17 +80,3 @@ entries:
     - name: picoCTF
       url: https://play.picoctf.org/practice?category=1&page=1
       desc: Place to learn security via capture-the-flag.
-  - name: News
-    entries:
-    - name: LWN.net
-      url: https://lwn.net/
-      desc: News related to the Linux kernel and more.
-    - name: Hacker News
-      url: https://news.ycombinator.com/
-      desc: Social news website focusing on computer science and entrepreneurship.
-    - name: Embedsys Weekly
-      url: https://embedsysweekly.com/issues/
-      desc: Weekly newsletter on embedded software and hardware articles.
-    - name: HACKADAY.IO
-      url: https://hackaday.io/projects
-      desc: Various IoT projects from the community.
