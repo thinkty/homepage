@@ -65,19 +65,40 @@ th {
 code {
   background: #383838;
   border-radius: 5px;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding: 0 3px;
   tab-size: 2rem;
 }
 
+.copy-code-button {
+  position: absolute;
+  top: calc(1rem - 3px);
+  right: calc(1rem - 3px);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #525252;
+  border-radius: 100px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.highlight {
+  border-radius: 5px;
+}
+
 div.highlighter-rouge {
+
+  position: relative;
 
   .highlight code {
     display: block;
     max-height: 500px;
     overflow: auto;
     background: #383838;
-    border-radius: 3px;
     padding: 1rem;
     tab-size: 2rem;
   }
