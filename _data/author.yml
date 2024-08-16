@@ -1,8 +1,14 @@
 
 name: "Tae Yoon Kim"
 experiences:
+  - label: "Full Time"
+    name: "NAVER LABS"
+    url: "https://www.naverlabs.com/"
+    from: "2024 Jun"
+    to: "current"
+    description: "Embedded systems software engineer."
   - label: "Internship"
-    name: "Samsung Electronics"
+    name: "SAMSUNG"
     url: "https://www.samsung.com/sec/about-us/company-info/"
     from: "2023 Jun"
     to: "2023 Aug"
