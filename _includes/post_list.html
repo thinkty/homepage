@@ -2,7 +2,8 @@
 {% if include.category %}
   {% assign posts = site.categories[include.category] %}  
 {% else %}
-  {% assign posts = site.posts %}
+  <!-- This code is hideous but it's to hide monologue -->
+  {% assign posts = site.posts | where_exp:"post","post.categories contains 'general' or post.categories contains 'projects' or post.categories contains 'updates'" %}
 {% endif %}
 
 {% if include.limit and posts.size > include.limit %}

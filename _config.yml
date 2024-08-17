@@ -43,13 +43,13 @@ socials:
     icon: "icons/instagram.html"
     url: "https://www.instagram.com/_thinkty_/"
 links:
-  - label: "Intro."
+  - label: "About Me"
     icon: "icons/aboutme.html"
     url: "about"
-  - label: "Src."
+  - label: "Resources"
     icon: "icons/resources.html"
     url: "resources"
-  - label: "Mono."
+  - label: "독백"
     icon: "icons/mono.html"
     url: "monologue"
 post_categories:
