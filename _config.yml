@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -52,6 +52,9 @@ links:
   - label: "독백"
     icon: "icons/mono.html"
     url: "monologue"
+  - label: "재테크"
+    icon: "icons/investment.html"
+    url: "investment"
 post_categories:
   - label: "Updates"
     icon: "icons/updates.html"
@@ -65,11 +68,11 @@ post_categories:
 
 # Theme settings
 favicon : "assets/favicons/favicon.ico"
-theme   : 
+theme   :
 
 # SEO Related do this after you get a domain name
 # google_site_verification : Done through DNS record
-# bing_site_verification   : 
+# bing_site_verification   :
 # yandex_site_verification :
 
 # Reading Files
