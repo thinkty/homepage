@@ -1,6 +1,6 @@
 
 {% if include.category %}
-  {% assign posts = site.categories[include.category] %}  
+  {% assign posts = site.categories[include.category] %}
 {% else %}
   <!-- This code is hideous but it's to hide monologue -->
   {% assign posts = site.posts | where_exp:"post","post.categories contains 'general' or post.categories contains 'projects' or post.categories contains 'updates'" %}
@@ -32,7 +32,7 @@
 
   {% if include.show_more and limit_exceeded %}
     <a class="showmore" href="{{ include.show_more_url }}" rel="nofollow noopener noreferrer">
-      {% include icons/showmore.html %}
+      ...
     </a>
   {% endif %}
 {% endif %}
