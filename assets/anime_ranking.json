@@ -1,0 +1,1188 @@
+[
+  {
+    "title": "Cowboy Bebop",
+    "title_ko": "카우보이 비밥",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/1/Cowboy_Bebop",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/4/19644.jpg?s=aa40e14c009147bfdd64e4ac10692b3b",
+    "anime_id": 1
+  },
+  {
+    "title": "Howl's Moving Castle",
+    "title_ko": "하울의 움직이는 성",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/431/Howl_no_Ugoku_Shiro",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1470/138723.jpg?s=573abfbcfd540d115f66966441380c93",
+    "anime_id": 431
+  },
+  {
+    "title": "Nausicaä of the Valley of the Wind",
+    "title_ko": "바람의 계곡의 나우시카",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/572/Kaze_no_Tani_no_Nausicaä",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/10/75914.jpg?s=ecb5a24b684319d6963eb980ec1553c8",
+    "anime_id": 572
+  },
+  {
+    "title": "Your Name.",
+    "title_ko": "너의 이름은.",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/32281/Kimi_no_Na_wa",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/5/87048.jpg?s=6229957bf0186372369774708d38e1c8",
+    "anime_id": 32281
+  },
+  {
+    "title": "Ghost in the Shell",
+    "title_ko": "공각기동대 (극장판)",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/43/Koukaku_Kidoutai",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/10/82594.jpg?s=6a38398c27b945933b41ceed8a2f5328",
+    "anime_id": 43
+  },
+  {
+    "title": "Princess Mononoke",
+    "title_ko": "원령공주",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/164/Mononoke_Hime",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1355/147277.jpg?s=3e6e44e1868a9356a0ace67faee8ba24",
+    "anime_id": 164
+  },
+  {
+    "title": "Mushoku Tensei: Jobless Reincarnation Season 2 Part 2",
+    "title_ko": "무직전생 ~이세계에 갔으면 진지하게 최선을 다한다~ 2기 2부",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/55888/Mushoku_Tensei_II__Isekai_Ittara_Honki_Dasu_Part_2",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1876/141251.jpg?s=f2f66c5c2903f75be4c965042e4a8975",
+    "anime_id": 55888
+  },
+  {
+    "title": "Evangelion: 3.0+1.0 Thrice Upon a Time",
+    "title_ko": "에반게리온: 3.0+1.0 신극장판",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/3786/Shin_Evangelion_Movie_||",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1422/113533.jpg?s=071526444b9675d625e777f95ecc7414",
+    "anime_id": 3786
+  },
+  {
+    "title": "Neon Genesis Evangelion",
+    "title_ko": "신세기 에반게리온 (OVA)",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/30/Shinseiki_Evangelion",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1314/108941.jpg?s=dfafabfbb184bafdd8649c73b705097c",
+    "anime_id": 30
+  },
+  {
+    "title": "Neon Genesis Evangelion: The End of Evangelion",
+    "title_ko": "엔드 오브 에반게리온",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/32/Shinseiki_Evangelion_Movie__Air_Magokoro_wo_Kimi_ni",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1404/98182.jpg?s=45d50b182819579684a9d88d9c5756a6",
+    "anime_id": 32
+  },
+  {
+    "title": "Frieren: Beyond Journey's End",
+    "title_ko": "장송의 프리렌 1기",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/52991/Sousou_no_Frieren",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1015/138006.jpg?s=ce1002699d33adc692baf5e3c32e80c1",
+    "anime_id": 52991
+  },
+  {
+    "title": "Frieren: Beyond Journey's End Season 2",
+    "title_ko": "장송의 프리렌 2기",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/59978/Sousou_no_Frieren_2nd_Season",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1921/154528.jpg?s=60e2aab87c2f2ed3146565ae5e9df703",
+    "anime_id": 59978
+  },
+  {
+    "title": "Castle in the Sky",
+    "title_ko": "천공의 성 라퓨타",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/513/Tenkuu_no_Shiro_Laputa",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/5/37799.jpg?s=ebe94fbe4713f151c10bd9aace373d03",
+    "anime_id": 513
+  },
+  {
+    "title": "The Girl Who Leapt Through Time",
+    "title_ko": "시간을 달리는 소녀",
+    "score": 10,
+    "anime_url": "https://myanimelist.net/anime/2236/Toki_wo_Kakeru_Shoujo",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1/2432.jpg?s=2c2de6dd5e27c2035b556088539cda59",
+    "anime_id": 2236
+  },
+  {
+    "title": "Akira",
+    "title_ko": "아키라",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/47/Akira",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1408/114012.jpg?s=cccbe98f0a30d6c557aab125064f127d",
+    "anime_id": 47
+  },
+  {
+    "title": "Berserk (2016)",
+    "title_ko": "베르세르크 (2016)",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/32379/Berserk",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/10/79352.jpg?s=45a4836c3cf4912a25e59f1d5b5ea886",
+    "anime_id": 32379
+  },
+  {
+    "title": "5 Centimeters per Second",
+    "title_ko": "초속 5센티미터",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/1689/Byousoku_5_Centimeter",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1410/112994.jpg?s=abeaed146b07f3f63efb5c5baad340b7",
+    "anime_id": 1689
+  },
+  {
+    "title": "Chainsaw Man – The Movie: Reze Arc",
+    "title_ko": "극장판 체인소 맨: 레제편",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/57555/Chainsaw_Man_Movie__Reze-hen",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1763/150638.jpg?s=b34f6eeda19f8643d8515ad65dce9908",
+    "anime_id": 57555
+  },
+  {
+    "title": "Cyberpunk: Edgerunners",
+    "title_ko": "사이버펑크: 엣지러너",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/42310/Cyberpunk__Edgerunners",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1818/126435.jpg?s=0be17183a1db49a9a2fb43affb404d81",
+    "anime_id": 42310
+  },
+  {
+    "title": "Evangelion: 1.0 You Are (Not) Alone",
+    "title_ko": "에반게리온: 서",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/2759/Evangelion_Movie_1__Jo",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/7/74975.jpg?s=153836125197325bd35938cd934f9b98",
+    "anime_id": 2759
+  },
+  {
+    "title": "FLCL",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/227/FLCL",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/7/77356.jpg?s=cea42bd34b6b6cf6c626364a2d75496b",
+    "anime_id": 227
+  },
+  {
+    "title": "Ponyo",
+    "title_ko": "벼랑 위의 포뇨",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/2890/Gake_no_Ue_no_Ponyo",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1331/138727.jpg?s=0660d3e4d7822197bb9ec425cc6eecf2",
+    "anime_id": 2890
+  },
+  {
+    "title": "Voices of a Distant Star",
+    "title_ko": "별의 목소리",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/256/Hoshi_no_Koe",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1980/112997.jpg?s=320340872260e8c4327dd0e130d4bff6",
+    "anime_id": 256
+  },
+  {
+    "title": "Hunter x Hunter",
+    "title_ko": "헌터 x 헌터",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/11061/Hunter_x_Hunter_2011",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1337/99013.jpg?s=011b146df50b9c132d126f0d9d270048",
+    "anime_id": 11061
+  },
+  {
+    "title": "Ghost in the Shell 2: Innocence",
+    "title_ko": "공각기동대 이노센스",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/468/Innocence",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/10/75628.jpg?s=32add0500236dab849c17edbed5268a6",
+    "anime_id": 468
+  },
+  {
+    "title": "Jujutsu Kaisen: The Culling Game Part 1",
+    "title_ko": "주술회전: 사멸회유 전편",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/57658/Jujutsu_Kaisen__Shimetsu_Kaiyuu_-_Zenpen",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1659/154920.jpg?s=ababb922ddf0b81f26af0df3a5e16a82",
+    "anime_id": 57658
+  },
+  {
+    "title": "Children of the Sea",
+    "title_ko": "해수의 아이",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/37981/Kaijuu_no_Kodomo",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1103/99778.jpg?s=d1da0b1bd3283e112c81f0b365a3f91f",
+    "anime_id": 37981
+  },
+  {
+    "title": "The Boy and the Heron",
+    "title_ko": "그대들은 어떻게 살 것인가",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/36699/Kimitachi_wa_Dou_Ikiru_ka",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1126/139654.jpg?s=5f064372864f705523bc8798f77622f5",
+    "anime_id": 36699
+  },
+  {
+    "title": "A Silent Voice",
+    "title_ko": "목소리의 형태",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/28851/Koe_no_Katachi",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1122/96435.jpg?s=93a12868f53676988803e1d1cd22f1d2",
+    "anime_id": 28851
+  },
+  {
+    "title": "The Garden of Words",
+    "title_ko": "언어의 정원",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/16782/Kotonoha_no_Niwa",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1597/112995.jpg?s=03198bf8c94921f9ab384fcb5b853906",
+    "anime_id": 16782
+  },
+  {
+    "title": "Porco Rosso",
+    "title_ko": "붉은 돼지",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/416/Kurenai_no_Buta",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1728/138709.jpg?s=65a78f589bffe964617a42991533d669",
+    "anime_id": 416
+  },
+  {
+    "title": "Macross Plus",
+    "title_ko": "마크로스 플러스",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/474/Macross_Plus",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/12/75807.jpg?s=133ab463c493813e3b7e122dfc611183",
+    "anime_id": 474
+  },
+  {
+    "title": "Kiki's Delivery Service",
+    "title_ko": "마녀 배달부 키키",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/512/Majo_no_Takkyuubin",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1579/140483.jpg?s=36cc2adc1e8a4ddfd336513ebbc1b7bb",
+    "anime_id": 512
+  },
+  {
+    "title": "Whisper of the Heart",
+    "title_ko": "귀를 기울이면",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/585/Mimi_wo_Sumaseba",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1764/138714.jpg?s=beeeddb04316ba72c20b3fa7797cdadb",
+    "anime_id": 585
+  },
+  {
+    "title": "Mushoku Tensei: Jobless Reincarnation Season 2",
+    "title_ko": "무직전행 ~이세계에 갔으면 진지하게 최선을 다한다~ 2기",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/51179/Mushoku_Tensei_II__Isekai_Ittara_Honki_Dasu",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1898/138005.jpg?s=0ba39d5b50134cbc5fabc9cf77ea1a3b",
+    "anime_id": 51179
+  },
+  {
+    "title": "Paprika",
+    "title_ko": "파프리카",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/1943/Paprika",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1929/93629.jpg?s=c73510be5062b9684a325131b40c7b95",
+    "anime_id": 1943
+  },
+  {
+    "title": "Psycho-Pass",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/13601/Psycho-Pass",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1314/142015.jpg?s=45ef034a08f69f41c9d5bfa247367bcd",
+    "anime_id": 13601
+  },
+  {
+    "title": "Redline",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/6675/Redline",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/12/28553.jpg?s=5f168c26fe6bc1773385286f6212c6a2",
+    "anime_id": 6675
+  },
+  {
+    "title": "Spirited Away",
+    "title_ko": "센과 치히로의 행방불명",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/199/Sen_to_Chihiro_no_Kamikakushi",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/6/79597.jpg?s=9be2b26501dad1ef733e2c38e2741c44",
+    "anime_id": 199
+  },
+  {
+    "title": "Millennium Actress",
+    "title_ko": "천년여우",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/1033/Sennen_Joyuu",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1648/93626.jpg?s=47693f38953034f6abb26d0f09b4495f",
+    "anime_id": 1033
+  },
+  {
+    "title": "Attack on Titan",
+    "title_ko": "진격의 거인",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/16498/Shingeki_no_Kyojin",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/10/47347.jpg?s=0c5745fd0b1559ebf88af1c403b4e288",
+    "anime_id": 16498
+  },
+  {
+    "title": "Sonny Boy",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/48849/Sonny_Boy",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1509/117149.jpg?s=b010067ccdc242240adc31aedb6fab32",
+    "anime_id": 48849
+  },
+  {
+    "title": "My Dress-Up Darling Season 2",
+    "title_ko": "그 비스크 돌은 사랑을 한다 Season 2",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/53065/Sono_Bisque_Doll_wa_Koi_wo_Suru_Season_2",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1024/150787.jpg?s=f9a2aa0a32dcc0674005dc11e2d51b8c",
+    "anime_id": 53065
+  },
+  {
+    "title": "Steins;Gate",
+    "title_ko": "슈타인즈 게이트",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/9253/Steins_Gate",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1935/127974.jpg?s=82ada9442e8693db63d325f457cf186b",
+    "anime_id": 9253
+  },
+  {
+    "title": "Takopi's Original Sin",
+    "title_ko": "타코피의 원죄",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/60489/Takopii_no_Genzai",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1182/149879.jpg?s=688b3449e5f7fafcb5ac33bf516afd7b",
+    "anime_id": 60489
+  },
+  {
+    "title": "My Neighbor Totoro",
+    "title_ko": "이웃집 토토로",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/523/Tonari_no_Totoro",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1110/147278.jpg?s=d79dd9bc5bbd3f27d0ad21d41c6aaaf3",
+    "anime_id": 523
+  },
+  {
+    "title": "Vampire Hunter D: Bloodlust",
+    "title_ko": "뱀파이어 헌터 D",
+    "score": 9,
+    "anime_url": "https://myanimelist.net/anime/543/Vampire_Hunter_D_2000",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1571/135153.jpg?s=17215c2fdc83d0c2aa6694597a96a13a",
+    "anime_id": 543
+  },
+  {
+    "title": "Akame ga Kill!",
+    "title_ko": "아카메가 벤다!",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/22199/Akame_ga_Kill",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1429/95946.jpg?s=7faffc350d3fdfc43bd01d216eff0981",
+    "anime_id": 22199
+  },
+  {
+    "title": "Bakemonogatari",
+    "title_ko": "바케모노가타리",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/5081/Bakemonogatari",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/11/75274.jpg?s=9a41fef3ec70b47cd603d3495dec5735",
+    "anime_id": 5081
+  },
+  {
+    "title": "Blame!: The Movie",
+    "title_ko": "블레임!",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/32086/Blame_Movie",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1976/93666.jpg?s=3d2ee0f91d42c1952424baea30e31963",
+    "anime_id": 32086
+  },
+  {
+    "title": "The Dangers in My Heart",
+    "title_ko": "내 마음의 위험한 녀석",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/52578/Boku_no_Kokoro_no_Yabai_Yatsu",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1545/133887.jpg?s=d4dc8d3d5928e75c79bbfb5e62567beb",
+    "anime_id": 52578
+  },
+  {
+    "title": "Chainsaw Man",
+    "title_ko": "체인소 맨",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/44511/Chainsaw_Man",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1806/126216.jpg?s=6ec84201471890577a860594817833f7",
+    "anime_id": 44511
+  },
+  {
+    "title": "Clevatess",
+    "title_ko": "클레바테스 -마수왕과 아기와 시체 용사-",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/59205/Clevatess__Majuu_no_Ou_to_Akago_to_Shikabane_no_Yuusha",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1255/150593.jpg?s=53768233102bb06ca06424234552ca0a",
+    "anime_id": 59205
+  },
+  {
+    "title": "Dorohedoro",
+    "title_ko": "도로헤도로",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/38668/Dorohedoro",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1230/119278.jpg?s=461ea227fa90a5b904935d5c0d9f3848",
+    "anime_id": 38668
+  },
+  {
+    "title": "Evangelion: 2.0 You Can (Not) Advance",
+    "title_ko": "에반게리온: 파",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/3784/Evangelion_Movie_2__Ha",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/5/74983.jpg?s=03796c8f7e2fd8d41abf1bebccbf1ed9",
+    "anime_id": 3784
+  },
+  {
+    "title": "Evangelion: 3.0 You Can (Not) Redo",
+    "title_ko": "에반게리온: Q",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/3785/Evangelion_Movie_3__Q",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/9/43201.jpg?s=92b21277f5abfeec3f4869d07d99c533",
+    "anime_id": 3785
+  },
+  {
+    "title": "Final Fantasy VII: Advent Children",
+    "title_ko": "파이널 판타지 VII: 어드벤트 칠드런",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/317/Final_Fantasy_VII__Advent_Children",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1/317.jpg?s=24850a7c0252816860a14bcb8df89441",
+    "anime_id": 317
+  },
+  {
+    "title": "Genocidal Organ",
+    "title_ko": "학살기관",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/23279/Gyakusatsu_Kikan",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/12/83309.jpg?s=83549c37531111df1cba3e9315bb5ed2",
+    "anime_id": 23279
+  },
+  {
+    "title": "Hinamatsuri",
+    "title_ko": "히나마츠리",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/36296/Hinamatsuri",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1580/93526.jpg?s=4e070752e33a87858cd1f1d73c1db3a2",
+    "anime_id": 36296
+  },
+  {
+    "title": "Land of the Lustrous",
+    "title_ko": "보석의 나라",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/35557/Houseki_no_Kuni",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/3/88293.jpg?s=6aed03abbcf4586ff71866e89e742bdb",
+    "anime_id": 35557
+  },
+  {
+    "title": "The Eminence in Shadow",
+    "title_ko": "어둠의 실력자가 되고 싶어서!",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/48316/Kage_no_Jitsuryokusha_ni_Naritakute",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1091/128729.jpg?s=168c5c851f101808ecf4701c5a3685fc",
+    "anime_id": 48316
+  },
+  {
+    "title": "The Eminence in Shadow Season 2",
+    "title_ko": "어둠의 실력자가 되고 싶어서! Season 2",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/54595/Kage_no_Jitsuryokusha_ni_Naritakute_2nd_Season",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1938/138295.jpg?s=8bef95ce02330ec0728ad349c296d174",
+    "anime_id": 54595
+  },
+  {
+    "title": "Kaguya-sama: Love is War",
+    "title_ko": "카구야 님은 고백받고 싶어 ~천재들의 연애 두뇌전~",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/37999/Kaguya-sama_wa_Kokurasetai__Tensai-tachi_no_Renai_Zunousen",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1295/106551.jpg?s=00fc498ed478611aa4320af9e8015c69",
+    "anime_id": 37999
+  },
+  {
+    "title": "Mobile Suit Gundam 0080: War in the Pocket",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/82/Kidou_Senshi_Gundam_0080__Pocket_no_Naka_no_Sensou",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1839/92857.jpg?s=26ca97a8b686685ea2d0dbffc78f3f13",
+    "anime_id": 82
+  },
+  {
+    "title": "Mobile Suit Gundam: Char's Counterattack",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/87/Kidou_Senshi_Gundam__Gyakushuu_no_Char",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1523/92371.jpg?s=69bd71267784fb67b76a430069a201bf",
+    "anime_id": 87
+  },
+  {
+    "title": "Parasyte: The Maxim",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/22535/Kiseijuu__Sei_no_Kakuritsu",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/3/73178.jpg?s=10cc6330364cb0b69f8eb9f16469b177",
+    "anime_id": 22535
+  },
+  {
+    "title": "Ghost in the Shell: Stand Alone Complex",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/467/Koukaku_Kidoutai__Stand_Alone_Complex",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/11/50857.jpg?s=2c0c268dfeb2653030258e7b31333dee",
+    "anime_id": 467
+  },
+  {
+    "title": "Look Back",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/58125/Look_Back",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1716/142633.jpg?s=bd3f4e645b6567de9a26f2715f2644c5",
+    "anime_id": 58125
+  },
+  {
+    "title": "Made in Abyss",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/34599/Made_in_Abyss",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/6/86733.jpg?s=f925034fd328f06efe25bf60410345b0",
+    "anime_id": 34599
+  },
+  {
+    "title": "Mob Psycho 100",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/32182/Mob_Psycho_100",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/8/80356.jpg?s=4c98a3ed436e8096e05d8c01d1e63a10",
+    "anime_id": 32182
+  },
+  {
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/39535/Mushoku_Tensei__Isekai_Ittara_Honki_Dasu",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1530/117776.jpg?s=2c0d611bea033f393998793b9dca7732",
+    "anime_id": 39535
+  },
+  {
+    "title": "Mushoku Tensei: Jobless Reincarnation Part 2",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/45576/Mushoku_Tensei__Isekai_Ittara_Honki_Dasu_Part_2",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1028/117777.jpg?s=11ea6e47d314fb746abb706e0692d468",
+    "anime_id": 45576
+  },
+  {
+    "title": "The Elusive Samurai",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/54724/Nige_Jouzu_no_Wakagimi",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1386/140401.jpg?s=e970fbb45a6d82beb005e46c677c0607",
+    "anime_id": 54724
+  },
+  {
+    "title": "Noragami",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/20507/Noragami",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1886/128266.jpg?s=48d95ddb919aec4f4cc068bd6596a689",
+    "anime_id": 20507
+  },
+  {
+    "title": "One-Punch Man",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/30276/One_Punch_Man",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/12/76049.jpg?s=8a6af524cfe586d8c6099dbbf2803294",
+    "anime_id": 30276
+  },
+  {
+    "title": "Perfect Blue",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/437/Perfect_Blue",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1254/134212.jpg?s=698d4458869274bd136e46616190fe84",
+    "anime_id": 437
+  },
+  {
+    "title": "My Dress-Up Darling",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/48736/Sono_Bisque_Doll_wa_Koi_wo_Suru",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1179/119897.jpg?s=947c4f14aa219793bf7cbc170a6ad951",
+    "anime_id": 48736
+  },
+  {
+    "title": "Sword of the Stranger",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/2418/Stranger__Mukou_Hadan",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/9/87066.jpg?s=413df010c4121286565c6c9558094172",
+    "anime_id": 2418
+  },
+  {
+    "title": "Sword Art Online",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/11757/Sword_Art_Online",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/11/39717.jpg?s=55f88992df908bdcb872db3a398aea49",
+    "anime_id": 11757
+  },
+  {
+    "title": "The Animatrix",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/1303/The_Animatrix",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/3/75870.jpg?s=b4590b612f2cb06ffc78b89f5d7a06ec",
+    "anime_id": 1303
+  },
+  {
+    "title": "Tokyo Ghoul",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/22319/Tokyo_Ghoul",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1498/134443.jpg?s=3b5201f5bc801c531f525b99f3adf99c",
+    "anime_id": 22319
+  },
+  {
+    "title": "Vivy -Fluorite Eye's Song-",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/46095/Vivy__Fluorite_Eyes_Song",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1551/128960.jpg?s=6bef86951f15c43360b459c184abf867",
+    "anime_id": 46095
+  },
+  {
+    "title": "Sentenced to Be a Hero",
+    "score": 8,
+    "anime_url": "https://myanimelist.net/anime/56009/Yuusha-kei_ni_Shosu__Choubatsu_Yuusha_9004-tai_Keimu_Kiroku",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1062/151911.jpg?s=1f31f95ae770f623178c4876cbc4cc1a",
+    "anime_id": 56009
+  },
+  {
+    "title": "Ajin: Demi-Human",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/31580/Ajin",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/13/77968.jpg?s=aa7396172f47a3efbb48dcf6d404bfd6",
+    "anime_id": 31580
+  },
+  {
+    "title": "The Boy and the Beast",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/28805/Bakemono_no_Ko",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/11/73540.jpg?s=a727d39e34d6aa707258c2d459d7555e",
+    "anime_id": 28805
+  },
+  {
+    "title": "Erased",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/31043/Boku_dake_ga_Inai_Machi",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/10/77957.jpg?s=2a823e65b904c9557b2b184f75c69872",
+    "anime_id": 31043
+  },
+  {
+    "title": "Code Geass: Lelouch of the Rebellion R2",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/2904/Code_Geass__Hangyaku_no_Lelouch_R2",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1088/135089.jpg?s=644467e60af6bc013425ca39b447b350",
+    "anime_id": 2904
+  },
+  {
+    "title": "Dan Da Dan Season 2",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/60543/Dandadan_2nd_Season",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1721/149001.jpg?s=65264cc282aeddc3cfe0fa8f189fe1b0",
+    "anime_id": 60543
+  },
+  {
+    "title": "Dead Dead Demons Dededede Destruction",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/58883/Dead_Dead_Demons_Dededede_Destruction_ONA",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1528/143212.jpg?s=15e795a855133e9e82b3ab5290984389",
+    "anime_id": 58883
+  },
+  {
+    "title": "Death Parade",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/28223/Death_Parade",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/5/71553.jpg?s=52074a59721f09b569102fe3f20a0e4f",
+    "anime_id": 28223
+  },
+  {
+    "title": "The Masterful Cat Is Depressed Again Today",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/51916/Dekiru_Neko_wa_Kyou_mo_Yuuutsu",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1074/136720.jpg?s=8b31594971ca2a664957015b9af3b819",
+    "anime_id": 51916
+  },
+  {
+    "title": "Devilman: Crybaby",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/35120/Devilman__Crybaby",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/2/89973.jpg?s=79cd3f3de608e4b9161d9ffcb82f29e2",
+    "anime_id": 35120
+  },
+  {
+    "title": "Delicious in Dungeon",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/52701/Dungeon_Meshi",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1711/142478.jpg?s=f3493d93a2fa26c2aacbd22cb2bec4e0",
+    "anime_id": 52701
+  },
+  {
+    "title": "Into the Forest of Fireflies' Light",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/10408/Hotarubi_no_Mori_e",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1599/112267.jpg?s=a46017a3c4cb80db2a600f05c26e1161",
+    "anime_id": 10408
+  },
+  {
+    "title": "Don't Toy with Me, Miss Nagatoro",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/42361/Ijiranaide_Nagatoro-san",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1900/110097.jpg?s=d41ba2f8430722f17061ae4244c24049",
+    "anime_id": 42361
+  },
+  {
+    "title": "Kakegurui",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/34933/Kakegurui",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/3/86578.jpg?s=e44e47d3bef9b747aa573792fa55fd69",
+    "anime_id": 34933
+  },
+  {
+    "title": "Mobile Suit Gundam II: Soldiers of Sorrow",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/1091/Kidou_Senshi_Gundam_II__Ai_Senshi-hen",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1336/143747.jpg?s=a09a042e08a0a17f4f13555bdacc98fd",
+    "anime_id": 1091
+  },
+  {
+    "title": "Mobile Suit Gundam Thunderbolt",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/31973/Kidou_Senshi_Gundam_Thunderbolt",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/3/77176.jpg?s=e4b56410c242b04e1d28bad3dd597853",
+    "anime_id": 31973
+  },
+  {
+    "title": "Mobile Suit Gundam Thunderbolt: December Sky",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/33221/Kidou_Senshi_Gundam_Thunderbolt__December_Sky",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/2/79823.jpg?s=e038fdae2c901eef03ac14cb353d61b7",
+    "anime_id": 33221
+  },
+  {
+    "title": "Mobile Suit Gundam: The 08th MS Team",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/81/Kidou_Senshi_Gundam__Dai_08_MS_Shoutai",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/9/75618.jpg?s=92cfc85808651710b2de8a7876527d55",
+    "anime_id": 81
+  },
+  {
+    "title": "Mobile Suit Gundam: The Origin",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/10937/Kidou_Senshi_Gundam__The_Origin",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/4/72702.jpg?s=c97966d3d0780116ce2773b4e59cff50",
+    "anime_id": 10937
+  },
+  {
+    "title": "KonoSuba: God's Blessing on This Wonderful World!",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/30831/Kono_Subarashii_Sekai_ni_Shukufuku_wo",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1895/142748.jpg?s=3c36db103bf2d62af03c9812170f2d37",
+    "anime_id": 30831
+  },
+  {
+    "title": "Talentless Nana",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/41619/Munou_na_Nana",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1301/110433.jpg?s=1f6ac25269f3e4f52238ba8393321f96",
+    "anime_id": 41619
+  },
+  {
+    "title": "The Cat Returns",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/597/Neko_no_Ongaeshi",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1109/138719.jpg?s=249da546f1ea55cd6c5f9a680a0f16b5",
+    "anime_id": 597
+  },
+  {
+    "title": "Solo Leveling",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/52299/Ore_dake_Level_Up_na_Ken",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1801/142390.jpg?s=542dcaa7d0738f240742971c85eb02e1",
+    "anime_id": 52299
+  },
+  {
+    "title": "Solo Leveling Season 2: Arise from the Shadow",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/58567/Ore_dake_Level_Up_na_Ken_Season_2__Arise_from_the_Shadow",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1448/147351.jpg?s=f661ae6f9bc762445bdcd43479e18021",
+    "anime_id": 58567
+  },
+  {
+    "title": "Psycho-Pass 2",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/23281/Psycho-Pass_2",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1197/100616.jpg?s=5a7d70534b774faa8270b1d593ca6dfb",
+    "anime_id": 23281
+  },
+  {
+    "title": "Re:ZERO -Starting Life in Another World-",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/31240/Re_Zero_kara_Hajimeru_Isekai_Seikatsu",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1522/128039.jpg?s=fa18667f7e01c40f0c08efed87bd8a4b",
+    "anime_id": 31240
+  },
+  {
+    "title": "The Disastrous Life of Saiki K.",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/33255/Saiki_Kusuo_no_Ψ-nan",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1973/142750.jpg?s=7df52dc248549c6389ede8f1ac4bda00",
+    "anime_id": 33255
+  },
+  {
+    "title": "Sakamoto Days Part 2",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/60285/Sakamoto_Days_Part_2",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1758/148719.jpg?s=14ea8e54f81bf02e0839eb5680afb2f2",
+    "anime_id": 60285
+  },
+  {
+    "title": "Rascal Does Not Dream of Bunny Girl Senpai",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/37450/Seishun_Buta_Yarou_wa_Bunny_Girl_Senpai_no_Yume_wo_Minai",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1301/93586.jpg?s=c5816f00664086dd8c815a1d79cafa4f",
+    "anime_id": 37450
+  },
+  {
+    "title": "Steins;Gate 0",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/30484/Steins_Gate_0",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1375/93521.jpg?s=2cc439b457bcb5ca6ffc87c1eb27912b",
+    "anime_id": 30484
+  },
+  {
+    "title": "Suzume",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/50594/Suzume_no_Tojimari",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1598/128450.jpg?s=aedb2aa747318b2a07d797d3b29e3301",
+    "anime_id": 50594
+  },
+  {
+    "title": "The Melancholy of Haruhi Suzumiya",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/849/Suzumiya_Haruhi_no_Yuuutsu",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1470/137929.jpg?s=4d21d91fe36bfb9040c7408063f07f19",
+    "anime_id": 849
+  },
+  {
+    "title": "The Melancholy of Haruhi Suzumiya (2009)",
+    "score": 7,
+    "anime_url": "https://myanimelist.net/anime/4382/Suzumiya_Haruhi_no_Yuuutsu_2009",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/8/75377.jpg?s=e834cf5783c61b99e70439f08255374d",
+    "anime_id": 4382
+  },
+  {
+    "title": "Akiba Maid War",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/52193/Akiba_Meido_Sensou",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1217/129604.jpg?s=9ac29757475fcac51afbb63bbc5289aa",
+    "anime_id": 52193
+  },
+  {
+    "title": "Assassination Classroom",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/24833/Ansatsu_Kyoushitsu",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/5/75639.jpg?s=446c4a2d1f128c0d206af25d7e652b56",
+    "anime_id": 24833
+  },
+  {
+    "title": "My Hero Academia",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/31964/Boku_no_Hero_Academia",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/10/78745.jpg?s=844d9959a2cfbc60de12c138ca2837b9",
+    "anime_id": 31964
+  },
+  {
+    "title": "Code Geass: Lelouch of the Rebellion",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/1575/Code_Geass__Hangyaku_no_Lelouch",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1032/135088.jpg?s=7fc91a20b4351859f589ae8cddcbbd91",
+    "anime_id": 1575
+  },
+  {
+    "title": "Dan Da Dan",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/57334/Dandadan",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1584/143719.jpg?s=5da547014079dcefe6fb19d64534497c",
+    "anime_id": 57334
+  },
+  {
+    "title": "Goblin Slayer",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/37349/Goblin_Slayer",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1719/95621.jpg?s=efbd385d01d600aad1202dd7618077c6",
+    "anime_id": 37349
+  },
+  {
+    "title": "Grimgar: Ashes and Illusions",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/31859/Hai_to_Gensou_no_Grimgar",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/13/77976.jpg?s=913d9c11ed773cc67e854d9efa8defa0",
+    "anime_id": 31859
+  },
+  {
+    "title": "Kaiju No. 8",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/52588/Kaijuu_8-gou",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1370/140362.jpg?s=ef043b90d4bf310fcde0a7b070c5d84e",
+    "anime_id": 52588
+  },
+  {
+    "title": "Mobile Suit Gundam Thunderbolt: Bandit Flower",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/35949/Kidou_Senshi_Gundam_Thunderbolt__Bandit_Flower",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/13/87511.jpg?s=b717a8b64c724ca64e4a00ea4b521a46",
+    "anime_id": 35949
+  },
+  {
+    "title": "Mobile Suit Gundam: Cucuruz Doan's Island",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/49827/Kidou_Senshi_Gundam__Cucuruz_Doan_no_Shima",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1629/124154.jpg?s=ade3177452e0425d05a636ec56ef1ea6",
+    "anime_id": 49827
+  },
+  {
+    "title": "Mobile Suit Gundam: Hathaway",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/37765/Kidou_Senshi_Gundam__Senkou_no_Hathaway",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1195/115685.jpg?s=d35c08f4a948a251e87491bd57237ca0",
+    "anime_id": 37765
+  },
+  {
+    "title": "The Future Diary",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/10620/Mirai_Nikki_TV",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/13/33465.jpg?s=64e79261a0e3025f6b747d5822a53f3d",
+    "anime_id": 10620
+  },
+  {
+    "title": "The Tunnel to Summer, the Exit of Goodbyes",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/50593/Natsu_e_no_Tunnel_Sayonara_no_Deguchi",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1462/125397.jpg?s=3a4be2f5c3854aa4d64e4db4a6228347",
+    "anime_id": 50593
+  },
+  {
+    "title": "Overlord",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/29803/Overlord",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1945/136600.jpg?s=fc794a6c3e85ae6c6661133da34a4984",
+    "anime_id": 29803
+  },
+  {
+    "title": "Sakamoto Days",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/58939/Sakamoto_Days",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1026/146459.jpg?s=88c3ae866e77a509c01d753ae1b66f2f",
+    "anime_id": 58939
+  },
+  {
+    "title": "SHIMONETA: A Boring World Where the Concept of Dirty Jokes Doesn't Exist",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/29786/Shimoneta_to_Iu_Gainen_ga_Sonzai_Shinai_Taikutsu_na_Sekai",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/6/75106.jpg?s=d1eea5602525b5028394009af87b4d77",
+    "anime_id": 29786
+  },
+  {
+    "title": "Summer Wars",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/5681/Summer_Wars",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1593/116751.jpg?s=4419fde6b736ba90690e6d1e5712212a",
+    "anime_id": 5681
+  },
+  {
+    "title": "The Rising of the Shield Hero",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/35790/Tate_no_Yuusha_no_Nariagari",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1490/101365.jpg?s=a86cf7ae62762116809daa3576131d03",
+    "anime_id": 35790
+  },
+  {
+    "title": "Gurren Lagann",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/2001/Tengen_Toppa_Gurren_Lagann",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/4/5123.jpg?s=ea53808ecf45b91df0ce86a856084fd3",
+    "anime_id": 2001
+  },
+  {
+    "title": "Terra Formars",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/22687/Terra_Formars",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/2/67117.jpg?s=4449d3b1d1241d631347529f2a2bf381",
+    "anime_id": 22687
+  },
+  {
+    "title": "My Love Story with Yamada-kun at Lv999",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/53126/Yamada-kun_to_Lv999_no_Koi_wo_Suru",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1298/134178.jpg?s=6be5a3c774f25dc81318b74df17b7cfa",
+    "anime_id": 53126
+  },
+  {
+    "title": "Saga of Tanya the Evil",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/32615/Youjo_Senki",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/5/82890.jpg?s=b64f06c15c2eaa9d8717494e4b30138d",
+    "anime_id": 32615
+  },
+  {
+    "title": "Wicked City",
+    "score": 6,
+    "anime_url": "https://myanimelist.net/anime/1107/Youjuu_Toshi",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/2/50021.jpg?s=3dfb816bd9f5b06860e8d71565f3f45b",
+    "anime_id": 1107
+  },
+  {
+    "title": "Asura",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/8475/Asura",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/7/44289.jpg?s=ea38427cdfff37a046860eeae4f157c9",
+    "anime_id": 8475
+  },
+  {
+    "title": "Black Bullet",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/20787/Black_Bullet",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1292/94693.jpg?s=37fee00ab60b6294f88bdbc36b8ef092",
+    "anime_id": 20787
+  },
+  {
+    "title": "My Hero Academia Season 2",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/33486/Boku_no_Hero_Academia_2nd_Season",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/12/85221.jpg?s=d65251d6fb3c8aea81b25cafeeea52ee",
+    "anime_id": 33486
+  },
+  {
+    "title": "Immoral Guild",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/51212/Futoku_no_Guild",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1651/128718.jpg?s=2f33d4c1f9b2f99b97364b5e795da46b",
+    "anime_id": 51212
+  },
+  {
+    "title": "Hell's Paradise",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/46569/Jigokuraku",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1075/131925.jpg?s=d7a306cad06c4f49cd1064d59616320f",
+    "anime_id": 46569
+  },
+  {
+    "title": "Jujutsu Kaisen",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/40748/Jujutsu_Kaisen",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1171/109222.jpg?s=31d8a72519f9121c6154b9cb4e45eed1",
+    "anime_id": 40748
+  },
+  {
+    "title": "Jujutsu Kaisen 0",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/48561/Jujutsu_Kaisen_0_Movie",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1121/119044.jpg?s=4583e5808cbe490bef24ca10828bf512",
+    "anime_id": 48561
+  },
+  {
+    "title": "Jujutsu Kaisen Season 2",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/51009/Jujutsu_Kaisen_2nd_Season",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1792/138022.jpg?s=daa7c26164c2bb3b0626ab6ba3bfc4db",
+    "anime_id": 51009
+  },
+  {
+    "title": "Mobile Suit Gundam Narrative",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/37764/Kidou_Senshi_Gundam_NT",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1552/95706.jpg?s=60c33537a606fac3701f1b07e0591922",
+    "anime_id": 37764
+  },
+  {
+    "title": "Demon Slayer: Kimetsu no Yaiba - The Movie: Infinity Castle - Part 1: Akaza Returns",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/59192/Kimetsu_no_Yaiba_Movie_1__Mugenjou-hen_-_Akaza_Sairai",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1681/148216.jpg?s=b67bf1a7f74d865e50230eecb4cc63ba",
+    "anime_id": 59192
+  },
+  {
+    "title": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/55701/Kimetsu_no_Yaiba__Hashira_Geiko-hen",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1565/142711.jpg?s=2174b2f364244d8c56b9fc57cb05c600",
+    "anime_id": 55701
+  },
+  {
+    "title": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/51019/Kimetsu_no_Yaiba__Katanakaji_no_Sato-hen",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1765/135099.jpg?s=546acc31b843b62c783a95de0efe9650",
+    "anime_id": 51019
+  },
+  {
+    "title": "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/49926/Kimetsu_no_Yaiba__Mugen_Ressha-hen",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1065/118763.jpg?s=276ca8e2f5a05ef0ac603c064c0ec5c5",
+    "anime_id": 49926
+  },
+  {
+    "title": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/47778/Kimetsu_no_Yaiba__Yuukaku-hen",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1908/120036.jpg?s=990c9d2b55d17e2c192af4cecbb6399d",
+    "anime_id": 47778
+  },
+  {
+    "title": "No Game, No Life",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/19815/No_Game_No_Life",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1074/111944.jpg?s=47dc6b0ee368ca7e7894f0ab592582b4",
+    "anime_id": 19815
+  },
+  {
+    "title": "Overlord II",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/35073/Overlord_II",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1212/113415.jpg?s=04b0ad527303539d8eee03d616f7cae9",
+    "anime_id": 35073
+  },
+  {
+    "title": "Re:ZERO -Starting Life in Another World- Season 2 Part 2",
+    "score": 5,
+    "anime_url": "https://myanimelist.net/anime/42203/Re_Zero_kara_Hajimeru_Isekai_Seikatsu_2nd_Season_Part_2",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1724/117421.jpg?s=f6e5a251f2ca172a135ef1194458a1e6",
+    "anime_id": 42203
+  },
+  {
+    "title": "Infinite Stratos",
+    "score": 4,
+    "anime_url": "https://myanimelist.net/anime/9041/IS__Infinite_Stratos",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/3/74045.jpg?s=697811a02c444d4e52f61e8cd91bcf67",
+    "anime_id": 9041
+  },
+  {
+    "title": "Demon Slayer: Kimetsu no Yaiba",
+    "score": 4,
+    "anime_url": "https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1286/99889.jpg?s=df53be1440a076de57fda204bba4de60",
+    "anime_id": 38000
+  },
+  {
+    "title": "Demon Slayer: Kimetsu no Yaiba - The Movie: Mugen Train",
+    "score": 4,
+    "anime_url": "https://myanimelist.net/anime/40456/Kimetsu_no_Yaiba_Movie__Mugen_Ressha-hen",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1704/106947.jpg?s=2b0103e44b1802d20d8bcf95ffaee6b7",
+    "anime_id": 40456
+  },
+  {
+    "title": "The Seven Deadly Sins",
+    "score": 4,
+    "anime_url": "https://myanimelist.net/anime/23755/Nanatsu_no_Taizai",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/8/65409.jpg?s=46c7072f51a0af3032faa65c3dc63fdf",
+    "anime_id": 23755
+  },
+  {
+    "title": "Higurashi: When They Cry – Gou",
+    "score": 3,
+    "anime_url": "https://myanimelist.net/anime/41006/Higurashi_no_Naku_Koro_ni_Gou",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/1716/111533.jpg?s=d8812eaf49445c5cfbc95a5bc8660a41",
+    "anime_id": 41006
+  },
+  {
+    "title": "The Seven Deadly Sins: Revival of the Commandments",
+    "score": 3,
+    "anime_url": "https://myanimelist.net/anime/34577/Nanatsu_no_Taizai__Imashime_no_Fukkatsu",
+    "image_url": "https://cdn.myanimelist.net/r/192x272/images/anime/11/90089.jpg?s=5b75c2d494d206554520a34f4b2a34b2",
+    "anime_id": 34577
+  }
+]
