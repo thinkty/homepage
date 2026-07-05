@@ -1,0 +1,173 @@
+---
+layout: default
+title: Anime Ranking
+namespace: anime_ranking
+permalink: /anime_ranking
+---
+
+<h1>애니 랭킹</h1>
+
+<p>
+  여태까지 본 애니들에 대한 내 주관 듬뿍 점수.
+  점수가 낮으면 노잼. 높으면 꿀잼. (데이터 출처 : <a href="https://myanimelist.net/animelist/tachikomaki?status=2&order=4&order2=0" target="_blank" rel="noopener noreferrer">MyAnimeList</a>)
+</p>
+
+<div class="ranking-controls">
+  <label for="score-filter">점수</label>
+  <select id="score-filter">
+    <option value="0">All</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+</div>
+
+<table id="anime-ranking-table" class="anime-ranking-table">
+  <thead>
+    <tr>
+      <th data-key="rank">#</th>
+      <th data-key="title">Title</th>
+      <th data-key="score">Score</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<a class="go_back" href="/" rel="nofollow noopener noreferrer">
+  {% include icons/back.html %}
+</a>
+
+<style>
+  .ranking-controls {
+    margin: 1rem 0 1.25rem;
+    color: #bbbbbb;
+  }
+
+  .ranking-controls label {
+    margin-right: 0.5rem;
+    font-weight: 600;
+  }
+
+  .anime-ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #555555;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #333333;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+
+  .anime-ranking-table th,
+  .anime-ranking-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #555555;
+    text-align: left;
+    color: #dddddd;
+  }
+
+  .anime-ranking-table th {
+    cursor: pointer;
+    user-select: none;
+    background: #444444;
+    color: #f5f5f5;
+  }
+
+  .anime-ranking-table tbody tr:hover {
+    background: #3f3f3f;
+  }
+
+  .anime-ranking-table a {
+    color: skyblue;
+    text-decoration: none;
+  }
+
+  .anime-ranking-table a:hover {
+    text-decoration: underline;
+  }
+
+  .anime-ranking-table .score-cell {
+    font-weight: 700;
+    color: #ffffff;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const tableBody = document.querySelector('#anime-ranking-table tbody');
+    const filterSelect = document.getElementById('score-filter');
+    const headers = Array.from(document.querySelectorAll('#anime-ranking-table th[data-key]'));
+
+    let rows = [];
+    let sortKey = 'score';
+    let sortDirection = 'desc';
+
+    const renderRows = () => {
+      const minScore = Number(filterSelect.value || 0);
+      const visibleRows = rows
+        .filter((row) => (minScore === 0 ? true : row.score === minScore))
+        .sort((a, b) => {
+          if (sortKey === 'score') {
+            return sortDirection === 'asc' ? a.score - b.score : b.score - a.score;
+          }
+
+          if (sortKey === 'title') {
+            return sortDirection === 'asc'
+              ? a.title.localeCompare(b.title)
+              : b.title.localeCompare(a.title);
+          }
+
+          return 0;
+        });
+
+      tableBody.innerHTML = visibleRows.map((row, index) => {
+        const displayTitle = row.title_ko || row.title || '';
+        return `
+          <tr>
+            <td>${index + 1}</td>
+            <td><a href="${row.anime_url}" target="_blank" rel="noopener noreferrer">${displayTitle}</a></td>
+            <td class="score-cell">${row.score}</td>
+          </tr>
+        `;
+      }).join('');
+    };
+
+    headers.forEach((header) => {
+      header.addEventListener('click', () => {
+        const key = header.getAttribute('data-key');
+        if (sortKey === key) {
+          sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+        } else {
+          sortKey = key;
+          sortDirection = key === 'score' ? 'desc' : 'asc';
+        }
+        renderRows();
+      });
+    });
+
+    filterSelect.addEventListener('change', renderRows);
+
+    fetch('{{ "/assets/anime_ranking.json" | relative_url }}')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to load anime ranking data');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        rows = data || [];
+        renderRows();
+      })
+      .catch((error) => {
+        tableBody.innerHTML = '<tr><td colspan="3">Unable to load ranking data right now.</td></tr>';
+        console.error(error);
+      });
+  });
+</script>
