@@ -52,6 +52,9 @@ links:
   - label: "독백"
     icon: "icons/mono.html"
     url: "monologue"
+  - label: "애니 랭킹"
+    icon: "icons/ranking.html"
+    url: "anime_ranking"
 post_categories:
   - label: "Updates"
     icon: "icons/updates.html"
