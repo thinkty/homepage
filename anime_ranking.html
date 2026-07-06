@@ -9,7 +9,7 @@ permalink: /anime_ranking
 
 <p>
   여태까지 본 애니들에 대한 내 주관 듬뿍 점수.
-  점수가 낮으면 노잼. 높으면 꿀잼. (데이터 출처 : <a href="https://myanimelist.net/animelist/tachikomaki?status=2&order=4&order2=0" target="_blank" rel="noopener noreferrer">MyAnimeList</a>)
+  점수가 낮으면 노잼. 높으면 꿀잼. (마지막 업데이트 : <a href="https://myanimelist.net/animelist/tachikomaki?status=2&order=4&order2=0" target="_blank" rel="noopener noreferrer">2026.07.06</a>)
 </p>
 
 <div class="ranking-controls">
@@ -33,8 +33,8 @@ permalink: /anime_ranking
   <thead>
     <tr>
       <th data-key="rank">#</th>
-      <th data-key="title">Title</th>
-      <th data-key="score">Score</th>
+      <th data-key="title">제목</th>
+      <th data-key="score">점수</th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -58,7 +58,7 @@ permalink: /anime_ranking
   .anime-ranking-table {
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid #555555;
+    border: none;
     border-radius: 10px;
     overflow: hidden;
     background: #333333;
@@ -68,9 +68,24 @@ permalink: /anime_ranking
   .anime-ranking-table th,
   .anime-ranking-table td {
     padding: 0.75rem;
+    border-top: none;
+    border-left: 1px solid #555555;
+    border-right: 1px solid #555555;
     border-bottom: 1px solid #555555;
     text-align: left;
     color: #dddddd;
+  }
+  .anime-ranking-table th:first-child {
+    border-left: none;
+  }
+  .anime-ranking-table th:last-child {
+    border-right: none;
+  }
+  .anime-ranking-table td:first-child {
+    border-left: none;
+  }
+  .anime-ranking-table td:last-child {
+    border-right: none;
   }
 
   .anime-ranking-table th {
@@ -82,6 +97,10 @@ permalink: /anime_ranking
 
   .anime-ranking-table tbody tr:hover {
     background: #3f3f3f;
+  }
+
+  .anime-ranking-table tbody tr:last-child td {
+    border-bottom: none;
   }
 
   .anime-ranking-table a {
